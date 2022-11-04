@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://www.iacgbt.com/link/LPzhMdtaiSe2FP70?clash=1
+#!MANAGED-CONFIG https://www.iacgbt.com/link/NbeoOeQjIfVKYtp6?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2022-11-04 11:58:22
+## 上次更新于：2022-11-04 04:55:22
 #---------------------------------------------------#
 
 port: 7890
@@ -18,21 +18,21 @@ proxies:
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: f826c28e-d797-3878-b3b3-8fe7ece19bc5
+    password: 8526f4ef-7d3d-3cea-8e50-409badbdeab9
     sni: a1.iacgbt.com
   -
     name: 官方网站：iacgbt.com
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: f826c28e-d797-3878-b3b3-8fe7ece19bc5
+    password: 8526f4ef-7d3d-3cea-8e50-409badbdeab9
     sni: a1.iacgbt.com
   -
     name: '🇭🇰  香港 | 103 | 杭港 | 1x'
     type: vmess
     server: relay-us.bfstec.com
     port: 31002
-    uuid: f826c28e-d797-3878-b3b3-8fe7ece19bc5
+    uuid: 8526f4ef-7d3d-3cea-8e50-409badbdeab9
     alterId: 0
     cipher: auto
     udp: true
@@ -41,7 +41,7 @@ proxies:
     type: vmess
     server: relay-hk2.bfstec.com
     port: 44275
-    uuid: f826c28e-d797-3878-b3b3-8fe7ece19bc5
+    uuid: 8526f4ef-7d3d-3cea-8e50-409badbdeab9
     alterId: 0
     cipher: auto
     udp: true
@@ -50,7 +50,7 @@ proxies:
     type: vmess
     server: relay-hk2.bfstec.com
     port: 59083
-    uuid: f826c28e-d797-3878-b3b3-8fe7ece19bc5
+    uuid: 8526f4ef-7d3d-3cea-8e50-409badbdeab9
     alterId: 0
     cipher: auto
     udp: true
@@ -59,7 +59,7 @@ proxies:
     type: vmess
     server: relay-us.bfstec.com
     port: 25119
-    uuid: f826c28e-d797-3878-b3b3-8fe7ece19bc5
+    uuid: 8526f4ef-7d3d-3cea-8e50-409badbdeab9
     alterId: 0
     cipher: auto
     udp: true
@@ -67,8 +67,8 @@ proxies:
     name: '🇹🇼 台湾 | 101 | 台湾解锁 | 1x'
     type: vmess
     server: relay-tw1.bfstec.com
-    port: 60783
-    uuid: f826c28e-d797-3878-b3b3-8fe7ece19bc5
+    port: 36003
+    uuid: 8526f4ef-7d3d-3cea-8e50-409badbdeab9
     alterId: 0
     cipher: auto
     udp: true
@@ -77,14 +77,14 @@ proxies:
     type: trojan
     server: qr.bfstec.com
     port: 443
-    password: f826c28e-d797-3878-b3b3-8fe7ece19bc5
+    password: 8526f4ef-7d3d-3cea-8e50-409badbdeab9
     sni: qr.bfstec.com
   -
     name: '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
     type: vmess
     server: relay-us2.bfstec.com
     port: 51959
-    uuid: f826c28e-d797-3878-b3b3-8fe7ece19bc5
+    uuid: 8526f4ef-7d3d-3cea-8e50-409badbdeab9
     alterId: 0
     cipher: auto
     udp: true
@@ -93,7 +93,7 @@ proxies:
     type: vmess
     server: relay-jp.bfstec.com
     port: 27152
-    uuid: f826c28e-d797-3878-b3b3-8fe7ece19bc5
+    uuid: 8526f4ef-7d3d-3cea-8e50-409badbdeab9
     alterId: 0
     cipher: auto
     udp: true
@@ -102,7 +102,7 @@ proxies:
     type: vmess
     server: relay-sg1.bfstec.com
     port: 11211
-    uuid: f826c28e-d797-3878-b3b3-8fe7ece19bc5
+    uuid: 8526f4ef-7d3d-3cea-8e50-409badbdeab9
     alterId: 0
     cipher: auto
     udp: true
@@ -111,7 +111,7 @@ proxies:
     type: vmess
     server: relay-sg.bfstec.com
     port: 52791
-    uuid: f826c28e-d797-3878-b3b3-8fe7ece19bc5
+    uuid: 8526f4ef-7d3d-3cea-8e50-409badbdeab9
     alterId: 0
     cipher: auto
     udp: true
