@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://www.iacgbt.com/link/o38UZKZmGDYe50zv?clash=1
+#!MANAGED-CONFIG https://www.iacgbt.com/link/AuG310TG8mrI0z5G?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2022-11-06 12:58:32
+## 上次更新于：2022-11-06 01:24:21
 #---------------------------------------------------#
 
 port: 7890
@@ -18,21 +18,21 @@ proxies:
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 99a12b75-f059-3ccb-9936-4d250149a2e5
+    password: cd9cbbfa-086f-3d41-847e-b96b3ea8cfef
     sni: a1.iacgbt.com
   -
     name: 官方网站：iacgbt.com
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: 99a12b75-f059-3ccb-9936-4d250149a2e5
+    password: cd9cbbfa-086f-3d41-847e-b96b3ea8cfef
     sni: a1.iacgbt.com
   -
     name: '🇭🇰  香港 | 103 | 杭港 | 1x'
     type: vmess
     server: relay-us.bfstec.com
     port: 31002
-    uuid: 99a12b75-f059-3ccb-9936-4d250149a2e5
+    uuid: cd9cbbfa-086f-3d41-847e-b96b3ea8cfef
     alterId: 0
     cipher: auto
     udp: true
@@ -41,7 +41,7 @@ proxies:
     type: vmess
     server: relay-hk2.bfstec.com
     port: 44275
-    uuid: 99a12b75-f059-3ccb-9936-4d250149a2e5
+    uuid: cd9cbbfa-086f-3d41-847e-b96b3ea8cfef
     alterId: 0
     cipher: auto
     udp: true
@@ -50,7 +50,7 @@ proxies:
     type: vmess
     server: relay-hk2.bfstec.com
     port: 59083
-    uuid: 99a12b75-f059-3ccb-9936-4d250149a2e5
+    uuid: cd9cbbfa-086f-3d41-847e-b96b3ea8cfef
     alterId: 0
     cipher: auto
     udp: true
@@ -59,7 +59,7 @@ proxies:
     type: vmess
     server: relay-us.bfstec.com
     port: 25119
-    uuid: 99a12b75-f059-3ccb-9936-4d250149a2e5
+    uuid: cd9cbbfa-086f-3d41-847e-b96b3ea8cfef
     alterId: 0
     cipher: auto
     udp: true
@@ -68,14 +68,23 @@ proxies:
     type: trojan
     server: qr.bfstec.com
     port: 443
-    password: 99a12b75-f059-3ccb-9936-4d250149a2e5
+    password: cd9cbbfa-086f-3d41-847e-b96b3ea8cfef
     sni: qr.bfstec.com
+  -
+    name: '🇹🇼 台湾 | 101 | 台湾解锁 | 1x'
+    type: vmess
+    server: relay-tw1.bfstec.com
+    port: 60783
+    uuid: cd9cbbfa-086f-3d41-847e-b96b3ea8cfef
+    alterId: 0
+    cipher: auto
+    udp: true
   -
     name: '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
     type: vmess
     server: relay-us2.bfstec.com
     port: 51959
-    uuid: 99a12b75-f059-3ccb-9936-4d250149a2e5
+    uuid: cd9cbbfa-086f-3d41-847e-b96b3ea8cfef
     alterId: 0
     cipher: auto
     udp: true
@@ -84,7 +93,7 @@ proxies:
     type: vmess
     server: relay-jp.bfstec.com
     port: 27152
-    uuid: 99a12b75-f059-3ccb-9936-4d250149a2e5
+    uuid: cd9cbbfa-086f-3d41-847e-b96b3ea8cfef
     alterId: 0
     cipher: auto
     udp: true
@@ -93,7 +102,7 @@ proxies:
     type: vmess
     server: relay-sg1.bfstec.com
     port: 11211
-    uuid: 99a12b75-f059-3ccb-9936-4d250149a2e5
+    uuid: cd9cbbfa-086f-3d41-847e-b96b3ea8cfef
     alterId: 0
     cipher: auto
     udp: true
@@ -102,7 +111,7 @@ proxies:
     type: vmess
     server: relay-sg.bfstec.com
     port: 52791
-    uuid: 99a12b75-f059-3ccb-9936-4d250149a2e5
+    uuid: cd9cbbfa-086f-3d41-847e-b96b3ea8cfef
     alterId: 0
     cipher: auto
     udp: true
@@ -118,6 +127,7 @@ proxy-groups:
       - '🇭🇰  香港 | 102 | 海港 | 1.5x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
       - ' 101 | 直连测试 | 1x'
+      - '🇹🇼 台湾 | 101 | 台湾解锁 | 1x'
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - '🇨🇳 新加坡 | 101 | 杭州入口 | 1x'
@@ -141,6 +151,7 @@ proxy-groups:
       - '🇭🇰  香港 | 102 | 海港 | 1.5x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
       - ' 101 | 直连测试 | 1x'
+      - '🇹🇼 台湾 | 101 | 台湾解锁 | 1x'
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - '🇨🇳 新加坡 | 101 | 杭州入口 | 1x'
@@ -157,6 +168,7 @@ proxy-groups:
       - '🇭🇰  香港 | 102 | 海港 | 1.5x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
       - ' 101 | 直连测试 | 1x'
+      - '🇹🇼 台湾 | 101 | 台湾解锁 | 1x'
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - '🇨🇳 新加坡 | 101 | 杭州入口 | 1x'
@@ -173,6 +185,7 @@ proxy-groups:
       - '🇭🇰  香港 | 102 | 海港 | 1.5x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
       - ' 101 | 直连测试 | 1x'
+      - '🇹🇼 台湾 | 101 | 台湾解锁 | 1x'
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - '🇨🇳 新加坡 | 101 | 杭州入口 | 1x'
@@ -189,6 +202,7 @@ proxy-groups:
       - '🇭🇰  香港 | 102 | 海港 | 1.5x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
       - ' 101 | 直连测试 | 1x'
+      - '🇹🇼 台湾 | 101 | 台湾解锁 | 1x'
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - '🇨🇳 新加坡 | 101 | 杭州入口 | 1x'
@@ -205,6 +219,7 @@ proxy-groups:
       - '🇭🇰  香港 | 102 | 海港 | 1.5x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
       - ' 101 | 直连测试 | 1x'
+      - '🇹🇼 台湾 | 101 | 台湾解锁 | 1x'
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
       - '🇨🇳 新加坡 | 101 | 杭州入口 | 1x'
