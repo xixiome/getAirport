@@ -5,7 +5,539 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🏁RELAY-172.67.158.25-00
+- name: 🏁RELAY-1.1.1.1-00
+  server: 1.1.1.1
+  port: 65535
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 1.1.1.1
+- name: 🏁RELAY-1.1.1.1-01
+  server: 1.1.1.1
+  port: 65535
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 1.1.1.1
+- name: 🇭🇰HK-16.163.29.139-02
+  server: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com
+  port: 80
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com
+- name: 🇭🇰HK-16.162.32.1-03
+  server: 00000000000000000000000000000000000000000000000000000000000002a.rui77.com
+  port: 443
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000002a.rui77.com
+- name: 🇯🇵JP-3.112.28.229-04
+  server: 00000000000000000000000000000000000000000000000000000000000003a.rui77.com
+  port: 80
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000003a.rui77.com
+- name: 🇯🇵JP-54.92.25.222-05
+  server: 00000000000000000000000000000000000000000000000000000000000004a.rui77.com
+  port: 443
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000004a.rui77.com
+- name: 🇸🇬SG-18.140.50.21-06
+  server: 00000000000000000000000000000000000000000000000000000000000005a.rui77.com
+  port: 80
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000005a.rui77.com
+- name: 🇸🇬SG-18.141.199.131-07
+  server: 00000000000000000000000000000000000000000000000000000000000006a.rui77.com
+  port: 443
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000006a.rui77.com
+- name: 🇰🇷KR-3.36.123.169-08
+  server: 00000000000000000000000000000000000000000000000000000000000007a.rui77.com
+  port: 80
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000007a.rui77.com
+- name: 🇰🇷KR-3.38.191.125-09
+  server: 00000000000000000000000000000000000000000000000000000000000008a.rui77.com
+  port: 443
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000008a.rui77.com
+- name: 🇺🇸US-54.193.141.149-10
+  server: 00000000000000000000000000000000000000000000000000000000000009a.rui77.com
+  port: 80
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000009a.rui77.com
+- name: 🇺🇸US-54.241.121.94-11
+  server: 00000000000000000000000000000000000000000000000000000000000010a.rui77.com
+  port: 443
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000010a.rui77.com
+- name: 🇩🇪DE-35.158.162.191-12
+  server: 00000000000000000000000000000000000000000000000000000000000011a.rui77.com
+  port: 26901
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000011a.rui77.com
+- name: 🇺🇸US-34.211.53.168-13
+  server: 00000000000000000000000000000000000000000000000000000000000012a.rui77.com
+  port: 10392
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000012a.rui77.com
+- name: 🇬🇧GB-13.40.28.234-14
+  server: 00000000000000000000000000000000000000000000000000000000000013a.rui77.com
+  port: 43566
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000013a.rui77.com
+- name: 🇫🇷FR-13.39.21.10-15
+  server: 00000000000000000000000000000000000000000000000000000000000014a.rui77.com
+  port: 12659
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000014a.rui77.com
+- name: 🇮🇪IE-52.211.206.146-16
+  server: 00000000000000000000000000000000000000000000000000000000000015a.rui77.com
+  port: 15092
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000015a.rui77.com
+- name: 🇦🇶NOWHERE-0.0.0.0-17
+  server: 00000000000000000000000000000000000000000000000000000000000021a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000021a.rui77.com
+- name: 🇦🇶NOWHERE-0.0.0.0-18
+  server: 00000000000000000000000000000000000000000000000000000000000022a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000022a.rui77.com
+- name: 🇯🇵JP-35.77.45.80-19
+  server: 00000000000000000000000000000000000000000000000000000000000023a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000023a.rui77.com
+- name: 🇯🇵JP-43.206.107.41-20
+  server: 00000000000000000000000000000000000000000000000000000000000024a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000024a.rui77.com
+- name: 🇸🇬SG-13.215.205.86-21
+  server: 00000000000000000000000000000000000000000000000000000000000025a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000025a.rui77.com
+- name: 🇸🇬SG-18.141.160.20-22
+  server: 00000000000000000000000000000000000000000000000000000000000026a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000026a.rui77.com
+- name: 🇰🇷KR-43.201.153.206-23
+  server: 00000000000000000000000000000000000000000000000000000000000027a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000027a.rui77.com
+- name: 🇰🇷KR-3.38.206.162-24
+  server: 00000000000000000000000000000000000000000000000000000000000028a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000028a.rui77.com
+- name: 🇺🇸US-54.241.52.134-25
+  server: 00000000000000000000000000000000000000000000000000000000000029a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000029a.rui77.com
+- name: 🇺🇸US-54.176.213.133-26
+  server: 00000000000000000000000000000000000000000000000000000000000030a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000030a.rui77.com
+- name: 🇦🇶NOWHERE-0.0.0.0-27
+  server: 00000000000000000000000000000000000000000000000000000000000031a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000031a.rui77.com
+- name: 🇭🇰HK-18.163.102.145-28
+  server: 00000000000000000000000000000000000000000000000000000000000032a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000032a.rui77.com
+- name: 🇯🇵JP-35.74.234.120-29
+  server: 00000000000000000000000000000000000000000000000000000000000033a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000033a.rui77.com
+- name: 🇯🇵JP-43.206.134.187-30
+  server: 00000000000000000000000000000000000000000000000000000000000034a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000034a.rui77.com
+- name: 🇸🇬SG-3.0.249.52-31
+  server: 00000000000000000000000000000000000000000000000000000000000035a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000035a.rui77.com
+- name: 🇸🇬SG-18.143.196.114-32
+  server: 00000000000000000000000000000000000000000000000000000000000036a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000036a.rui77.com
+- name: 🇰🇷KR-3.36.66.41-33
+  server: 00000000000000000000000000000000000000000000000000000000000037a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000037a.rui77.com
+- name: 🇰🇷KR-43.201.71.235-34
+  server: 00000000000000000000000000000000000000000000000000000000000038a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000038a.rui77.com
+- name: 🇺🇸US-54.241.111.192-35
+  server: 00000000000000000000000000000000000000000000000000000000000039a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000039a.rui77.com
+- name: 🇺🇸US-204.236.165.232-36
+  server: 00000000000000000000000000000000000000000000000000000000000040a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000040a.rui77.com
+- name: 🏁RELAY-1.1.1.1-37
+  server: 1.1.1.1
+  port: 65535
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 1.1.1.1
+- name: 🏁RELAY-172.67.158.25-38
   server: v1.583180.xyz
   port: 2096
   type: vmess
@@ -19,7 +551,7 @@ proxies:
     path: /
     headers:
       Host: v1.583181.xyz
-- name: 🏁RELAY-172.67.158.25-01
+- name: 🏁RELAY-104.21.14.58-39
   server: v13.583180.xyz
   port: 2053
   type: vmess
@@ -33,7 +565,7 @@ proxies:
     path: /
     headers:
       Host: v13.583181.xyz
-- name: 🏁RELAY-172.67.158.25-02
+- name: 🏁RELAY-172.67.158.25-40
   server: v14.583180.xyz
   port: 8443
   type: vmess
@@ -47,7 +579,7 @@ proxies:
     path: /
     headers:
       Host: v14.583181.xyz
-- name: 🏁RELAY-104.21.14.58-03
+- name: 🏁RELAY-104.21.14.58-41
   server: v15.583180.xyz
   port: 2053
   type: vmess
@@ -61,7 +593,7 @@ proxies:
     path: /
     headers:
       Host: v15.583181.xyz
-- name: 🏁RELAY-172.67.158.25-04
+- name: 🏁RELAY-104.21.14.58-42
   server: v16.583180.xyz
   port: 8443
   type: vmess
@@ -75,537 +607,13 @@ proxies:
     path: /
     headers:
       Host: v16.583181.xyz
-- name: 🇨🇦CA-192.46.223.110-05
+- name: 🇨🇦CA-192.46.223.110-43
   server: t5.583181.xyz
   port: 1255
   type: trojan
   password: a9ce394c-2b69-4802-b02c-e4bbc881d9ac
   sni: www.baidu.com
   skip-cert-verify: true
-- name: 🏁RELAY-1.1.1.1-06
-  server: 1.1.1.1
-  port: 65535
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 1.1.1.1
-- name: 🏁RELAY-1.1.1.1-07
-  server: 1.1.1.1
-  port: 65535
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 1.1.1.1
-- name: 🇭🇰HK-16.163.29.139-08
-  server: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com
-  port: 80
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com
-- name: 🇭🇰HK-16.162.32.1-09
-  server: 00000000000000000000000000000000000000000000000000000000000002a.rui77.com
-  port: 443
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000002a.rui77.com
-- name: 🇯🇵JP-3.112.28.229-10
-  server: 00000000000000000000000000000000000000000000000000000000000003a.rui77.com
-  port: 80
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000003a.rui77.com
-- name: 🇯🇵JP-54.92.25.222-11
-  server: 00000000000000000000000000000000000000000000000000000000000004a.rui77.com
-  port: 443
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000004a.rui77.com
-- name: 🇸🇬SG-18.140.50.21-12
-  server: 00000000000000000000000000000000000000000000000000000000000005a.rui77.com
-  port: 80
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000005a.rui77.com
-- name: 🇸🇬SG-18.141.199.131-13
-  server: 00000000000000000000000000000000000000000000000000000000000006a.rui77.com
-  port: 443
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000006a.rui77.com
-- name: 🇰🇷KR-3.36.123.169-14
-  server: 00000000000000000000000000000000000000000000000000000000000007a.rui77.com
-  port: 80
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000007a.rui77.com
-- name: 🇰🇷KR-3.38.191.125-15
-  server: 00000000000000000000000000000000000000000000000000000000000008a.rui77.com
-  port: 443
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000008a.rui77.com
-- name: 🇺🇸US-54.193.141.149-16
-  server: 00000000000000000000000000000000000000000000000000000000000009a.rui77.com
-  port: 80
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000009a.rui77.com
-- name: 🇺🇸US-54.241.121.94-17
-  server: 00000000000000000000000000000000000000000000000000000000000010a.rui77.com
-  port: 443
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000010a.rui77.com
-- name: 🇩🇪DE-35.158.162.191-18
-  server: 00000000000000000000000000000000000000000000000000000000000011a.rui77.com
-  port: 26901
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000011a.rui77.com
-- name: 🇺🇸US-34.211.53.168-19
-  server: 00000000000000000000000000000000000000000000000000000000000012a.rui77.com
-  port: 10392
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000012a.rui77.com
-- name: 🇬🇧GB-13.40.28.234-20
-  server: 00000000000000000000000000000000000000000000000000000000000013a.rui77.com
-  port: 43566
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000013a.rui77.com
-- name: 🇫🇷FR-13.39.21.10-21
-  server: 00000000000000000000000000000000000000000000000000000000000014a.rui77.com
-  port: 12659
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000014a.rui77.com
-- name: 🇮🇪IE-52.211.206.146-22
-  server: 00000000000000000000000000000000000000000000000000000000000015a.rui77.com
-  port: 15092
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000015a.rui77.com
-- name: 🇦🇶NOWHERE-0.0.0.0-23
-  server: 00000000000000000000000000000000000000000000000000000000000021a.rui77.com
-  port: 52356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000021a.rui77.com
-- name: 🇦🇶NOWHERE-0.0.0.0-24
-  server: 00000000000000000000000000000000000000000000000000000000000022a.rui77.com
-  port: 52356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000022a.rui77.com
-- name: 🇯🇵JP-35.77.45.80-25
-  server: 00000000000000000000000000000000000000000000000000000000000023a.rui77.com
-  port: 52356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000023a.rui77.com
-- name: 🇯🇵JP-43.206.107.41-26
-  server: 00000000000000000000000000000000000000000000000000000000000024a.rui77.com
-  port: 52356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000024a.rui77.com
-- name: 🇸🇬SG-13.215.205.86-27
-  server: 00000000000000000000000000000000000000000000000000000000000025a.rui77.com
-  port: 52356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000025a.rui77.com
-- name: 🇸🇬SG-18.141.160.20-28
-  server: 00000000000000000000000000000000000000000000000000000000000026a.rui77.com
-  port: 52356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000026a.rui77.com
-- name: 🇰🇷KR-43.201.153.206-29
-  server: 00000000000000000000000000000000000000000000000000000000000027a.rui77.com
-  port: 52356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000027a.rui77.com
-- name: 🇰🇷KR-3.38.206.162-30
-  server: 00000000000000000000000000000000000000000000000000000000000028a.rui77.com
-  port: 52356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000028a.rui77.com
-- name: 🇺🇸US-54.241.52.134-31
-  server: 00000000000000000000000000000000000000000000000000000000000029a.rui77.com
-  port: 52356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000029a.rui77.com
-- name: 🇺🇸US-54.176.213.133-32
-  server: 00000000000000000000000000000000000000000000000000000000000030a.rui77.com
-  port: 52356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000030a.rui77.com
-- name: 🇦🇶NOWHERE-0.0.0.0-33
-  server: 00000000000000000000000000000000000000000000000000000000000031a.rui77.com
-  port: 12356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000031a.rui77.com
-- name: 🇭🇰HK-18.163.102.145-34
-  server: 00000000000000000000000000000000000000000000000000000000000032a.rui77.com
-  port: 12356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000032a.rui77.com
-- name: 🇯🇵JP-35.74.234.120-35
-  server: 00000000000000000000000000000000000000000000000000000000000033a.rui77.com
-  port: 12356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000033a.rui77.com
-- name: 🇯🇵JP-43.206.134.187-36
-  server: 00000000000000000000000000000000000000000000000000000000000034a.rui77.com
-  port: 12356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000034a.rui77.com
-- name: 🇸🇬SG-3.0.249.52-37
-  server: 00000000000000000000000000000000000000000000000000000000000035a.rui77.com
-  port: 12356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000035a.rui77.com
-- name: 🇸🇬SG-18.143.196.114-38
-  server: 00000000000000000000000000000000000000000000000000000000000036a.rui77.com
-  port: 12356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000036a.rui77.com
-- name: 🇰🇷KR-3.36.66.41-39
-  server: 00000000000000000000000000000000000000000000000000000000000037a.rui77.com
-  port: 12356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000037a.rui77.com
-- name: 🇰🇷KR-43.201.71.235-40
-  server: 00000000000000000000000000000000000000000000000000000000000038a.rui77.com
-  port: 12356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000038a.rui77.com
-- name: 🇺🇸US-54.241.111.192-41
-  server: 00000000000000000000000000000000000000000000000000000000000039a.rui77.com
-  port: 12356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000039a.rui77.com
-- name: 🇺🇸US-204.236.165.232-42
-  server: 00000000000000000000000000000000000000000000000000000000000040a.rui77.com
-  port: 12356
-  type: vmess
-  uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000040a.rui77.com
-- name: 🏁RELAY-104.21.28.31-43
-  server: www.sstzi.com
-  port: 10086
-  type: ss
-  cipher: chacha20-ietf
-  password: W0lrBF
 - name: 🏁RELAY-104.21.28.31-44
   server: www.sstzi.com
   port: 10086
@@ -1041,20 +1049,6 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🏁RELAY-1.1.1.1-84
-  server: 1.1.1.1
-  port: 65535
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: d37xr2wb5cxle7.cloudfront.net
 proxy-groups:
 - name: 节点选择
   type: select
@@ -1070,59 +1064,59 @@ proxy-groups:
 - name: 香港节点
   type: select
   proxies:
-  - 🇭🇰HK-16.163.29.139-08
-  - 🇭🇰HK-16.162.32.1-09
-  - 🇭🇰HK-18.163.102.145-34
+  - 🇭🇰HK-16.163.29.139-02
+  - 🇭🇰HK-16.162.32.1-03
+  - 🇭🇰HK-18.163.102.145-28
 - name: 日本节点
   type: select
   proxies:
-  - 🇯🇵JP-3.112.28.229-10
-  - 🇯🇵JP-54.92.25.222-11
-  - 🇯🇵JP-35.77.45.80-25
-  - 🇯🇵JP-43.206.107.41-26
-  - 🇯🇵JP-35.74.234.120-35
-  - 🇯🇵JP-43.206.134.187-36
+  - 🇯🇵JP-3.112.28.229-04
+  - 🇯🇵JP-54.92.25.222-05
+  - 🇯🇵JP-35.77.45.80-19
+  - 🇯🇵JP-43.206.107.41-20
+  - 🇯🇵JP-35.74.234.120-29
+  - 🇯🇵JP-43.206.134.187-30
 - name: 新加坡节点
   type: select
   proxies:
-  - 🇸🇬SG-18.140.50.21-12
-  - 🇸🇬SG-18.141.199.131-13
-  - 🇸🇬SG-13.215.205.86-27
-  - 🇸🇬SG-18.141.160.20-28
-  - 🇸🇬SG-3.0.249.52-37
-  - 🇸🇬SG-18.143.196.114-38
+  - 🇸🇬SG-18.140.50.21-06
+  - 🇸🇬SG-18.141.199.131-07
+  - 🇸🇬SG-13.215.205.86-21
+  - 🇸🇬SG-18.141.160.20-22
+  - 🇸🇬SG-3.0.249.52-31
+  - 🇸🇬SG-18.143.196.114-32
 - name: 其他节点
   type: select
   proxies:
-  - 🏁RELAY-172.67.158.25-00
-  - 🏁RELAY-172.67.158.25-01
-  - 🏁RELAY-172.67.158.25-02
-  - 🏁RELAY-104.21.14.58-03
-  - 🏁RELAY-172.67.158.25-04
-  - 🇨🇦CA-192.46.223.110-05
-  - 🏁RELAY-1.1.1.1-06
-  - 🏁RELAY-1.1.1.1-07
-  - 🇰🇷KR-3.36.123.169-14
-  - 🇰🇷KR-3.38.191.125-15
-  - 🇺🇸US-54.193.141.149-16
-  - 🇺🇸US-54.241.121.94-17
-  - 🇩🇪DE-35.158.162.191-18
-  - 🇺🇸US-34.211.53.168-19
-  - 🇬🇧GB-13.40.28.234-20
-  - 🇫🇷FR-13.39.21.10-21
-  - 🇮🇪IE-52.211.206.146-22
-  - 🇦🇶NOWHERE-0.0.0.0-23
-  - 🇦🇶NOWHERE-0.0.0.0-24
-  - 🇰🇷KR-43.201.153.206-29
-  - 🇰🇷KR-3.38.206.162-30
-  - 🇺🇸US-54.241.52.134-31
-  - 🇺🇸US-54.176.213.133-32
-  - 🇦🇶NOWHERE-0.0.0.0-33
-  - 🇰🇷KR-3.36.66.41-39
-  - 🇰🇷KR-43.201.71.235-40
-  - 🇺🇸US-54.241.111.192-41
-  - 🇺🇸US-204.236.165.232-42
-  - 🏁RELAY-104.21.28.31-43
+  - 🏁RELAY-1.1.1.1-00
+  - 🏁RELAY-1.1.1.1-01
+  - 🇰🇷KR-3.36.123.169-08
+  - 🇰🇷KR-3.38.191.125-09
+  - 🇺🇸US-54.193.141.149-10
+  - 🇺🇸US-54.241.121.94-11
+  - 🇩🇪DE-35.158.162.191-12
+  - 🇺🇸US-34.211.53.168-13
+  - 🇬🇧GB-13.40.28.234-14
+  - 🇫🇷FR-13.39.21.10-15
+  - 🇮🇪IE-52.211.206.146-16
+  - 🇦🇶NOWHERE-0.0.0.0-17
+  - 🇦🇶NOWHERE-0.0.0.0-18
+  - 🇰🇷KR-43.201.153.206-23
+  - 🇰🇷KR-3.38.206.162-24
+  - 🇺🇸US-54.241.52.134-25
+  - 🇺🇸US-54.176.213.133-26
+  - 🇦🇶NOWHERE-0.0.0.0-27
+  - 🇰🇷KR-3.36.66.41-33
+  - 🇰🇷KR-43.201.71.235-34
+  - 🇺🇸US-54.241.111.192-35
+  - 🇺🇸US-204.236.165.232-36
+  - 🏁RELAY-1.1.1.1-37
+  - 🏁RELAY-172.67.158.25-38
+  - 🏁RELAY-104.21.14.58-39
+  - 🏁RELAY-172.67.158.25-40
+  - 🏁RELAY-104.21.14.58-41
+  - 🏁RELAY-104.21.14.58-42
+  - 🇨🇦CA-192.46.223.110-43
   - 🏁RELAY-104.21.28.31-44
   - 🇨🇳CN-125.94.215.234-45
   - 🇨🇳CN-116.162.120.52-46
@@ -1163,57 +1157,56 @@ proxy-groups:
   - 🇨🇳CN-117.62.232.225-81
   - 🇨🇳CN-117.62.232.225-82
   - 🇨🇳CN-117.62.232.225-83
-  - 🏁RELAY-1.1.1.1-84
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.158.25-00
-  - 🏁RELAY-172.67.158.25-01
-  - 🏁RELAY-172.67.158.25-02
-  - 🏁RELAY-104.21.14.58-03
-  - 🏁RELAY-172.67.158.25-04
-  - 🇨🇦CA-192.46.223.110-05
-  - 🏁RELAY-1.1.1.1-06
-  - 🏁RELAY-1.1.1.1-07
-  - 🇭🇰HK-16.163.29.139-08
-  - 🇭🇰HK-16.162.32.1-09
-  - 🇯🇵JP-3.112.28.229-10
-  - 🇯🇵JP-54.92.25.222-11
-  - 🇸🇬SG-18.140.50.21-12
-  - 🇸🇬SG-18.141.199.131-13
-  - 🇰🇷KR-3.36.123.169-14
-  - 🇰🇷KR-3.38.191.125-15
-  - 🇺🇸US-54.193.141.149-16
-  - 🇺🇸US-54.241.121.94-17
-  - 🇩🇪DE-35.158.162.191-18
-  - 🇺🇸US-34.211.53.168-19
-  - 🇬🇧GB-13.40.28.234-20
-  - 🇫🇷FR-13.39.21.10-21
-  - 🇮🇪IE-52.211.206.146-22
-  - 🇦🇶NOWHERE-0.0.0.0-23
-  - 🇦🇶NOWHERE-0.0.0.0-24
-  - 🇯🇵JP-35.77.45.80-25
-  - 🇯🇵JP-43.206.107.41-26
-  - 🇸🇬SG-13.215.205.86-27
-  - 🇸🇬SG-18.141.160.20-28
-  - 🇰🇷KR-43.201.153.206-29
-  - 🇰🇷KR-3.38.206.162-30
-  - 🇺🇸US-54.241.52.134-31
-  - 🇺🇸US-54.176.213.133-32
-  - 🇦🇶NOWHERE-0.0.0.0-33
-  - 🇭🇰HK-18.163.102.145-34
-  - 🇯🇵JP-35.74.234.120-35
-  - 🇯🇵JP-43.206.134.187-36
-  - 🇸🇬SG-3.0.249.52-37
-  - 🇸🇬SG-18.143.196.114-38
-  - 🇰🇷KR-3.36.66.41-39
-  - 🇰🇷KR-43.201.71.235-40
-  - 🇺🇸US-54.241.111.192-41
-  - 🇺🇸US-204.236.165.232-42
-  - 🏁RELAY-104.21.28.31-43
+  - 🏁RELAY-1.1.1.1-00
+  - 🏁RELAY-1.1.1.1-01
+  - 🇭🇰HK-16.163.29.139-02
+  - 🇭🇰HK-16.162.32.1-03
+  - 🇯🇵JP-3.112.28.229-04
+  - 🇯🇵JP-54.92.25.222-05
+  - 🇸🇬SG-18.140.50.21-06
+  - 🇸🇬SG-18.141.199.131-07
+  - 🇰🇷KR-3.36.123.169-08
+  - 🇰🇷KR-3.38.191.125-09
+  - 🇺🇸US-54.193.141.149-10
+  - 🇺🇸US-54.241.121.94-11
+  - 🇩🇪DE-35.158.162.191-12
+  - 🇺🇸US-34.211.53.168-13
+  - 🇬🇧GB-13.40.28.234-14
+  - 🇫🇷FR-13.39.21.10-15
+  - 🇮🇪IE-52.211.206.146-16
+  - 🇦🇶NOWHERE-0.0.0.0-17
+  - 🇦🇶NOWHERE-0.0.0.0-18
+  - 🇯🇵JP-35.77.45.80-19
+  - 🇯🇵JP-43.206.107.41-20
+  - 🇸🇬SG-13.215.205.86-21
+  - 🇸🇬SG-18.141.160.20-22
+  - 🇰🇷KR-43.201.153.206-23
+  - 🇰🇷KR-3.38.206.162-24
+  - 🇺🇸US-54.241.52.134-25
+  - 🇺🇸US-54.176.213.133-26
+  - 🇦🇶NOWHERE-0.0.0.0-27
+  - 🇭🇰HK-18.163.102.145-28
+  - 🇯🇵JP-35.74.234.120-29
+  - 🇯🇵JP-43.206.134.187-30
+  - 🇸🇬SG-3.0.249.52-31
+  - 🇸🇬SG-18.143.196.114-32
+  - 🇰🇷KR-3.36.66.41-33
+  - 🇰🇷KR-43.201.71.235-34
+  - 🇺🇸US-54.241.111.192-35
+  - 🇺🇸US-204.236.165.232-36
+  - 🏁RELAY-1.1.1.1-37
+  - 🏁RELAY-172.67.158.25-38
+  - 🏁RELAY-104.21.14.58-39
+  - 🏁RELAY-172.67.158.25-40
+  - 🏁RELAY-104.21.14.58-41
+  - 🏁RELAY-104.21.14.58-42
+  - 🇨🇦CA-192.46.223.110-43
   - 🏁RELAY-104.21.28.31-44
   - 🇨🇳CN-125.94.215.234-45
   - 🇨🇳CN-116.162.120.52-46
@@ -1254,7 +1247,6 @@ proxy-groups:
   - 🇨🇳CN-117.62.232.225-81
   - 🇨🇳CN-117.62.232.225-82
   - 🇨🇳CN-117.62.232.225-83
-  - 🏁RELAY-1.1.1.1-84
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -1262,50 +1254,50 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.158.25-00
-  - 🏁RELAY-172.67.158.25-01
-  - 🏁RELAY-172.67.158.25-02
-  - 🏁RELAY-104.21.14.58-03
-  - 🏁RELAY-172.67.158.25-04
-  - 🇨🇦CA-192.46.223.110-05
-  - 🏁RELAY-1.1.1.1-06
-  - 🏁RELAY-1.1.1.1-07
-  - 🇭🇰HK-16.163.29.139-08
-  - 🇭🇰HK-16.162.32.1-09
-  - 🇯🇵JP-3.112.28.229-10
-  - 🇯🇵JP-54.92.25.222-11
-  - 🇸🇬SG-18.140.50.21-12
-  - 🇸🇬SG-18.141.199.131-13
-  - 🇰🇷KR-3.36.123.169-14
-  - 🇰🇷KR-3.38.191.125-15
-  - 🇺🇸US-54.193.141.149-16
-  - 🇺🇸US-54.241.121.94-17
-  - 🇩🇪DE-35.158.162.191-18
-  - 🇺🇸US-34.211.53.168-19
-  - 🇬🇧GB-13.40.28.234-20
-  - 🇫🇷FR-13.39.21.10-21
-  - 🇮🇪IE-52.211.206.146-22
-  - 🇦🇶NOWHERE-0.0.0.0-23
-  - 🇦🇶NOWHERE-0.0.0.0-24
-  - 🇯🇵JP-35.77.45.80-25
-  - 🇯🇵JP-43.206.107.41-26
-  - 🇸🇬SG-13.215.205.86-27
-  - 🇸🇬SG-18.141.160.20-28
-  - 🇰🇷KR-43.201.153.206-29
-  - 🇰🇷KR-3.38.206.162-30
-  - 🇺🇸US-54.241.52.134-31
-  - 🇺🇸US-54.176.213.133-32
-  - 🇦🇶NOWHERE-0.0.0.0-33
-  - 🇭🇰HK-18.163.102.145-34
-  - 🇯🇵JP-35.74.234.120-35
-  - 🇯🇵JP-43.206.134.187-36
-  - 🇸🇬SG-3.0.249.52-37
-  - 🇸🇬SG-18.143.196.114-38
-  - 🇰🇷KR-3.36.66.41-39
-  - 🇰🇷KR-43.201.71.235-40
-  - 🇺🇸US-54.241.111.192-41
-  - 🇺🇸US-204.236.165.232-42
-  - 🏁RELAY-104.21.28.31-43
+  - 🏁RELAY-1.1.1.1-00
+  - 🏁RELAY-1.1.1.1-01
+  - 🇭🇰HK-16.163.29.139-02
+  - 🇭🇰HK-16.162.32.1-03
+  - 🇯🇵JP-3.112.28.229-04
+  - 🇯🇵JP-54.92.25.222-05
+  - 🇸🇬SG-18.140.50.21-06
+  - 🇸🇬SG-18.141.199.131-07
+  - 🇰🇷KR-3.36.123.169-08
+  - 🇰🇷KR-3.38.191.125-09
+  - 🇺🇸US-54.193.141.149-10
+  - 🇺🇸US-54.241.121.94-11
+  - 🇩🇪DE-35.158.162.191-12
+  - 🇺🇸US-34.211.53.168-13
+  - 🇬🇧GB-13.40.28.234-14
+  - 🇫🇷FR-13.39.21.10-15
+  - 🇮🇪IE-52.211.206.146-16
+  - 🇦🇶NOWHERE-0.0.0.0-17
+  - 🇦🇶NOWHERE-0.0.0.0-18
+  - 🇯🇵JP-35.77.45.80-19
+  - 🇯🇵JP-43.206.107.41-20
+  - 🇸🇬SG-13.215.205.86-21
+  - 🇸🇬SG-18.141.160.20-22
+  - 🇰🇷KR-43.201.153.206-23
+  - 🇰🇷KR-3.38.206.162-24
+  - 🇺🇸US-54.241.52.134-25
+  - 🇺🇸US-54.176.213.133-26
+  - 🇦🇶NOWHERE-0.0.0.0-27
+  - 🇭🇰HK-18.163.102.145-28
+  - 🇯🇵JP-35.74.234.120-29
+  - 🇯🇵JP-43.206.134.187-30
+  - 🇸🇬SG-3.0.249.52-31
+  - 🇸🇬SG-18.143.196.114-32
+  - 🇰🇷KR-3.36.66.41-33
+  - 🇰🇷KR-43.201.71.235-34
+  - 🇺🇸US-54.241.111.192-35
+  - 🇺🇸US-204.236.165.232-36
+  - 🏁RELAY-1.1.1.1-37
+  - 🏁RELAY-172.67.158.25-38
+  - 🏁RELAY-104.21.14.58-39
+  - 🏁RELAY-172.67.158.25-40
+  - 🏁RELAY-104.21.14.58-41
+  - 🏁RELAY-104.21.14.58-42
+  - 🇨🇦CA-192.46.223.110-43
   - 🏁RELAY-104.21.28.31-44
   - 🇨🇳CN-125.94.215.234-45
   - 🇨🇳CN-116.162.120.52-46
@@ -1346,57 +1338,56 @@ proxy-groups:
   - 🇨🇳CN-117.62.232.225-81
   - 🇨🇳CN-117.62.232.225-82
   - 🇨🇳CN-117.62.232.225-83
-  - 🏁RELAY-1.1.1.1-84
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.158.25-00
-  - 🏁RELAY-172.67.158.25-01
-  - 🏁RELAY-172.67.158.25-02
-  - 🏁RELAY-104.21.14.58-03
-  - 🏁RELAY-172.67.158.25-04
-  - 🇨🇦CA-192.46.223.110-05
-  - 🏁RELAY-1.1.1.1-06
-  - 🏁RELAY-1.1.1.1-07
-  - 🇭🇰HK-16.163.29.139-08
-  - 🇭🇰HK-16.162.32.1-09
-  - 🇯🇵JP-3.112.28.229-10
-  - 🇯🇵JP-54.92.25.222-11
-  - 🇸🇬SG-18.140.50.21-12
-  - 🇸🇬SG-18.141.199.131-13
-  - 🇰🇷KR-3.36.123.169-14
-  - 🇰🇷KR-3.38.191.125-15
-  - 🇺🇸US-54.193.141.149-16
-  - 🇺🇸US-54.241.121.94-17
-  - 🇩🇪DE-35.158.162.191-18
-  - 🇺🇸US-34.211.53.168-19
-  - 🇬🇧GB-13.40.28.234-20
-  - 🇫🇷FR-13.39.21.10-21
-  - 🇮🇪IE-52.211.206.146-22
-  - 🇦🇶NOWHERE-0.0.0.0-23
-  - 🇦🇶NOWHERE-0.0.0.0-24
-  - 🇯🇵JP-35.77.45.80-25
-  - 🇯🇵JP-43.206.107.41-26
-  - 🇸🇬SG-13.215.205.86-27
-  - 🇸🇬SG-18.141.160.20-28
-  - 🇰🇷KR-43.201.153.206-29
-  - 🇰🇷KR-3.38.206.162-30
-  - 🇺🇸US-54.241.52.134-31
-  - 🇺🇸US-54.176.213.133-32
-  - 🇦🇶NOWHERE-0.0.0.0-33
-  - 🇭🇰HK-18.163.102.145-34
-  - 🇯🇵JP-35.74.234.120-35
-  - 🇯🇵JP-43.206.134.187-36
-  - 🇸🇬SG-3.0.249.52-37
-  - 🇸🇬SG-18.143.196.114-38
-  - 🇰🇷KR-3.36.66.41-39
-  - 🇰🇷KR-43.201.71.235-40
-  - 🇺🇸US-54.241.111.192-41
-  - 🇺🇸US-204.236.165.232-42
-  - 🏁RELAY-104.21.28.31-43
+  - 🏁RELAY-1.1.1.1-00
+  - 🏁RELAY-1.1.1.1-01
+  - 🇭🇰HK-16.163.29.139-02
+  - 🇭🇰HK-16.162.32.1-03
+  - 🇯🇵JP-3.112.28.229-04
+  - 🇯🇵JP-54.92.25.222-05
+  - 🇸🇬SG-18.140.50.21-06
+  - 🇸🇬SG-18.141.199.131-07
+  - 🇰🇷KR-3.36.123.169-08
+  - 🇰🇷KR-3.38.191.125-09
+  - 🇺🇸US-54.193.141.149-10
+  - 🇺🇸US-54.241.121.94-11
+  - 🇩🇪DE-35.158.162.191-12
+  - 🇺🇸US-34.211.53.168-13
+  - 🇬🇧GB-13.40.28.234-14
+  - 🇫🇷FR-13.39.21.10-15
+  - 🇮🇪IE-52.211.206.146-16
+  - 🇦🇶NOWHERE-0.0.0.0-17
+  - 🇦🇶NOWHERE-0.0.0.0-18
+  - 🇯🇵JP-35.77.45.80-19
+  - 🇯🇵JP-43.206.107.41-20
+  - 🇸🇬SG-13.215.205.86-21
+  - 🇸🇬SG-18.141.160.20-22
+  - 🇰🇷KR-43.201.153.206-23
+  - 🇰🇷KR-3.38.206.162-24
+  - 🇺🇸US-54.241.52.134-25
+  - 🇺🇸US-54.176.213.133-26
+  - 🇦🇶NOWHERE-0.0.0.0-27
+  - 🇭🇰HK-18.163.102.145-28
+  - 🇯🇵JP-35.74.234.120-29
+  - 🇯🇵JP-43.206.134.187-30
+  - 🇸🇬SG-3.0.249.52-31
+  - 🇸🇬SG-18.143.196.114-32
+  - 🇰🇷KR-3.36.66.41-33
+  - 🇰🇷KR-43.201.71.235-34
+  - 🇺🇸US-54.241.111.192-35
+  - 🇺🇸US-204.236.165.232-36
+  - 🏁RELAY-1.1.1.1-37
+  - 🏁RELAY-172.67.158.25-38
+  - 🏁RELAY-104.21.14.58-39
+  - 🏁RELAY-172.67.158.25-40
+  - 🏁RELAY-104.21.14.58-41
+  - 🏁RELAY-104.21.14.58-42
+  - 🇨🇦CA-192.46.223.110-43
   - 🏁RELAY-104.21.28.31-44
   - 🇨🇳CN-125.94.215.234-45
   - 🇨🇳CN-116.162.120.52-46
@@ -1437,7 +1428,6 @@ proxy-groups:
   - 🇨🇳CN-117.62.232.225-81
   - 🇨🇳CN-117.62.232.225-82
   - 🇨🇳CN-117.62.232.225-83
-  - 🏁RELAY-1.1.1.1-84
 - name: 谷歌服务
   type: select
   proxies:
