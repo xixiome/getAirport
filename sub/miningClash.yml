@@ -5,19 +5,531 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🏁RELAY-104.21.28.31-00
+- name: 🏁RELAY-1.1.1.1-00
+  server: 1.1.1.1
+  port: 65535
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 1.1.1.1
+- name: 🏁RELAY-1.1.1.1-01
+  server: 1.1.1.1
+  port: 65535
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 1.1.1.1
+- name: 🇭🇰HK-16.163.29.139-02
+  server: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com
+  port: 80
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com
+- name: 🇭🇰HK-16.162.32.1-03
+  server: 00000000000000000000000000000000000000000000000000000000000002a.rui77.com
+  port: 443
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000002a.rui77.com
+- name: 🇯🇵JP-54.199.96.75-04
+  server: 00000000000000000000000000000000000000000000000000000000000003a.rui77.com
+  port: 80
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000003a.rui77.com
+- name: 🇯🇵JP-52.192.40.230-05
+  server: 00000000000000000000000000000000000000000000000000000000000004a.rui77.com
+  port: 443
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000004a.rui77.com
+- name: 🇸🇬SG-54.251.82.110-06
+  server: 00000000000000000000000000000000000000000000000000000000000005a.rui77.com
+  port: 80
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000005a.rui77.com
+- name: 🇸🇬SG-13.213.59.20-07
+  server: 00000000000000000000000000000000000000000000000000000000000006a.rui77.com
+  port: 443
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000006a.rui77.com
+- name: 🇰🇷KR-3.34.186.14-08
+  server: 00000000000000000000000000000000000000000000000000000000000007a.rui77.com
+  port: 80
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000007a.rui77.com
+- name: 🇰🇷KR-43.201.97.14-09
+  server: 00000000000000000000000000000000000000000000000000000000000008a.rui77.com
+  port: 443
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000008a.rui77.com
+- name: 🇺🇸US-54.193.221.148-10
+  server: 00000000000000000000000000000000000000000000000000000000000009a.rui77.com
+  port: 80
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000009a.rui77.com
+- name: 🇺🇸US-54.176.237.246-11
+  server: 00000000000000000000000000000000000000000000000000000000000010a.rui77.com
+  port: 443
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000010a.rui77.com
+- name: 🇩🇪DE-18.196.134.224-12
+  server: 00000000000000000000000000000000000000000000000000000000000011a.rui77.com
+  port: 26901
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000011a.rui77.com
+- name: 🇺🇸US-35.90.185.19-13
+  server: 00000000000000000000000000000000000000000000000000000000000012a.rui77.com
+  port: 10392
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000012a.rui77.com
+- name: 🇬🇧GB-13.40.28.234-14
+  server: 00000000000000000000000000000000000000000000000000000000000013a.rui77.com
+  port: 43566
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000013a.rui77.com
+- name: 🇫🇷FR-15.188.55.226-15
+  server: 00000000000000000000000000000000000000000000000000000000000014a.rui77.com
+  port: 12659
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000014a.rui77.com
+- name: 🇮🇪IE-34.254.252.48-16
+  server: 00000000000000000000000000000000000000000000000000000000000015a.rui77.com
+  port: 15092
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000015a.rui77.com
+- name: 🇭🇰HK-16.163.149.123-17
+  server: 00000000000000000000000000000000000000000000000000000000000021a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000021a.rui77.com
+- name: 🇭🇰HK-18.162.207.235-18
+  server: 00000000000000000000000000000000000000000000000000000000000022a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000022a.rui77.com
+- name: 🇯🇵JP-3.112.24.25-19
+  server: 00000000000000000000000000000000000000000000000000000000000023a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000023a.rui77.com
+- name: 🇯🇵JP-43.206.107.41-20
+  server: 00000000000000000000000000000000000000000000000000000000000024a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000024a.rui77.com
+- name: 🇸🇬SG-13.215.205.86-21
+  server: 00000000000000000000000000000000000000000000000000000000000025a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000025a.rui77.com
+- name: 🇸🇬SG-52.77.238.58-22
+  server: 00000000000000000000000000000000000000000000000000000000000026a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000026a.rui77.com
+- name: 🇰🇷KR-43.201.153.206-23
+  server: 00000000000000000000000000000000000000000000000000000000000027a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000027a.rui77.com
+- name: 🇰🇷KR-3.36.13.249-24
+  server: 00000000000000000000000000000000000000000000000000000000000028a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000028a.rui77.com
+- name: 🇺🇸US-54.183.237.225-25
+  server: 00000000000000000000000000000000000000000000000000000000000029a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000029a.rui77.com
+- name: 🇺🇸US-54.177.161.218-26
+  server: 00000000000000000000000000000000000000000000000000000000000030a.rui77.com
+  port: 52356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000030a.rui77.com
+- name: 🇦🇶NOWHERE-0.0.0.0-27
+  server: 00000000000000000000000000000000000000000000000000000000000031a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000031a.rui77.com
+- name: 🇭🇰HK-18.166.56.230-28
+  server: 00000000000000000000000000000000000000000000000000000000000032a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000032a.rui77.com
+- name: 🇯🇵JP-3.112.63.94-29
+  server: 00000000000000000000000000000000000000000000000000000000000033a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000033a.rui77.com
+- name: 🇯🇵JP-35.74.250.24-30
+  server: 00000000000000000000000000000000000000000000000000000000000034a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000034a.rui77.com
+- name: 🇸🇬SG-13.251.114.195-31
+  server: 00000000000000000000000000000000000000000000000000000000000035a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000035a.rui77.com
+- name: 🇸🇬SG-13.214.128.229-32
+  server: 00000000000000000000000000000000000000000000000000000000000036a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000036a.rui77.com
+- name: 🇰🇷KR-43.200.183.32-33
+  server: 00000000000000000000000000000000000000000000000000000000000037a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000037a.rui77.com
+- name: 🇰🇷KR-13.209.15.37-34
+  server: 00000000000000000000000000000000000000000000000000000000000038a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000038a.rui77.com
+- name: 🇺🇸US-54.215.217.96-35
+  server: 00000000000000000000000000000000000000000000000000000000000039a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000039a.rui77.com
+- name: 🇺🇸US-54.193.209.248-36
+  server: 00000000000000000000000000000000000000000000000000000000000040a.rui77.com
+  port: 12356
+  type: vmess
+  uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000040a.rui77.com
+- name: 🏁RELAY-172.67.170.56-37
   server: www.sstzi.com
   port: 10086
   type: ss
   cipher: chacha20-ietf
   password: W0lrBF
-- name: 🏁RELAY-104.21.28.31-01
-  server: www.sstzi.com
-  port: 10086
-  type: ss
-  cipher: chacha20-ietf
-  password: W0lrBF
-- name: 🇨🇳CN-125.94.215.234-02
+- name: 🇨🇳CN-125.94.215.234-38
   server: cmaisallin.debugspace.work
   port: 560
   type: ssr
@@ -28,7 +540,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.52-03
+- name: 🇨🇳CN-116.162.120.52-39
   server: eduall.buzzline.org
   port: 560
   type: ssr
@@ -39,7 +551,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.52-04
+- name: 🇨🇳CN-116.162.120.52-40
   server: eduall.buzzline.org
   port: 561
   type: ssr
@@ -50,7 +562,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.52-05
+- name: 🇨🇳CN-116.162.120.52-41
   server: eduall.buzzline.org
   port: 562
   type: ssr
@@ -61,7 +573,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.52-06
+- name: 🇨🇳CN-116.162.120.52-42
   server: eduall.buzzline.org
   port: 615
   type: ssr
@@ -72,7 +584,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.25-07
+- name: 🇨🇳CN-116.162.120.25-43
   server: cntwlayer1.standurl.xyz
   port: 560
   type: ssr
@@ -83,7 +595,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-223.166.28.166-08
+- name: 🇨🇳CN-223.166.28.166-44
   server: cncutw2.eucdurl.me
   port: 560
   type: ssr
@@ -94,7 +606,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.52-09
+- name: 🇨🇳CN-116.162.120.52-45
   server: eduall.buzzline.org
   port: 620
   type: ssr
@@ -105,7 +617,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.52-10
+- name: 🇨🇳CN-116.162.120.52-46
   server: eduall.buzzline.org
   port: 612
   type: ssr
@@ -116,7 +628,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-125.94.215.234-11
+- name: 🇨🇳CN-125.94.215.234-47
   server: cmaisallin.debugspace.work
   port: 562
   type: ssr
@@ -127,7 +639,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-223.166.28.14-12
+- name: 🇨🇳CN-223.166.28.14-48
   server: cnallaz2.eucdurl.me
   port: 566
   type: ssr
@@ -138,7 +650,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇦🇺AU-45.114.116.57-13
+- name: 🇦🇺AU-45.114.116.57-49
   server: ausyd.onlineqitv-ns.xyz
   port: 543
   type: ssr
@@ -149,7 +661,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.42-14
+- name: 🇨🇳CN-116.162.120.42-50
   server: usstand1.eucdurl.me
   port: 560
   type: ssr
@@ -160,7 +672,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-49.7.114.102-15
+- name: 🇨🇳CN-49.7.114.102-51
   server: usstand2.eucdurl.me
   port: 560
   type: ssr
@@ -171,7 +683,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.52-16
+- name: 🇨🇳CN-116.162.120.52-52
   server: eduall.buzzline.org
   port: 613
   type: ssr
@@ -182,7 +694,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.52-17
+- name: 🇨🇳CN-116.162.120.52-53
   server: eduall.buzzline.org
   port: 611
   type: ssr
@@ -193,7 +705,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.52-18
+- name: 🇨🇳CN-116.162.120.52-54
   server: eduall.buzzline.org
   port: 610
   type: ssr
@@ -204,7 +716,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-125.94.215.234-19
+- name: 🇨🇳CN-125.94.215.234-55
   server: cmaisallin.debugspace.work
   port: 565
   type: ssr
@@ -215,7 +727,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-120.240.163.164-20
+- name: 🇨🇳CN-120.240.163.164-56
   server: layercm05.initcloud.pro
   port: 560
   type: ssr
@@ -226,7 +738,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-120.240.163.164-21
+- name: 🇨🇳CN-120.240.163.164-57
   server: layercm05.initcloud.pro
   port: 561
   type: ssr
@@ -237,7 +749,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-120.240.163.163-22
+- name: 🇨🇳CN-120.240.163.163-58
   server: cmlayer6.standurls.co
   port: 561
   type: ssr
@@ -248,7 +760,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.40-23
+- name: 🇨🇳CN-116.162.120.40-59
   server: initest08.initcloud.pro
   port: 562
   type: ssr
@@ -259,7 +771,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-120.240.163.166-24
+- name: 🇨🇳CN-120.240.163.166-60
   server: 1cnrelay.initcloud.pro
   port: 560
   type: ssr
@@ -270,7 +782,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-120.240.163.162-25
+- name: 🇨🇳CN-120.240.163.162-61
   server: 2cnrelay2.initcloud.pro
   port: 560
   type: ssr
@@ -281,7 +793,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-112.64.52.92-26
+- name: 🇨🇳CN-112.64.52.92-62
   server: shgez3.eucdurl.me
   port: 568
   type: ssr
@@ -292,7 +804,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.33-27
+- name: 🇨🇳CN-116.162.120.33-63
   server: cnhkall.debugex.xyz
   port: 561
   type: ssr
@@ -303,7 +815,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-120.240.163.162-28
+- name: 🇨🇳CN-120.240.163.162-64
   server: 2cnrelay2.initcloud.pro
   port: 561
   type: ssr
@@ -314,7 +826,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.38-29
+- name: 🇨🇳CN-116.162.120.38-65
   server: inlayer7.standurls.co
   port: 560
   type: ssr
@@ -325,7 +837,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.38-30
+- name: 🇨🇳CN-116.162.120.38-66
   server: inlayer7.standurls.co
   port: 561
   type: ssr
@@ -336,7 +848,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-120.240.163.166-31
+- name: 🇨🇳CN-120.240.163.166-67
   server: 1cnrelay.initcloud.pro
   port: 562
   type: ssr
@@ -347,7 +859,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.38-32
+- name: 🇨🇳CN-116.162.120.38-68
   server: inlayer7.standurls.co
   port: 562
   type: ssr
@@ -358,7 +870,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-120.240.163.163-33
+- name: 🇨🇳CN-120.240.163.163-69
   server: cmlayer6.standurls.co
   port: 560
   type: ssr
@@ -369,7 +881,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-120.240.163.165-34
+- name: 🇨🇳CN-120.240.163.165-70
   server: 3layer03.initcloud.pro
   port: 560
   type: ssr
@@ -380,7 +892,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-120.240.163.165-35
+- name: 🇨🇳CN-120.240.163.165-71
   server: 3layer03.initcloud.pro
   port: 561
   type: ssr
@@ -391,7 +903,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.33-36
+- name: 🇨🇳CN-116.162.120.33-72
   server: cnhkall.debugex.xyz
   port: 560
   type: ssr
@@ -402,7 +914,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-116.162.120.40-37
+- name: 🇨🇳CN-116.162.120.40-73
   server: initest08.initcloud.pro
   port: 561
   type: ssr
@@ -413,7 +925,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-117.62.232.225-38
+- name: 🇨🇳CN-117.62.232.225-74
   server: shcuzxhk.eucdurl.me
   port: 560
   type: ssr
@@ -424,7 +936,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-117.62.232.225-39
+- name: 🇨🇳CN-117.62.232.225-75
   server: shcuzxhk.eucdurl.me
   port: 561
   type: ssr
@@ -435,7 +947,7 @@ proxies:
   obfsparam: 23ffd711.microsoft.com
   protoparam: 5435:SVIPTIZ8
   group: Joy
-- name: 🇨🇳CN-117.62.232.225-40
+- name: 🇨🇳CN-117.62.232.225-76
   server: shcuzxhk.eucdurl.me
   port: 562
   type: ssr
@@ -461,106 +973,175 @@ proxy-groups:
 - name: 香港节点
   type: select
   proxies:
-  - DIRECT
+  - 🇭🇰HK-16.163.29.139-02
+  - 🇭🇰HK-16.162.32.1-03
+  - 🇭🇰HK-16.163.149.123-17
+  - 🇭🇰HK-18.162.207.235-18
+  - 🇭🇰HK-18.166.56.230-28
 - name: 日本节点
   type: select
   proxies:
-  - DIRECT
+  - 🇯🇵JP-54.199.96.75-04
+  - 🇯🇵JP-52.192.40.230-05
+  - 🇯🇵JP-3.112.24.25-19
+  - 🇯🇵JP-43.206.107.41-20
+  - 🇯🇵JP-3.112.63.94-29
+  - 🇯🇵JP-35.74.250.24-30
 - name: 新加坡节点
   type: select
   proxies:
-  - DIRECT
+  - 🇸🇬SG-54.251.82.110-06
+  - 🇸🇬SG-13.213.59.20-07
+  - 🇸🇬SG-13.215.205.86-21
+  - 🇸🇬SG-52.77.238.58-22
+  - 🇸🇬SG-13.251.114.195-31
+  - 🇸🇬SG-13.214.128.229-32
 - name: 其他节点
   type: select
   proxies:
-  - 🏁RELAY-104.21.28.31-00
-  - 🏁RELAY-104.21.28.31-01
-  - 🇨🇳CN-125.94.215.234-02
-  - 🇨🇳CN-116.162.120.52-03
-  - 🇨🇳CN-116.162.120.52-04
-  - 🇨🇳CN-116.162.120.52-05
-  - 🇨🇳CN-116.162.120.52-06
-  - 🇨🇳CN-116.162.120.25-07
-  - 🇨🇳CN-223.166.28.166-08
-  - 🇨🇳CN-116.162.120.52-09
-  - 🇨🇳CN-116.162.120.52-10
-  - 🇨🇳CN-125.94.215.234-11
-  - 🇨🇳CN-223.166.28.14-12
-  - 🇦🇺AU-45.114.116.57-13
-  - 🇨🇳CN-116.162.120.42-14
-  - 🇨🇳CN-49.7.114.102-15
-  - 🇨🇳CN-116.162.120.52-16
-  - 🇨🇳CN-116.162.120.52-17
-  - 🇨🇳CN-116.162.120.52-18
-  - 🇨🇳CN-125.94.215.234-19
-  - 🇨🇳CN-120.240.163.164-20
-  - 🇨🇳CN-120.240.163.164-21
-  - 🇨🇳CN-120.240.163.163-22
-  - 🇨🇳CN-116.162.120.40-23
-  - 🇨🇳CN-120.240.163.166-24
-  - 🇨🇳CN-120.240.163.162-25
-  - 🇨🇳CN-112.64.52.92-26
-  - 🇨🇳CN-116.162.120.33-27
-  - 🇨🇳CN-120.240.163.162-28
-  - 🇨🇳CN-116.162.120.38-29
-  - 🇨🇳CN-116.162.120.38-30
-  - 🇨🇳CN-120.240.163.166-31
-  - 🇨🇳CN-116.162.120.38-32
-  - 🇨🇳CN-120.240.163.163-33
-  - 🇨🇳CN-120.240.163.165-34
-  - 🇨🇳CN-120.240.163.165-35
-  - 🇨🇳CN-116.162.120.33-36
-  - 🇨🇳CN-116.162.120.40-37
-  - 🇨🇳CN-117.62.232.225-38
-  - 🇨🇳CN-117.62.232.225-39
-  - 🇨🇳CN-117.62.232.225-40
+  - 🏁RELAY-1.1.1.1-00
+  - 🏁RELAY-1.1.1.1-01
+  - 🇰🇷KR-3.34.186.14-08
+  - 🇰🇷KR-43.201.97.14-09
+  - 🇺🇸US-54.193.221.148-10
+  - 🇺🇸US-54.176.237.246-11
+  - 🇩🇪DE-18.196.134.224-12
+  - 🇺🇸US-35.90.185.19-13
+  - 🇬🇧GB-13.40.28.234-14
+  - 🇫🇷FR-15.188.55.226-15
+  - 🇮🇪IE-34.254.252.48-16
+  - 🇰🇷KR-43.201.153.206-23
+  - 🇰🇷KR-3.36.13.249-24
+  - 🇺🇸US-54.183.237.225-25
+  - 🇺🇸US-54.177.161.218-26
+  - 🇦🇶NOWHERE-0.0.0.0-27
+  - 🇰🇷KR-43.200.183.32-33
+  - 🇰🇷KR-13.209.15.37-34
+  - 🇺🇸US-54.215.217.96-35
+  - 🇺🇸US-54.193.209.248-36
+  - 🏁RELAY-172.67.170.56-37
+  - 🇨🇳CN-125.94.215.234-38
+  - 🇨🇳CN-116.162.120.52-39
+  - 🇨🇳CN-116.162.120.52-40
+  - 🇨🇳CN-116.162.120.52-41
+  - 🇨🇳CN-116.162.120.52-42
+  - 🇨🇳CN-116.162.120.25-43
+  - 🇨🇳CN-223.166.28.166-44
+  - 🇨🇳CN-116.162.120.52-45
+  - 🇨🇳CN-116.162.120.52-46
+  - 🇨🇳CN-125.94.215.234-47
+  - 🇨🇳CN-223.166.28.14-48
+  - 🇦🇺AU-45.114.116.57-49
+  - 🇨🇳CN-116.162.120.42-50
+  - 🇨🇳CN-49.7.114.102-51
+  - 🇨🇳CN-116.162.120.52-52
+  - 🇨🇳CN-116.162.120.52-53
+  - 🇨🇳CN-116.162.120.52-54
+  - 🇨🇳CN-125.94.215.234-55
+  - 🇨🇳CN-120.240.163.164-56
+  - 🇨🇳CN-120.240.163.164-57
+  - 🇨🇳CN-120.240.163.163-58
+  - 🇨🇳CN-116.162.120.40-59
+  - 🇨🇳CN-120.240.163.166-60
+  - 🇨🇳CN-120.240.163.162-61
+  - 🇨🇳CN-112.64.52.92-62
+  - 🇨🇳CN-116.162.120.33-63
+  - 🇨🇳CN-120.240.163.162-64
+  - 🇨🇳CN-116.162.120.38-65
+  - 🇨🇳CN-116.162.120.38-66
+  - 🇨🇳CN-120.240.163.166-67
+  - 🇨🇳CN-116.162.120.38-68
+  - 🇨🇳CN-120.240.163.163-69
+  - 🇨🇳CN-120.240.163.165-70
+  - 🇨🇳CN-120.240.163.165-71
+  - 🇨🇳CN-116.162.120.33-72
+  - 🇨🇳CN-116.162.120.40-73
+  - 🇨🇳CN-117.62.232.225-74
+  - 🇨🇳CN-117.62.232.225-75
+  - 🇨🇳CN-117.62.232.225-76
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-104.21.28.31-00
-  - 🏁RELAY-104.21.28.31-01
-  - 🇨🇳CN-125.94.215.234-02
-  - 🇨🇳CN-116.162.120.52-03
-  - 🇨🇳CN-116.162.120.52-04
-  - 🇨🇳CN-116.162.120.52-05
-  - 🇨🇳CN-116.162.120.52-06
-  - 🇨🇳CN-116.162.120.25-07
-  - 🇨🇳CN-223.166.28.166-08
-  - 🇨🇳CN-116.162.120.52-09
-  - 🇨🇳CN-116.162.120.52-10
-  - 🇨🇳CN-125.94.215.234-11
-  - 🇨🇳CN-223.166.28.14-12
-  - 🇦🇺AU-45.114.116.57-13
-  - 🇨🇳CN-116.162.120.42-14
-  - 🇨🇳CN-49.7.114.102-15
-  - 🇨🇳CN-116.162.120.52-16
-  - 🇨🇳CN-116.162.120.52-17
-  - 🇨🇳CN-116.162.120.52-18
-  - 🇨🇳CN-125.94.215.234-19
-  - 🇨🇳CN-120.240.163.164-20
-  - 🇨🇳CN-120.240.163.164-21
-  - 🇨🇳CN-120.240.163.163-22
-  - 🇨🇳CN-116.162.120.40-23
-  - 🇨🇳CN-120.240.163.166-24
-  - 🇨🇳CN-120.240.163.162-25
-  - 🇨🇳CN-112.64.52.92-26
-  - 🇨🇳CN-116.162.120.33-27
-  - 🇨🇳CN-120.240.163.162-28
-  - 🇨🇳CN-116.162.120.38-29
-  - 🇨🇳CN-116.162.120.38-30
-  - 🇨🇳CN-120.240.163.166-31
-  - 🇨🇳CN-116.162.120.38-32
-  - 🇨🇳CN-120.240.163.163-33
-  - 🇨🇳CN-120.240.163.165-34
-  - 🇨🇳CN-120.240.163.165-35
-  - 🇨🇳CN-116.162.120.33-36
-  - 🇨🇳CN-116.162.120.40-37
-  - 🇨🇳CN-117.62.232.225-38
-  - 🇨🇳CN-117.62.232.225-39
-  - 🇨🇳CN-117.62.232.225-40
+  - 🏁RELAY-1.1.1.1-00
+  - 🏁RELAY-1.1.1.1-01
+  - 🇭🇰HK-16.163.29.139-02
+  - 🇭🇰HK-16.162.32.1-03
+  - 🇯🇵JP-54.199.96.75-04
+  - 🇯🇵JP-52.192.40.230-05
+  - 🇸🇬SG-54.251.82.110-06
+  - 🇸🇬SG-13.213.59.20-07
+  - 🇰🇷KR-3.34.186.14-08
+  - 🇰🇷KR-43.201.97.14-09
+  - 🇺🇸US-54.193.221.148-10
+  - 🇺🇸US-54.176.237.246-11
+  - 🇩🇪DE-18.196.134.224-12
+  - 🇺🇸US-35.90.185.19-13
+  - 🇬🇧GB-13.40.28.234-14
+  - 🇫🇷FR-15.188.55.226-15
+  - 🇮🇪IE-34.254.252.48-16
+  - 🇭🇰HK-16.163.149.123-17
+  - 🇭🇰HK-18.162.207.235-18
+  - 🇯🇵JP-3.112.24.25-19
+  - 🇯🇵JP-43.206.107.41-20
+  - 🇸🇬SG-13.215.205.86-21
+  - 🇸🇬SG-52.77.238.58-22
+  - 🇰🇷KR-43.201.153.206-23
+  - 🇰🇷KR-3.36.13.249-24
+  - 🇺🇸US-54.183.237.225-25
+  - 🇺🇸US-54.177.161.218-26
+  - 🇦🇶NOWHERE-0.0.0.0-27
+  - 🇭🇰HK-18.166.56.230-28
+  - 🇯🇵JP-3.112.63.94-29
+  - 🇯🇵JP-35.74.250.24-30
+  - 🇸🇬SG-13.251.114.195-31
+  - 🇸🇬SG-13.214.128.229-32
+  - 🇰🇷KR-43.200.183.32-33
+  - 🇰🇷KR-13.209.15.37-34
+  - 🇺🇸US-54.215.217.96-35
+  - 🇺🇸US-54.193.209.248-36
+  - 🏁RELAY-172.67.170.56-37
+  - 🇨🇳CN-125.94.215.234-38
+  - 🇨🇳CN-116.162.120.52-39
+  - 🇨🇳CN-116.162.120.52-40
+  - 🇨🇳CN-116.162.120.52-41
+  - 🇨🇳CN-116.162.120.52-42
+  - 🇨🇳CN-116.162.120.25-43
+  - 🇨🇳CN-223.166.28.166-44
+  - 🇨🇳CN-116.162.120.52-45
+  - 🇨🇳CN-116.162.120.52-46
+  - 🇨🇳CN-125.94.215.234-47
+  - 🇨🇳CN-223.166.28.14-48
+  - 🇦🇺AU-45.114.116.57-49
+  - 🇨🇳CN-116.162.120.42-50
+  - 🇨🇳CN-49.7.114.102-51
+  - 🇨🇳CN-116.162.120.52-52
+  - 🇨🇳CN-116.162.120.52-53
+  - 🇨🇳CN-116.162.120.52-54
+  - 🇨🇳CN-125.94.215.234-55
+  - 🇨🇳CN-120.240.163.164-56
+  - 🇨🇳CN-120.240.163.164-57
+  - 🇨🇳CN-120.240.163.163-58
+  - 🇨🇳CN-116.162.120.40-59
+  - 🇨🇳CN-120.240.163.166-60
+  - 🇨🇳CN-120.240.163.162-61
+  - 🇨🇳CN-112.64.52.92-62
+  - 🇨🇳CN-116.162.120.33-63
+  - 🇨🇳CN-120.240.163.162-64
+  - 🇨🇳CN-116.162.120.38-65
+  - 🇨🇳CN-116.162.120.38-66
+  - 🇨🇳CN-120.240.163.166-67
+  - 🇨🇳CN-116.162.120.38-68
+  - 🇨🇳CN-120.240.163.163-69
+  - 🇨🇳CN-120.240.163.165-70
+  - 🇨🇳CN-120.240.163.165-71
+  - 🇨🇳CN-116.162.120.33-72
+  - 🇨🇳CN-116.162.120.40-73
+  - 🇨🇳CN-117.62.232.225-74
+  - 🇨🇳CN-117.62.232.225-75
+  - 🇨🇳CN-117.62.232.225-76
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -568,94 +1149,166 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-104.21.28.31-00
-  - 🏁RELAY-104.21.28.31-01
-  - 🇨🇳CN-125.94.215.234-02
-  - 🇨🇳CN-116.162.120.52-03
-  - 🇨🇳CN-116.162.120.52-04
-  - 🇨🇳CN-116.162.120.52-05
-  - 🇨🇳CN-116.162.120.52-06
-  - 🇨🇳CN-116.162.120.25-07
-  - 🇨🇳CN-223.166.28.166-08
-  - 🇨🇳CN-116.162.120.52-09
-  - 🇨🇳CN-116.162.120.52-10
-  - 🇨🇳CN-125.94.215.234-11
-  - 🇨🇳CN-223.166.28.14-12
-  - 🇦🇺AU-45.114.116.57-13
-  - 🇨🇳CN-116.162.120.42-14
-  - 🇨🇳CN-49.7.114.102-15
-  - 🇨🇳CN-116.162.120.52-16
-  - 🇨🇳CN-116.162.120.52-17
-  - 🇨🇳CN-116.162.120.52-18
-  - 🇨🇳CN-125.94.215.234-19
-  - 🇨🇳CN-120.240.163.164-20
-  - 🇨🇳CN-120.240.163.164-21
-  - 🇨🇳CN-120.240.163.163-22
-  - 🇨🇳CN-116.162.120.40-23
-  - 🇨🇳CN-120.240.163.166-24
-  - 🇨🇳CN-120.240.163.162-25
-  - 🇨🇳CN-112.64.52.92-26
-  - 🇨🇳CN-116.162.120.33-27
-  - 🇨🇳CN-120.240.163.162-28
-  - 🇨🇳CN-116.162.120.38-29
-  - 🇨🇳CN-116.162.120.38-30
-  - 🇨🇳CN-120.240.163.166-31
-  - 🇨🇳CN-116.162.120.38-32
-  - 🇨🇳CN-120.240.163.163-33
-  - 🇨🇳CN-120.240.163.165-34
-  - 🇨🇳CN-120.240.163.165-35
-  - 🇨🇳CN-116.162.120.33-36
-  - 🇨🇳CN-116.162.120.40-37
-  - 🇨🇳CN-117.62.232.225-38
-  - 🇨🇳CN-117.62.232.225-39
-  - 🇨🇳CN-117.62.232.225-40
+  - 🏁RELAY-1.1.1.1-00
+  - 🏁RELAY-1.1.1.1-01
+  - 🇭🇰HK-16.163.29.139-02
+  - 🇭🇰HK-16.162.32.1-03
+  - 🇯🇵JP-54.199.96.75-04
+  - 🇯🇵JP-52.192.40.230-05
+  - 🇸🇬SG-54.251.82.110-06
+  - 🇸🇬SG-13.213.59.20-07
+  - 🇰🇷KR-3.34.186.14-08
+  - 🇰🇷KR-43.201.97.14-09
+  - 🇺🇸US-54.193.221.148-10
+  - 🇺🇸US-54.176.237.246-11
+  - 🇩🇪DE-18.196.134.224-12
+  - 🇺🇸US-35.90.185.19-13
+  - 🇬🇧GB-13.40.28.234-14
+  - 🇫🇷FR-15.188.55.226-15
+  - 🇮🇪IE-34.254.252.48-16
+  - 🇭🇰HK-16.163.149.123-17
+  - 🇭🇰HK-18.162.207.235-18
+  - 🇯🇵JP-3.112.24.25-19
+  - 🇯🇵JP-43.206.107.41-20
+  - 🇸🇬SG-13.215.205.86-21
+  - 🇸🇬SG-52.77.238.58-22
+  - 🇰🇷KR-43.201.153.206-23
+  - 🇰🇷KR-3.36.13.249-24
+  - 🇺🇸US-54.183.237.225-25
+  - 🇺🇸US-54.177.161.218-26
+  - 🇦🇶NOWHERE-0.0.0.0-27
+  - 🇭🇰HK-18.166.56.230-28
+  - 🇯🇵JP-3.112.63.94-29
+  - 🇯🇵JP-35.74.250.24-30
+  - 🇸🇬SG-13.251.114.195-31
+  - 🇸🇬SG-13.214.128.229-32
+  - 🇰🇷KR-43.200.183.32-33
+  - 🇰🇷KR-13.209.15.37-34
+  - 🇺🇸US-54.215.217.96-35
+  - 🇺🇸US-54.193.209.248-36
+  - 🏁RELAY-172.67.170.56-37
+  - 🇨🇳CN-125.94.215.234-38
+  - 🇨🇳CN-116.162.120.52-39
+  - 🇨🇳CN-116.162.120.52-40
+  - 🇨🇳CN-116.162.120.52-41
+  - 🇨🇳CN-116.162.120.52-42
+  - 🇨🇳CN-116.162.120.25-43
+  - 🇨🇳CN-223.166.28.166-44
+  - 🇨🇳CN-116.162.120.52-45
+  - 🇨🇳CN-116.162.120.52-46
+  - 🇨🇳CN-125.94.215.234-47
+  - 🇨🇳CN-223.166.28.14-48
+  - 🇦🇺AU-45.114.116.57-49
+  - 🇨🇳CN-116.162.120.42-50
+  - 🇨🇳CN-49.7.114.102-51
+  - 🇨🇳CN-116.162.120.52-52
+  - 🇨🇳CN-116.162.120.52-53
+  - 🇨🇳CN-116.162.120.52-54
+  - 🇨🇳CN-125.94.215.234-55
+  - 🇨🇳CN-120.240.163.164-56
+  - 🇨🇳CN-120.240.163.164-57
+  - 🇨🇳CN-120.240.163.163-58
+  - 🇨🇳CN-116.162.120.40-59
+  - 🇨🇳CN-120.240.163.166-60
+  - 🇨🇳CN-120.240.163.162-61
+  - 🇨🇳CN-112.64.52.92-62
+  - 🇨🇳CN-116.162.120.33-63
+  - 🇨🇳CN-120.240.163.162-64
+  - 🇨🇳CN-116.162.120.38-65
+  - 🇨🇳CN-116.162.120.38-66
+  - 🇨🇳CN-120.240.163.166-67
+  - 🇨🇳CN-116.162.120.38-68
+  - 🇨🇳CN-120.240.163.163-69
+  - 🇨🇳CN-120.240.163.165-70
+  - 🇨🇳CN-120.240.163.165-71
+  - 🇨🇳CN-116.162.120.33-72
+  - 🇨🇳CN-116.162.120.40-73
+  - 🇨🇳CN-117.62.232.225-74
+  - 🇨🇳CN-117.62.232.225-75
+  - 🇨🇳CN-117.62.232.225-76
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-104.21.28.31-00
-  - 🏁RELAY-104.21.28.31-01
-  - 🇨🇳CN-125.94.215.234-02
-  - 🇨🇳CN-116.162.120.52-03
-  - 🇨🇳CN-116.162.120.52-04
-  - 🇨🇳CN-116.162.120.52-05
-  - 🇨🇳CN-116.162.120.52-06
-  - 🇨🇳CN-116.162.120.25-07
-  - 🇨🇳CN-223.166.28.166-08
-  - 🇨🇳CN-116.162.120.52-09
-  - 🇨🇳CN-116.162.120.52-10
-  - 🇨🇳CN-125.94.215.234-11
-  - 🇨🇳CN-223.166.28.14-12
-  - 🇦🇺AU-45.114.116.57-13
-  - 🇨🇳CN-116.162.120.42-14
-  - 🇨🇳CN-49.7.114.102-15
-  - 🇨🇳CN-116.162.120.52-16
-  - 🇨🇳CN-116.162.120.52-17
-  - 🇨🇳CN-116.162.120.52-18
-  - 🇨🇳CN-125.94.215.234-19
-  - 🇨🇳CN-120.240.163.164-20
-  - 🇨🇳CN-120.240.163.164-21
-  - 🇨🇳CN-120.240.163.163-22
-  - 🇨🇳CN-116.162.120.40-23
-  - 🇨🇳CN-120.240.163.166-24
-  - 🇨🇳CN-120.240.163.162-25
-  - 🇨🇳CN-112.64.52.92-26
-  - 🇨🇳CN-116.162.120.33-27
-  - 🇨🇳CN-120.240.163.162-28
-  - 🇨🇳CN-116.162.120.38-29
-  - 🇨🇳CN-116.162.120.38-30
-  - 🇨🇳CN-120.240.163.166-31
-  - 🇨🇳CN-116.162.120.38-32
-  - 🇨🇳CN-120.240.163.163-33
-  - 🇨🇳CN-120.240.163.165-34
-  - 🇨🇳CN-120.240.163.165-35
-  - 🇨🇳CN-116.162.120.33-36
-  - 🇨🇳CN-116.162.120.40-37
-  - 🇨🇳CN-117.62.232.225-38
-  - 🇨🇳CN-117.62.232.225-39
-  - 🇨🇳CN-117.62.232.225-40
+  - 🏁RELAY-1.1.1.1-00
+  - 🏁RELAY-1.1.1.1-01
+  - 🇭🇰HK-16.163.29.139-02
+  - 🇭🇰HK-16.162.32.1-03
+  - 🇯🇵JP-54.199.96.75-04
+  - 🇯🇵JP-52.192.40.230-05
+  - 🇸🇬SG-54.251.82.110-06
+  - 🇸🇬SG-13.213.59.20-07
+  - 🇰🇷KR-3.34.186.14-08
+  - 🇰🇷KR-43.201.97.14-09
+  - 🇺🇸US-54.193.221.148-10
+  - 🇺🇸US-54.176.237.246-11
+  - 🇩🇪DE-18.196.134.224-12
+  - 🇺🇸US-35.90.185.19-13
+  - 🇬🇧GB-13.40.28.234-14
+  - 🇫🇷FR-15.188.55.226-15
+  - 🇮🇪IE-34.254.252.48-16
+  - 🇭🇰HK-16.163.149.123-17
+  - 🇭🇰HK-18.162.207.235-18
+  - 🇯🇵JP-3.112.24.25-19
+  - 🇯🇵JP-43.206.107.41-20
+  - 🇸🇬SG-13.215.205.86-21
+  - 🇸🇬SG-52.77.238.58-22
+  - 🇰🇷KR-43.201.153.206-23
+  - 🇰🇷KR-3.36.13.249-24
+  - 🇺🇸US-54.183.237.225-25
+  - 🇺🇸US-54.177.161.218-26
+  - 🇦🇶NOWHERE-0.0.0.0-27
+  - 🇭🇰HK-18.166.56.230-28
+  - 🇯🇵JP-3.112.63.94-29
+  - 🇯🇵JP-35.74.250.24-30
+  - 🇸🇬SG-13.251.114.195-31
+  - 🇸🇬SG-13.214.128.229-32
+  - 🇰🇷KR-43.200.183.32-33
+  - 🇰🇷KR-13.209.15.37-34
+  - 🇺🇸US-54.215.217.96-35
+  - 🇺🇸US-54.193.209.248-36
+  - 🏁RELAY-172.67.170.56-37
+  - 🇨🇳CN-125.94.215.234-38
+  - 🇨🇳CN-116.162.120.52-39
+  - 🇨🇳CN-116.162.120.52-40
+  - 🇨🇳CN-116.162.120.52-41
+  - 🇨🇳CN-116.162.120.52-42
+  - 🇨🇳CN-116.162.120.25-43
+  - 🇨🇳CN-223.166.28.166-44
+  - 🇨🇳CN-116.162.120.52-45
+  - 🇨🇳CN-116.162.120.52-46
+  - 🇨🇳CN-125.94.215.234-47
+  - 🇨🇳CN-223.166.28.14-48
+  - 🇦🇺AU-45.114.116.57-49
+  - 🇨🇳CN-116.162.120.42-50
+  - 🇨🇳CN-49.7.114.102-51
+  - 🇨🇳CN-116.162.120.52-52
+  - 🇨🇳CN-116.162.120.52-53
+  - 🇨🇳CN-116.162.120.52-54
+  - 🇨🇳CN-125.94.215.234-55
+  - 🇨🇳CN-120.240.163.164-56
+  - 🇨🇳CN-120.240.163.164-57
+  - 🇨🇳CN-120.240.163.163-58
+  - 🇨🇳CN-116.162.120.40-59
+  - 🇨🇳CN-120.240.163.166-60
+  - 🇨🇳CN-120.240.163.162-61
+  - 🇨🇳CN-112.64.52.92-62
+  - 🇨🇳CN-116.162.120.33-63
+  - 🇨🇳CN-120.240.163.162-64
+  - 🇨🇳CN-116.162.120.38-65
+  - 🇨🇳CN-116.162.120.38-66
+  - 🇨🇳CN-120.240.163.166-67
+  - 🇨🇳CN-116.162.120.38-68
+  - 🇨🇳CN-120.240.163.163-69
+  - 🇨🇳CN-120.240.163.165-70
+  - 🇨🇳CN-120.240.163.165-71
+  - 🇨🇳CN-116.162.120.33-72
+  - 🇨🇳CN-116.162.120.40-73
+  - 🇨🇳CN-117.62.232.225-74
+  - 🇨🇳CN-117.62.232.225-75
+  - 🇨🇳CN-117.62.232.225-76
 - name: 谷歌服务
   type: select
   proxies:
