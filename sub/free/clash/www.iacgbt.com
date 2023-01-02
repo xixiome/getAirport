@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://www.iacgbt.com/link/pC8nn4APbpS0P6iB?clash=1
+#!MANAGED-CONFIG https://www.iacgbt.com/link/ui8S8GItprsTH5Lk?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2023-01-02 05:17:07
+## 上次更新于：2023-01-03 12:27:48
 #---------------------------------------------------#
 
 port: 7890
@@ -18,21 +18,21 @@ proxies:
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: fc51028d-adf6-3038-9034-d1f91c055838
+    password: 262ba7b1-5922-3a99-aad1-dc582350ddbd
     sni: a1.iacgbt.com
   -
     name: 官方网站：iacgbt.com
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: fc51028d-adf6-3038-9034-d1f91c055838
+    password: 262ba7b1-5922-3a99-aad1-dc582350ddbd
     sni: a1.iacgbt.com
   -
     name: '🇭🇰  香港 | 103 | 杭港 | 1x'
     type: vmess
     server: relay-us.bfstec.com
     port: 31002
-    uuid: fc51028d-adf6-3038-9034-d1f91c055838
+    uuid: 262ba7b1-5922-3a99-aad1-dc582350ddbd
     alterId: 0
     cipher: auto
     udp: true
@@ -41,16 +41,7 @@ proxies:
     type: vmess
     server: relay-hk2.bfstec.com
     port: 44275
-    uuid: fc51028d-adf6-3038-9034-d1f91c055838
-    alterId: 0
-    cipher: auto
-    udp: true
-  -
-    name: '🇭🇰  香港 | 102 | 海港 | 1.5x'
-    type: vmess
-    server: relay-hk4.bfstec.com
-    port: 33556
-    uuid: fc51028d-adf6-3038-9034-d1f91c055838
+    uuid: 262ba7b1-5922-3a99-aad1-dc582350ddbd
     alterId: 0
     cipher: auto
     udp: true
@@ -59,7 +50,7 @@ proxies:
     type: vmess
     server: relay-us.bfstec.com
     port: 25119
-    uuid: fc51028d-adf6-3038-9034-d1f91c055838
+    uuid: 262ba7b1-5922-3a99-aad1-dc582350ddbd
     alterId: 0
     cipher: auto
     udp: true
@@ -68,7 +59,7 @@ proxies:
     type: vmess
     server: relay-us2.bfstec.com
     port: 51959
-    uuid: fc51028d-adf6-3038-9034-d1f91c055838
+    uuid: 262ba7b1-5922-3a99-aad1-dc582350ddbd
     alterId: 0
     cipher: auto
     udp: true
@@ -77,7 +68,7 @@ proxies:
     type: vmess
     server: relay-jp.bfstec.com
     port: 27152
-    uuid: fc51028d-adf6-3038-9034-d1f91c055838
+    uuid: 262ba7b1-5922-3a99-aad1-dc582350ddbd
     alterId: 0
     cipher: auto
     udp: true
@@ -86,7 +77,7 @@ proxies:
     type: vmess
     server: relay-sg1.bfstec.com
     port: 11211
-    uuid: fc51028d-adf6-3038-9034-d1f91c055838
+    uuid: 262ba7b1-5922-3a99-aad1-dc582350ddbd
     alterId: 0
     cipher: auto
     udp: true
@@ -95,7 +86,7 @@ proxies:
     type: vmess
     server: relay-sg.bfstec.com
     port: 52791
-    uuid: fc51028d-adf6-3038-9034-d1f91c055838
+    uuid: 262ba7b1-5922-3a99-aad1-dc582350ddbd
     alterId: 0
     cipher: auto
     udp: true
@@ -104,7 +95,7 @@ proxies:
     type: vmess
     server: relay-hk3.bfstec.com
     port: 32123
-    uuid: fc51028d-adf6-3038-9034-d1f91c055838
+    uuid: 262ba7b1-5922-3a99-aad1-dc582350ddbd
     alterId: 0
     cipher: auto
     udp: true
@@ -117,7 +108,6 @@ proxy-groups:
       - 官方网站：iacgbt.com
       - '🇭🇰  香港 | 103 | 杭港 | 1x'
       - "🇭🇰 香港 | 105 | 海港 | 1x\t"
-      - '🇭🇰  香港 | 102 | 海港 | 1.5x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
@@ -140,7 +130,6 @@ proxy-groups:
       - 官方网站：iacgbt.com
       - '🇭🇰  香港 | 103 | 杭港 | 1x'
       - "🇭🇰 香港 | 105 | 海港 | 1x\t"
-      - '🇭🇰  香港 | 102 | 海港 | 1.5x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
@@ -156,7 +145,6 @@ proxy-groups:
       - 官方网站：iacgbt.com
       - '🇭🇰  香港 | 103 | 杭港 | 1x'
       - "🇭🇰 香港 | 105 | 海港 | 1x\t"
-      - '🇭🇰  香港 | 102 | 海港 | 1.5x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
@@ -172,7 +160,6 @@ proxy-groups:
       - 官方网站：iacgbt.com
       - '🇭🇰  香港 | 103 | 杭港 | 1x'
       - "🇭🇰 香港 | 105 | 海港 | 1x\t"
-      - '🇭🇰  香港 | 102 | 海港 | 1.5x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
@@ -188,7 +175,6 @@ proxy-groups:
       - 官方网站：iacgbt.com
       - '🇭🇰  香港 | 103 | 杭港 | 1x'
       - "🇭🇰 香港 | 105 | 海港 | 1x\t"
-      - '🇭🇰  香港 | 102 | 海港 | 1.5x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
@@ -204,7 +190,6 @@ proxy-groups:
       - 官方网站：iacgbt.com
       - '🇭🇰  香港 | 103 | 杭港 | 1x'
       - "🇭🇰 香港 | 105 | 海港 | 1x\t"
-      - '🇭🇰  香港 | 102 | 海港 | 1.5x'
       - '🇺🇲 美国 | 103 | 美区解锁 | 1x'
       - '🇺🇲 美国 | 101 | 流媒体优化 | 1x'
       - '🇯🇵 日本 | 102 | 流媒体优化 | 1x'
