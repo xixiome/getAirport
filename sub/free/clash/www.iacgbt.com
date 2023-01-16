@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://www.iacgbt.com/link/mZL0WJOIX1M1Xz4v?clash=1
+#!MANAGED-CONFIG https://www.iacgbt.com/link/V349FatMPGKZg3zU?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2023-01-16 05:20:47
+## 上次更新于：2023-01-17 12:27:58
 #---------------------------------------------------#
 
 port: 7890
@@ -18,21 +18,21 @@ proxies:
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: e2cc4528-d374-3700-9ec0-0b8f11d8a5e2
+    password: 4e562900-de83-3375-a2dd-88072d0c17ea
     sni: a1.iacgbt.com
   -
     name: 官方网站：iacgbt.com
     type: trojan
     server: azxg.iacgbt.com
     port: 26010
-    password: e2cc4528-d374-3700-9ec0-0b8f11d8a5e2
+    password: 4e562900-de83-3375-a2dd-88072d0c17ea
     sni: a1.iacgbt.com
   -
     name: '🇭🇰  香港 | 103 | 杭港 | 1x'
     type: vmess
     server: relay-us.bfstec.com
     port: 31002
-    uuid: e2cc4528-d374-3700-9ec0-0b8f11d8a5e2
+    uuid: 4e562900-de83-3375-a2dd-88072d0c17ea
     alterId: 0
     cipher: auto
     udp: true
@@ -41,7 +41,7 @@ proxies:
     type: vmess
     server: relay-hk2.bfstec.com
     port: 44275
-    uuid: e2cc4528-d374-3700-9ec0-0b8f11d8a5e2
+    uuid: 4e562900-de83-3375-a2dd-88072d0c17ea
     alterId: 0
     cipher: auto
     udp: true
@@ -50,7 +50,7 @@ proxies:
     type: vmess
     server: relay-us.bfstec.com
     port: 25119
-    uuid: e2cc4528-d374-3700-9ec0-0b8f11d8a5e2
+    uuid: 4e562900-de83-3375-a2dd-88072d0c17ea
     alterId: 0
     cipher: auto
     udp: true
@@ -59,7 +59,7 @@ proxies:
     type: vmess
     server: relay-us2.bfstec.com
     port: 51959
-    uuid: e2cc4528-d374-3700-9ec0-0b8f11d8a5e2
+    uuid: 4e562900-de83-3375-a2dd-88072d0c17ea
     alterId: 0
     cipher: auto
     udp: true
@@ -68,7 +68,7 @@ proxies:
     type: vmess
     server: relay-jp.bfstec.com
     port: 27152
-    uuid: e2cc4528-d374-3700-9ec0-0b8f11d8a5e2
+    uuid: 4e562900-de83-3375-a2dd-88072d0c17ea
     alterId: 0
     cipher: auto
     udp: true
@@ -77,7 +77,7 @@ proxies:
     type: vmess
     server: relay-sg1.bfstec.com
     port: 11211
-    uuid: e2cc4528-d374-3700-9ec0-0b8f11d8a5e2
+    uuid: 4e562900-de83-3375-a2dd-88072d0c17ea
     alterId: 0
     cipher: auto
     udp: true
@@ -86,7 +86,7 @@ proxies:
     type: vmess
     server: relay-sg.bfstec.com
     port: 52791
-    uuid: e2cc4528-d374-3700-9ec0-0b8f11d8a5e2
+    uuid: 4e562900-de83-3375-a2dd-88072d0c17ea
     alterId: 0
     cipher: auto
     udp: true
@@ -95,7 +95,7 @@ proxies:
     type: vmess
     server: relay-hk3.bfstec.com
     port: 32123
-    uuid: e2cc4528-d374-3700-9ec0-0b8f11d8a5e2
+    uuid: 4e562900-de83-3375-a2dd-88072d0c17ea
     alterId: 0
     cipher: auto
     udp: true
