@@ -5,48 +5,48 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇻🇳VN-103.124.92.48-00
-  server: 103.124.92.48
-  port: 80
-  type: vmess
-  uuid: 62f2d3ba-abc6-4858-82ef-219f62f8e070
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: dl.kgvn.garenanow.com
-- name: 🇸🇬SG-128.199.247.101-01
-  server: 128.199.247.101
-  port: 80
-  type: vmess
-  uuid: 62f2d3ba-abc6-4858-82ef-219f62f8e070
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: dl.kgvn.garenanow.com
-- name: 🇻🇳VN-103.124.92.48-02
-  server: 103.124.92.48
+- name: 🏁RELAY-104.26.5.78-00
+  server: v2ray.online
   port: 443
   type: vmess
-  uuid: 62f2d3ba-abc6-4858-82ef-219f62f8e070
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
   alterId: 0
   cipher: auto
   skip-cert-vertify: true
   network: ws
   tls: true
   ws-opts:
-    path: /
+    path: /speedtest
     headers:
-      Host: cn.e.pic.ak.mangatoon.akamaized.net
+      Host: Vienna.v2ray.online
+- name: 🏁RELAY-172.67.68.253-01
+  server: v2ray.online
+  port: 443
+  type: vmess
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /speedtest
+    headers:
+      Host: Amsterdam.v2ray.online
+- name: 🏁RELAY-104.26.4.78-02
+  server: v2ray.online
+  port: 443
+  type: vmess
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /speedtest
+    headers:
+      Host: LosAngeles.v2ray.online
 - name: 🏁RELAY-1.1.1.1-03
   server: 1.1.1.1
   port: 65535
@@ -565,77 +565,49 @@ proxies:
     path: /
     headers:
       Host: 00000000000000000000000000000000000000000000000000000000000040a.node-for-bigairport.win
-- name: 🏁RELAY-172.67.6.11-41
-  server: cf-lt.sharecentre.online
-  port: 443
+- name: 🇻🇳VN-103.124.92.48-40
+  server: 103.124.92.48
+  port: 80
   type: vmess
-  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
+  uuid: 62f2d3ba-abc6-4858-82ef-219f62f8e070
   alterId: 0
   cipher: auto
   skip-cert-vertify: true
   network: ws
-  tls: true
-  ws-opts:
-    path: /shirker
-    headers:
-      Host: us-st-1.sharecentre.online
-- name: 🏁RELAY-172.67.6.11-42
-  server: cf-lt.sharecentre.online
-  port: 443
-  type: vmess
-  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /shirker
-    headers:
-      Host: sg-gcore.sharecentre.online
-- name: 🏁RELAY-172.67.148.20-43
-  server: cf-lt.sharecentre.online
-  port: 443
-  type: vmess
-  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /shirker
-    headers:
-      Host: lu.sharecentre.online
-- name: 🏁RELAY-104.21.51.216-44
-  server: mncc.cf
-  port: 443
-  type: vmess
-  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /shirker
-    headers:
-      Host: mncc.cf
-- name: 🏁RELAY-104.21.35.102-45
-  server: 789jiying.com
-  port: 10086
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
   tls: false
   ws-opts:
     path: /
     headers:
-      Host: 789jiying.com
-- name: 🇨🇳CN-120.240.236.14-46
+      Host: dl.kgvn.garenanow.com
+- name: 🇸🇬SG-128.199.247.101-41
+  server: 128.199.247.101
+  port: 80
+  type: vmess
+  uuid: 62f2d3ba-abc6-4858-82ef-219f62f8e070
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: dl.kgvn.garenanow.com
+- name: 🇻🇳VN-103.124.92.48-42
+  server: 103.124.92.48
+  port: 443
+  type: vmess
+  uuid: 62f2d3ba-abc6-4858-82ef-219f62f8e070
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: cn.e.pic.ak.mangatoon.akamaized.net
+- name: 🇨🇳CN-120.240.236.14-43
   server: hndx.relay01.fast001.buzz
   port: 19221
   type: vmess
@@ -649,7 +621,7 @@ proxies:
     path: /
     headers:
       Host: hndx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-47
+- name: 🇨🇳CN-120.240.236.14-44
   server: yzdx.relay01.fast001.buzz
   port: 19222
   type: vmess
@@ -663,7 +635,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-48
+- name: 🇨🇳CN-120.240.236.14-45
   server: yzdx.relay01.fast001.buzz
   port: 19225
   type: vmess
@@ -677,7 +649,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-49
+- name: 🇨🇳CN-120.240.236.14-46
   server: yzdx.relay01.fast001.buzz
   port: 19226
   type: vmess
@@ -691,7 +663,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-50
+- name: 🇨🇳CN-120.240.236.14-47
   server: yzdx.relay01.fast001.buzz
   port: 19227
   type: vmess
@@ -705,7 +677,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-51
+- name: 🇨🇳CN-120.240.236.14-48
   server: yzdx.relay01.fast001.buzz
   port: 19228
   type: vmess
@@ -719,7 +691,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-52
+- name: 🇨🇳CN-120.240.236.14-49
   server: yzdx.relay01.fast001.buzz
   port: 19238
   type: vmess
@@ -733,7 +705,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-53
+- name: 🇨🇳CN-120.240.236.14-50
   server: yzdx.relay01.fast001.buzz
   port: 19239
   type: vmess
@@ -747,7 +719,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-54
+- name: 🇨🇳CN-120.240.236.14-51
   server: yzdx.relay01.fast001.buzz
   port: 19240
   type: vmess
@@ -761,7 +733,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-55
+- name: 🇨🇳CN-120.240.236.14-52
   server: yzdx.relay01.fast001.buzz
   port: 19241
   type: vmess
@@ -775,7 +747,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-56
+- name: 🇨🇳CN-120.240.236.14-53
   server: yzdx.relay01.fast001.buzz
   port: 19229
   type: vmess
@@ -789,7 +761,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-57
+- name: 🇨🇳CN-120.240.236.14-54
   server: yzdx.relay01.fast001.buzz
   port: 19230
   type: vmess
@@ -803,7 +775,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-58
+- name: 🇨🇳CN-120.240.236.14-55
   server: yzdx.relay01.fast001.buzz
   port: 19231
   type: vmess
@@ -817,7 +789,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-59
+- name: 🇨🇳CN-120.240.236.14-56
   server: yzdx.relay01.fast001.buzz
   port: 19232
   type: vmess
@@ -831,7 +803,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-60
+- name: 🇨🇳CN-120.240.236.14-57
   server: yzdx.relay01.fast001.buzz
   port: 19244
   type: vmess
@@ -845,7 +817,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-61
+- name: 🇨🇳CN-120.240.236.14-58
   server: yzdx.relay01.fast001.buzz
   port: 19245
   type: vmess
@@ -859,7 +831,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-62
+- name: 🇨🇳CN-120.240.236.14-59
   server: yzdx.relay01.fast001.buzz
   port: 19242
   type: vmess
@@ -873,7 +845,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-63
+- name: 🇨🇳CN-120.240.236.14-60
   server: yzdx.relay01.fast001.buzz
   port: 19243
   type: vmess
@@ -887,7 +859,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-64
+- name: 🇨🇳CN-120.240.236.14-61
   server: yzdx.relay01.fast001.buzz
   port: 19246
   type: vmess
@@ -901,7 +873,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-65
+- name: 🇨🇳CN-120.240.236.14-62
   server: yzdx.relay01.fast001.buzz
   port: 19247
   type: vmess
@@ -915,7 +887,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-66
+- name: 🇨🇳CN-120.240.236.14-63
   server: yzdx.relay01.fast001.buzz
   port: 19248
   type: vmess
@@ -929,49 +901,7 @@ proxies:
     path: /
     headers:
       Host: yzdx.relay01.fast001.buzz
-- name: 🏁RELAY-104.26.4.78-67
-  server: v2ray.online
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Tokyo.v2ray.online
-- name: 🏁RELAY-104.26.4.78-68
-  server: v2ray.online
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: LosAngeles.v2ray.online
-- name: 🏁RELAY-104.26.5.78-69
-  server: v2ray.online
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Helsinki.v2ray.online
-- name: 🇺🇸US-38.54.101.76-70
+- name: 🇺🇸US-38.54.101.76-64
   server: meiguo.htvviru.top
   port: 3674
   type: vmess
@@ -985,14 +915,14 @@ proxies:
     path: /cctv13/hd.m3u8
     headers:
       Host: meiguo.htvviru.top
-- name: 🇺🇸US-38.54.101.76-71
+- name: 🇺🇸US-38.54.101.76-65
   server: meiguo.htvviru.top
   port: 2342
   type: trojan
   password: 3d81e6fb-c7f0-4791-af2e-82c93d149483
   sni: meiguo.htvviru.top
   skip-cert-verify: true
-- name: 🇺🇸US-38.54.95.63-72
+- name: 🇺🇸US-38.54.95.63-66
   server: meimei.htvviru.top
   port: 1231
   type: vmess
@@ -1006,7 +936,7 @@ proxies:
     path: /cctv13/hd.m3u8
     headers:
       Host: meimei.htvviru.top
-- name: 🇰🇷KR-38.54.40.48-73
+- name: 🇰🇷KR-38.54.40.48-67
   server: hg1.htvviru.top
   port: 1235
   type: vmess
@@ -1020,7 +950,7 @@ proxies:
     path: /cctv13/hd.m3u8
     headers:
       Host: hg1.htvviru.top
-- name: 🇰🇷KR-38.54.40.39-74
+- name: 🇰🇷KR-38.54.40.39-68
   server: hand.htvviru.top
   port: 131
   type: vmess
@@ -1034,13 +964,69 @@ proxies:
     path: /cctv13/hd.m3u8
     headers:
       Host: hand.htvviru.top
-- name: 🇰🇷KR-38.54.40.39-75
+- name: 🇰🇷KR-38.54.40.39-69
   server: hand.htvviru.top
   port: 354
   type: trojan
   password: 3d81e6fb-c7f0-4791-af2e-82c93d149483
   sni: hand.htvviru.top
   skip-cert-verify: true
+- name: 🏁RELAY-172.64.167.93-71
+  server: cf-lt.sharecentre.online
+  port: 443
+  type: vmess
+  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /shirker
+    headers:
+      Host: us-st-1.sharecentre.online
+- name: 🏁RELAY-172.64.128.19-72
+  server: cf-lt.sharecentre.online
+  port: 443
+  type: vmess
+  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /shirker
+    headers:
+      Host: sg-gcore.sharecentre.online
+- name: 🏁RELAY-172.64.167.93-73
+  server: cf-lt.sharecentre.online
+  port: 443
+  type: vmess
+  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /shirker
+    headers:
+      Host: lu.sharecentre.online
+- name: 🏁RELAY-172.67.186.95-74
+  server: mncc.cf
+  port: 443
+  type: vmess
+  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /shirker
+    headers:
+      Host: mncc.cf
 proxy-groups:
 - name: 节点选择
   type: select
@@ -1073,18 +1059,19 @@ proxy-groups:
 - name: 新加坡节点
   type: select
   proxies:
-  - 🇸🇬SG-128.199.247.101-01
   - 🇸🇬SG-13.212.109.31-09
   - 🇸🇬SG-13.212.9.250-10
   - 🇸🇬SG-18.141.203.130-24
   - 🇸🇬SG-13.213.57.39-25
   - 🇸🇬SG-13.229.81.201-34
   - 🇸🇬SG-13.228.170.229-35
+  - 🇸🇬SG-128.199.247.101-41
 - name: 其他节点
   type: select
   proxies:
-  - 🇻🇳VN-103.124.92.48-00
-  - 🇻🇳VN-103.124.92.48-02
+  - 🏁RELAY-104.26.5.78-00
+  - 🏁RELAY-172.67.68.253-01
+  - 🏁RELAY-104.26.4.78-02
   - 🏁RELAY-1.1.1.1-03
   - 🏁RELAY-1.1.1.1-04
   - 🇰🇷KR-3.34.50.21-11
@@ -1105,11 +1092,11 @@ proxy-groups:
   - 🇰🇷KR-3.38.216.201-37
   - 🇺🇸US-54.177.4.177-38
   - 🇺🇸US-54.183.197.74-39
-  - 🏁RELAY-172.67.6.11-41
-  - 🏁RELAY-172.67.6.11-42
-  - 🏁RELAY-172.67.148.20-43
-  - 🏁RELAY-104.21.51.216-44
-  - 🏁RELAY-104.21.35.102-45
+  - 🇻🇳VN-103.124.92.48-40
+  - 🇻🇳VN-103.124.92.48-42
+  - 🇨🇳CN-120.240.236.14-43
+  - 🇨🇳CN-120.240.236.14-44
+  - 🇨🇳CN-120.240.236.14-45
   - 🇨🇳CN-120.240.236.14-46
   - 🇨🇳CN-120.240.236.14-47
   - 🇨🇳CN-120.240.236.14-48
@@ -1128,27 +1115,25 @@ proxy-groups:
   - 🇨🇳CN-120.240.236.14-61
   - 🇨🇳CN-120.240.236.14-62
   - 🇨🇳CN-120.240.236.14-63
-  - 🇨🇳CN-120.240.236.14-64
-  - 🇨🇳CN-120.240.236.14-65
-  - 🇨🇳CN-120.240.236.14-66
-  - 🏁RELAY-104.26.4.78-67
-  - 🏁RELAY-104.26.4.78-68
-  - 🏁RELAY-104.26.5.78-69
-  - 🇺🇸US-38.54.101.76-70
-  - 🇺🇸US-38.54.101.76-71
-  - 🇺🇸US-38.54.95.63-72
-  - 🇰🇷KR-38.54.40.48-73
-  - 🇰🇷KR-38.54.40.39-74
-  - 🇰🇷KR-38.54.40.39-75
+  - 🇺🇸US-38.54.101.76-64
+  - 🇺🇸US-38.54.101.76-65
+  - 🇺🇸US-38.54.95.63-66
+  - 🇰🇷KR-38.54.40.48-67
+  - 🇰🇷KR-38.54.40.39-68
+  - 🇰🇷KR-38.54.40.39-69
+  - 🏁RELAY-172.64.167.93-71
+  - 🏁RELAY-172.64.128.19-72
+  - 🏁RELAY-172.64.167.93-73
+  - 🏁RELAY-172.67.186.95-74
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇻🇳VN-103.124.92.48-00
-  - 🇸🇬SG-128.199.247.101-01
-  - 🇻🇳VN-103.124.92.48-02
+  - 🏁RELAY-104.26.5.78-00
+  - 🏁RELAY-172.67.68.253-01
+  - 🏁RELAY-104.26.4.78-02
   - 🏁RELAY-1.1.1.1-03
   - 🏁RELAY-1.1.1.1-04
   - 🇭🇰HK-18.163.46.220-05
@@ -1186,11 +1171,12 @@ proxy-groups:
   - 🇰🇷KR-3.38.216.201-37
   - 🇺🇸US-54.177.4.177-38
   - 🇺🇸US-54.183.197.74-39
-  - 🏁RELAY-172.67.6.11-41
-  - 🏁RELAY-172.67.6.11-42
-  - 🏁RELAY-172.67.148.20-43
-  - 🏁RELAY-104.21.51.216-44
-  - 🏁RELAY-104.21.35.102-45
+  - 🇻🇳VN-103.124.92.48-40
+  - 🇸🇬SG-128.199.247.101-41
+  - 🇻🇳VN-103.124.92.48-42
+  - 🇨🇳CN-120.240.236.14-43
+  - 🇨🇳CN-120.240.236.14-44
+  - 🇨🇳CN-120.240.236.14-45
   - 🇨🇳CN-120.240.236.14-46
   - 🇨🇳CN-120.240.236.14-47
   - 🇨🇳CN-120.240.236.14-48
@@ -1209,18 +1195,16 @@ proxy-groups:
   - 🇨🇳CN-120.240.236.14-61
   - 🇨🇳CN-120.240.236.14-62
   - 🇨🇳CN-120.240.236.14-63
-  - 🇨🇳CN-120.240.236.14-64
-  - 🇨🇳CN-120.240.236.14-65
-  - 🇨🇳CN-120.240.236.14-66
-  - 🏁RELAY-104.26.4.78-67
-  - 🏁RELAY-104.26.4.78-68
-  - 🏁RELAY-104.26.5.78-69
-  - 🇺🇸US-38.54.101.76-70
-  - 🇺🇸US-38.54.101.76-71
-  - 🇺🇸US-38.54.95.63-72
-  - 🇰🇷KR-38.54.40.48-73
-  - 🇰🇷KR-38.54.40.39-74
-  - 🇰🇷KR-38.54.40.39-75
+  - 🇺🇸US-38.54.101.76-64
+  - 🇺🇸US-38.54.101.76-65
+  - 🇺🇸US-38.54.95.63-66
+  - 🇰🇷KR-38.54.40.48-67
+  - 🇰🇷KR-38.54.40.39-68
+  - 🇰🇷KR-38.54.40.39-69
+  - 🏁RELAY-172.64.167.93-71
+  - 🏁RELAY-172.64.128.19-72
+  - 🏁RELAY-172.64.167.93-73
+  - 🏁RELAY-172.67.186.95-74
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -1228,9 +1212,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇻🇳VN-103.124.92.48-00
-  - 🇸🇬SG-128.199.247.101-01
-  - 🇻🇳VN-103.124.92.48-02
+  - 🏁RELAY-104.26.5.78-00
+  - 🏁RELAY-172.67.68.253-01
+  - 🏁RELAY-104.26.4.78-02
   - 🏁RELAY-1.1.1.1-03
   - 🏁RELAY-1.1.1.1-04
   - 🇭🇰HK-18.163.46.220-05
@@ -1268,11 +1252,12 @@ proxy-groups:
   - 🇰🇷KR-3.38.216.201-37
   - 🇺🇸US-54.177.4.177-38
   - 🇺🇸US-54.183.197.74-39
-  - 🏁RELAY-172.67.6.11-41
-  - 🏁RELAY-172.67.6.11-42
-  - 🏁RELAY-172.67.148.20-43
-  - 🏁RELAY-104.21.51.216-44
-  - 🏁RELAY-104.21.35.102-45
+  - 🇻🇳VN-103.124.92.48-40
+  - 🇸🇬SG-128.199.247.101-41
+  - 🇻🇳VN-103.124.92.48-42
+  - 🇨🇳CN-120.240.236.14-43
+  - 🇨🇳CN-120.240.236.14-44
+  - 🇨🇳CN-120.240.236.14-45
   - 🇨🇳CN-120.240.236.14-46
   - 🇨🇳CN-120.240.236.14-47
   - 🇨🇳CN-120.240.236.14-48
@@ -1291,27 +1276,25 @@ proxy-groups:
   - 🇨🇳CN-120.240.236.14-61
   - 🇨🇳CN-120.240.236.14-62
   - 🇨🇳CN-120.240.236.14-63
-  - 🇨🇳CN-120.240.236.14-64
-  - 🇨🇳CN-120.240.236.14-65
-  - 🇨🇳CN-120.240.236.14-66
-  - 🏁RELAY-104.26.4.78-67
-  - 🏁RELAY-104.26.4.78-68
-  - 🏁RELAY-104.26.5.78-69
-  - 🇺🇸US-38.54.101.76-70
-  - 🇺🇸US-38.54.101.76-71
-  - 🇺🇸US-38.54.95.63-72
-  - 🇰🇷KR-38.54.40.48-73
-  - 🇰🇷KR-38.54.40.39-74
-  - 🇰🇷KR-38.54.40.39-75
+  - 🇺🇸US-38.54.101.76-64
+  - 🇺🇸US-38.54.101.76-65
+  - 🇺🇸US-38.54.95.63-66
+  - 🇰🇷KR-38.54.40.48-67
+  - 🇰🇷KR-38.54.40.39-68
+  - 🇰🇷KR-38.54.40.39-69
+  - 🏁RELAY-172.64.167.93-71
+  - 🏁RELAY-172.64.128.19-72
+  - 🏁RELAY-172.64.167.93-73
+  - 🏁RELAY-172.67.186.95-74
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇻🇳VN-103.124.92.48-00
-  - 🇸🇬SG-128.199.247.101-01
-  - 🇻🇳VN-103.124.92.48-02
+  - 🏁RELAY-104.26.5.78-00
+  - 🏁RELAY-172.67.68.253-01
+  - 🏁RELAY-104.26.4.78-02
   - 🏁RELAY-1.1.1.1-03
   - 🏁RELAY-1.1.1.1-04
   - 🇭🇰HK-18.163.46.220-05
@@ -1349,11 +1332,12 @@ proxy-groups:
   - 🇰🇷KR-3.38.216.201-37
   - 🇺🇸US-54.177.4.177-38
   - 🇺🇸US-54.183.197.74-39
-  - 🏁RELAY-172.67.6.11-41
-  - 🏁RELAY-172.67.6.11-42
-  - 🏁RELAY-172.67.148.20-43
-  - 🏁RELAY-104.21.51.216-44
-  - 🏁RELAY-104.21.35.102-45
+  - 🇻🇳VN-103.124.92.48-40
+  - 🇸🇬SG-128.199.247.101-41
+  - 🇻🇳VN-103.124.92.48-42
+  - 🇨🇳CN-120.240.236.14-43
+  - 🇨🇳CN-120.240.236.14-44
+  - 🇨🇳CN-120.240.236.14-45
   - 🇨🇳CN-120.240.236.14-46
   - 🇨🇳CN-120.240.236.14-47
   - 🇨🇳CN-120.240.236.14-48
@@ -1372,18 +1356,16 @@ proxy-groups:
   - 🇨🇳CN-120.240.236.14-61
   - 🇨🇳CN-120.240.236.14-62
   - 🇨🇳CN-120.240.236.14-63
-  - 🇨🇳CN-120.240.236.14-64
-  - 🇨🇳CN-120.240.236.14-65
-  - 🇨🇳CN-120.240.236.14-66
-  - 🏁RELAY-104.26.4.78-67
-  - 🏁RELAY-104.26.4.78-68
-  - 🏁RELAY-104.26.5.78-69
-  - 🇺🇸US-38.54.101.76-70
-  - 🇺🇸US-38.54.101.76-71
-  - 🇺🇸US-38.54.95.63-72
-  - 🇰🇷KR-38.54.40.48-73
-  - 🇰🇷KR-38.54.40.39-74
-  - 🇰🇷KR-38.54.40.39-75
+  - 🇺🇸US-38.54.101.76-64
+  - 🇺🇸US-38.54.101.76-65
+  - 🇺🇸US-38.54.95.63-66
+  - 🇰🇷KR-38.54.40.48-67
+  - 🇰🇷KR-38.54.40.39-68
+  - 🇰🇷KR-38.54.40.39-69
+  - 🏁RELAY-172.64.167.93-71
+  - 🏁RELAY-172.64.128.19-72
+  - 🏁RELAY-172.64.167.93-73
+  - 🏁RELAY-172.67.186.95-74
 - name: 谷歌服务
   type: select
   proxies:
