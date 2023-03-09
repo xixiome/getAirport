@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🏁RELAY-172.67.217.74-00
+- name: 🏁RELAY-104.21.35.102-00
   server: 789jiying.com
   port: 10086
   type: vmess
@@ -313,49 +313,7 @@ proxies:
     path: /
     headers:
       Host: gdcm.relay01.fast001.buzz
-- name: 🏁RELAY-172.67.81.238-22
-  server: cdnjs.com
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Lille.kotick.site
-- name: 🏁RELAY-104.24.176.7-23
-  server: cdnjs.com
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Kansas.kotick.site
-- name: 🏁RELAY-104.24.176.7-24
-  server: cdnjs.com
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Riga.kotick.site
-- name: 🏁RELAY-172.67.233.164-26
+- name: 🏁RELAY-172.67.171.13-23
   server: cf-lt.sharecentre.online
   port: 443
   type: vmess
@@ -369,7 +327,7 @@ proxies:
     path: /shirker
     headers:
       Host: uk1.scproxy.top
-- name: 🏁RELAY-172.67.233.164-27
+- name: 🏁RELAY-172.67.55.198-24
   server: cf-lt.sharecentre.online
   port: 443
   type: vmess
@@ -383,7 +341,7 @@ proxies:
     path: /shirker
     headers:
       Host: hk-hytron.ilovescp.com
-- name: 🏁RELAY-172.67.193.194-28
+- name: 🏁RELAY-172.67.171.13-25
   server: cf-lt.sharecentre.online
   port: 443
   type: vmess
@@ -397,6 +355,48 @@ proxies:
     path: /shirker
     headers:
       Host: lv1.sharecentrepro.org
+- name: 🏁RELAY-172.67.81.238-26
+  server: cdnjs.com
+  port: 443
+  type: vmess
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /speedtest
+    headers:
+      Host: Dusseldorf.kotick.site
+- name: 🏁RELAY-172.67.81.238-27
+  server: cdnjs.com
+  port: 443
+  type: vmess
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /speedtest
+    headers:
+      Host: Paris.kotick.site
+- name: 🏁RELAY-104.24.176.7-28
+  server: cdnjs.com
+  port: 443
+  type: vmess
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /speedtest
+    headers:
+      Host: Amsterdam.kotick.site
 - name: 🏁RELAY-1.1.1.1-29
   server: 1.1.1.1
   port: 65535
@@ -943,7 +943,7 @@ proxy-groups:
 - name: 其他节点
   type: select
   proxies:
-  - 🏁RELAY-172.67.217.74-00
+  - 🏁RELAY-104.21.35.102-00
   - 🇨🇳CN-120.240.236.14-01
   - 🇨🇳CN-120.240.236.14-02
   - 🇨🇳CN-120.240.236.14-03
@@ -965,12 +965,12 @@ proxy-groups:
   - 🇨🇳CN-120.240.236.14-19
   - 🇨🇳CN-120.240.236.14-20
   - 🇨🇳CN-120.240.236.14-21
-  - 🏁RELAY-172.67.81.238-22
-  - 🏁RELAY-104.24.176.7-23
-  - 🏁RELAY-104.24.176.7-24
-  - 🏁RELAY-172.67.233.164-26
-  - 🏁RELAY-172.67.233.164-27
-  - 🏁RELAY-172.67.193.194-28
+  - 🏁RELAY-172.67.171.13-23
+  - 🏁RELAY-172.67.55.198-24
+  - 🏁RELAY-172.67.171.13-25
+  - 🏁RELAY-172.67.81.238-26
+  - 🏁RELAY-172.67.81.238-27
+  - 🏁RELAY-104.24.176.7-28
   - 🏁RELAY-1.1.1.1-29
   - 🇰🇷KR-43.201.62.55-36
   - 🇰🇷KR-13.125.239.28-37
@@ -995,7 +995,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.217.74-00
+  - 🏁RELAY-104.21.35.102-00
   - 🇨🇳CN-120.240.236.14-01
   - 🇨🇳CN-120.240.236.14-02
   - 🇨🇳CN-120.240.236.14-03
@@ -1017,12 +1017,12 @@ proxy-groups:
   - 🇨🇳CN-120.240.236.14-19
   - 🇨🇳CN-120.240.236.14-20
   - 🇨🇳CN-120.240.236.14-21
-  - 🏁RELAY-172.67.81.238-22
-  - 🏁RELAY-104.24.176.7-23
-  - 🏁RELAY-104.24.176.7-24
-  - 🏁RELAY-172.67.233.164-26
-  - 🏁RELAY-172.67.233.164-27
-  - 🏁RELAY-172.67.193.194-28
+  - 🏁RELAY-172.67.171.13-23
+  - 🏁RELAY-172.67.55.198-24
+  - 🏁RELAY-172.67.171.13-25
+  - 🏁RELAY-172.67.81.238-26
+  - 🏁RELAY-172.67.81.238-27
+  - 🏁RELAY-104.24.176.7-28
   - 🏁RELAY-1.1.1.1-29
   - 🇭🇰HK-18.166.70.23-30
   - 🇭🇰HK-43.198.23.213-31
@@ -1066,7 +1066,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.217.74-00
+  - 🏁RELAY-104.21.35.102-00
   - 🇨🇳CN-120.240.236.14-01
   - 🇨🇳CN-120.240.236.14-02
   - 🇨🇳CN-120.240.236.14-03
@@ -1088,12 +1088,12 @@ proxy-groups:
   - 🇨🇳CN-120.240.236.14-19
   - 🇨🇳CN-120.240.236.14-20
   - 🇨🇳CN-120.240.236.14-21
-  - 🏁RELAY-172.67.81.238-22
-  - 🏁RELAY-104.24.176.7-23
-  - 🏁RELAY-104.24.176.7-24
-  - 🏁RELAY-172.67.233.164-26
-  - 🏁RELAY-172.67.233.164-27
-  - 🏁RELAY-172.67.193.194-28
+  - 🏁RELAY-172.67.171.13-23
+  - 🏁RELAY-172.67.55.198-24
+  - 🏁RELAY-172.67.171.13-25
+  - 🏁RELAY-172.67.81.238-26
+  - 🏁RELAY-172.67.81.238-27
+  - 🏁RELAY-104.24.176.7-28
   - 🏁RELAY-1.1.1.1-29
   - 🇭🇰HK-18.166.70.23-30
   - 🇭🇰HK-43.198.23.213-31
@@ -1136,7 +1136,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.217.74-00
+  - 🏁RELAY-104.21.35.102-00
   - 🇨🇳CN-120.240.236.14-01
   - 🇨🇳CN-120.240.236.14-02
   - 🇨🇳CN-120.240.236.14-03
@@ -1158,12 +1158,12 @@ proxy-groups:
   - 🇨🇳CN-120.240.236.14-19
   - 🇨🇳CN-120.240.236.14-20
   - 🇨🇳CN-120.240.236.14-21
-  - 🏁RELAY-172.67.81.238-22
-  - 🏁RELAY-104.24.176.7-23
-  - 🏁RELAY-104.24.176.7-24
-  - 🏁RELAY-172.67.233.164-26
-  - 🏁RELAY-172.67.233.164-27
-  - 🏁RELAY-172.67.193.194-28
+  - 🏁RELAY-172.67.171.13-23
+  - 🏁RELAY-172.67.55.198-24
+  - 🏁RELAY-172.67.171.13-25
+  - 🏁RELAY-172.67.81.238-26
+  - 🏁RELAY-172.67.81.238-27
+  - 🏁RELAY-104.24.176.7-28
   - 🏁RELAY-1.1.1.1-29
   - 🇭🇰HK-18.166.70.23-30
   - 🇭🇰HK-43.198.23.213-31
