@@ -5,833 +5,7 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🏁RELAY-1.1.1.1-00
-  server: 1.1.1.1
-  port: 65535
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 1.1.1.1
-- name: 🇭🇰HK-16.163.127.109-01
-  server: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win
-  port: 80
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win
-- name: 🇭🇰HK-43.198.102.121-02
-  server: 00000000000000000000000000000000000000000000000000000000000002a.node-for-bigairport.win
-  port: 443
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000002a.node-for-bigairport.win
-- name: 🇯🇵JP-13.115.246.235-03
-  server: 00000000000000000000000000000000000000000000000000000000000003a.node-for-bigairport.win
-  port: 80
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000003a.node-for-bigairport.win
-- name: 🇯🇵JP-52.193.140.253-04
-  server: 00000000000000000000000000000000000000000000000000000000000004a.node-for-bigairport.win
-  port: 443
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000004a.node-for-bigairport.win
-- name: 🇸🇬SG-18.143.139.244-05
-  server: 00000000000000000000000000000000000000000000000000000000000005a.node-for-bigairport.win
-  port: 80
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000005a.node-for-bigairport.win
-- name: 🇸🇬SG-13.212.38.183-06
-  server: 00000000000000000000000000000000000000000000000000000000000006a.node-for-bigairport.win
-  port: 443
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000006a.node-for-bigairport.win
-- name: 🇰🇷KR-3.38.135.133-07
-  server: 00000000000000000000000000000000000000000000000000000000000007a.node-for-bigairport.win
-  port: 80
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000007a.node-for-bigairport.win
-- name: 🇰🇷KR-3.39.0.63-08
-  server: 00000000000000000000000000000000000000000000000000000000000008a.node-for-bigairport.win
-  port: 443
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000008a.node-for-bigairport.win
-- name: 🇺🇸US-184.169.246.237-09
-  server: 00000000000000000000000000000000000000000000000000000000000009a.node-for-bigairport.win
-  port: 80
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000009a.node-for-bigairport.win
-- name: 🇺🇸US-52.8.15.20-10
-  server: 00000000000000000000000000000000000000000000000000000000000010a.node-for-bigairport.win
-  port: 443
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000010a.node-for-bigairport.win
-- name: 🇩🇪DE-3.127.210.159-11
-  server: 00000000000000000000000000000000000000000000000000000000000011a.node-for-bigairport.win
-  port: 26901
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000011a.node-for-bigairport.win
-- name: 🇺🇸US-34.210.225.110-12
-  server: 00000000000000000000000000000000000000000000000000000000000012a.node-for-bigairport.win
-  port: 10392
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000012a.node-for-bigairport.win
-- name: 🇬🇧GB-35.178.114.233-13
-  server: 00000000000000000000000000000000000000000000000000000000000013a.node-for-bigairport.win
-  port: 43566
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000013a.node-for-bigairport.win
-- name: 🇫🇷FR-13.39.23.7-14
-  server: 00000000000000000000000000000000000000000000000000000000000014a.node-for-bigairport.win
-  port: 12659
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000014a.node-for-bigairport.win
-- name: 🇮🇪IE-54.75.70.190-15
-  server: 00000000000000000000000000000000000000000000000000000000000015a.node-for-bigairport.win
-  port: 15092
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000015a.node-for-bigairport.win
-- name: 🇭🇰HK-18.162.130.60-16
-  server: 00000000000000000000000000000000000000000000000000000000000021a.node-for-bigairport.win
-  port: 52356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000021a.node-for-bigairport.win
-- name: 🇭🇰HK-18.163.61.1-17
-  server: 00000000000000000000000000000000000000000000000000000000000022a.node-for-bigairport.win
-  port: 52356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000022a.node-for-bigairport.win
-- name: 🇯🇵JP-35.77.107.179-18
-  server: 00000000000000000000000000000000000000000000000000000000000023a.node-for-bigairport.win
-  port: 52356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000023a.node-for-bigairport.win
-- name: 🇯🇵JP-18.183.152.209-19
-  server: 00000000000000000000000000000000000000000000000000000000000024a.node-for-bigairport.win
-  port: 52356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000024a.node-for-bigairport.win
-- name: 🇸🇬SG-13.212.54.181-20
-  server: 00000000000000000000000000000000000000000000000000000000000025a.node-for-bigairport.win
-  port: 52356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000025a.node-for-bigairport.win
-- name: 🇸🇬SG-13.250.119.92-21
-  server: 00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win
-  port: 52356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win
-- name: 🇰🇷KR-3.38.199.203-22
-  server: 00000000000000000000000000000000000000000000000000000000000027a.node-for-bigairport.win
-  port: 52356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000027a.node-for-bigairport.win
-- name: 🇰🇷KR-3.38.173.7-23
-  server: 00000000000000000000000000000000000000000000000000000000000028a.node-for-bigairport.win
-  port: 52356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000028a.node-for-bigairport.win
-- name: 🇺🇸US-3.101.27.39-24
-  server: 00000000000000000000000000000000000000000000000000000000000029a.node-for-bigairport.win
-  port: 52356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000029a.node-for-bigairport.win
-- name: 🇺🇸US-13.56.251.217-25
-  server: 00000000000000000000000000000000000000000000000000000000000030a.node-for-bigairport.win
-  port: 52356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000030a.node-for-bigairport.win
-- name: 🇭🇰HK-18.166.52.188-26
-  server: 00000000000000000000000000000000000000000000000000000000000031a.node-for-bigairport.win
-  port: 12356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000031a.node-for-bigairport.win
-- name: 🇭🇰HK-18.167.94.255-27
-  server: 00000000000000000000000000000000000000000000000000000000000032a.node-for-bigairport.win
-  port: 12356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000032a.node-for-bigairport.win
-- name: 🇯🇵JP-13.230.41.59-28
-  server: 00000000000000000000000000000000000000000000000000000000000033a.node-for-bigairport.win
-  port: 12356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000033a.node-for-bigairport.win
-- name: 🇯🇵JP-43.206.143.34-29
-  server: 00000000000000000000000000000000000000000000000000000000000034a.node-for-bigairport.win
-  port: 12356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000034a.node-for-bigairport.win
-- name: 🇸🇬SG-13.214.169.93-30
-  server: 00000000000000000000000000000000000000000000000000000000000035a.node-for-bigairport.win
-  port: 12356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000035a.node-for-bigairport.win
-- name: 🇸🇬SG-18.142.96.80-31
-  server: 00000000000000000000000000000000000000000000000000000000000036a.node-for-bigairport.win
-  port: 12356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000036a.node-for-bigairport.win
-- name: 🇰🇷KR-13.209.41.49-32
-  server: 00000000000000000000000000000000000000000000000000000000000037a.node-for-bigairport.win
-  port: 12356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000037a.node-for-bigairport.win
-- name: 🇰🇷KR-3.39.25.190-33
-  server: 00000000000000000000000000000000000000000000000000000000000038a.node-for-bigairport.win
-  port: 12356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000038a.node-for-bigairport.win
-- name: 🇺🇸US-13.57.42.44-34
-  server: 00000000000000000000000000000000000000000000000000000000000039a.node-for-bigairport.win
-  port: 12356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000039a.node-for-bigairport.win
-- name: 🇺🇸US-54.219.92.97-35
-  server: 00000000000000000000000000000000000000000000000000000000000040a.node-for-bigairport.win
-  port: 12356
-  type: vmess
-  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 00000000000000000000000000000000000000000000000000000000000040a.node-for-bigairport.win
-- name: 🏁RELAY-104.24.177.7-36
-  server: cdnjs.com
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Seattle.kotick.site
-- name: 🏁RELAY-104.24.177.7-37
-  server: cdnjs.com
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Lille.kotick.site
-- name: 🇨🇳CN-120.240.236.14-38
-  server: gdcm.relay01.fast001.buzz
-  port: 19221
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-39
-  server: gdcm.relay01.fast001.buzz
-  port: 19222
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-40
-  server: gdcm.relay01.fast001.buzz
-  port: 19225
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-41
-  server: gdcm.relay01.fast001.buzz
-  port: 19226
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-42
-  server: gdcm.relay01.fast001.buzz
-  port: 19227
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-43
-  server: gdcm.relay01.fast001.buzz
-  port: 19228
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-44
-  server: gdcm.relay01.fast001.buzz
-  port: 19238
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-45
-  server: gdcm.relay01.fast001.buzz
-  port: 19239
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-46
-  server: gdcm.relay01.fast001.buzz
-  port: 19240
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-47
-  server: gdcm.relay01.fast001.buzz
-  port: 19241
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-48
-  server: gdcm.relay01.fast001.buzz
-  port: 19229
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-49
-  server: gdcm.relay01.fast001.buzz
-  port: 19230
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-50
-  server: gdcm.relay01.fast001.buzz
-  port: 19231
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-51
-  server: gdcm.relay01.fast001.buzz
-  port: 19232
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-52
-  server: gdcm.relay01.fast001.buzz
-  port: 19243
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-53
-  server: gdcm.relay01.fast001.buzz
-  port: 19244
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-54
-  server: gdcm.relay01.fast001.buzz
-  port: 19245
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-55
-  server: gdcm.relay01.fast001.buzz
-  port: 19242
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-56
-  server: gdcm.relay01.fast001.buzz
-  port: 19246
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-57
-  server: gdcm.relay01.fast001.buzz
-  port: 19247
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🇨🇳CN-120.240.236.14-58
-  server: gdcm.relay01.fast001.buzz
-  port: 19248
-  type: vmess
-  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: tcp
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gdcm.relay01.fast001.buzz
-- name: 🏁RELAY-172.67.94.93-60
+- name: 🏁RELAY-198.41.215.20-01
   server: cf-lt.sharecentre.online
   port: 443
   type: vmess
@@ -845,7 +19,7 @@ proxies:
     path: /shirker
     headers:
       Host: uk1.scproxy.top
-- name: 🏁RELAY-198.41.215.20-61
+- name: 🏁RELAY-190.93.247.250-02
   server: cf-lt.sharecentre.online
   port: 443
   type: vmess
@@ -859,7 +33,7 @@ proxies:
     path: /shirker
     headers:
       Host: hk-hytron.ilovescp.com
-- name: 🏁RELAY-172.67.94.93-62
+- name: 🏁RELAY-190.93.247.250-03
   server: cf-lt.sharecentre.online
   port: 443
   type: vmess
@@ -873,6 +47,804 @@ proxies:
     path: /shirker
     headers:
       Host: ny1.sharecentrepro.org
+- name: 🏁RELAY-1.1.1.1-04
+  server: 1.1.1.1
+  port: 65535
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 1.1.1.1
+- name: 🇭🇰HK-16.163.127.109-05
+  server: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win
+  port: 80
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win
+- name: 🇭🇰HK-43.198.102.121-06
+  server: 00000000000000000000000000000000000000000000000000000000000002a.node-for-bigairport.win
+  port: 443
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000002a.node-for-bigairport.win
+- name: 🇯🇵JP-13.115.246.235-07
+  server: 00000000000000000000000000000000000000000000000000000000000003a.node-for-bigairport.win
+  port: 80
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000003a.node-for-bigairport.win
+- name: 🇯🇵JP-52.193.140.253-08
+  server: 00000000000000000000000000000000000000000000000000000000000004a.node-for-bigairport.win
+  port: 443
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000004a.node-for-bigairport.win
+- name: 🇸🇬SG-18.143.139.244-09
+  server: 00000000000000000000000000000000000000000000000000000000000005a.node-for-bigairport.win
+  port: 80
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000005a.node-for-bigairport.win
+- name: 🇸🇬SG-13.212.38.183-10
+  server: 00000000000000000000000000000000000000000000000000000000000006a.node-for-bigairport.win
+  port: 443
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000006a.node-for-bigairport.win
+- name: 🇰🇷KR-3.38.135.133-11
+  server: 00000000000000000000000000000000000000000000000000000000000007a.node-for-bigairport.win
+  port: 80
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000007a.node-for-bigairport.win
+- name: 🇰🇷KR-3.39.0.63-12
+  server: 00000000000000000000000000000000000000000000000000000000000008a.node-for-bigairport.win
+  port: 443
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000008a.node-for-bigairport.win
+- name: 🇺🇸US-184.169.246.237-13
+  server: 00000000000000000000000000000000000000000000000000000000000009a.node-for-bigairport.win
+  port: 80
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000009a.node-for-bigairport.win
+- name: 🇺🇸US-52.8.15.20-14
+  server: 00000000000000000000000000000000000000000000000000000000000010a.node-for-bigairport.win
+  port: 443
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000010a.node-for-bigairport.win
+- name: 🇩🇪DE-3.127.210.159-15
+  server: 00000000000000000000000000000000000000000000000000000000000011a.node-for-bigairport.win
+  port: 26901
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000011a.node-for-bigairport.win
+- name: 🇺🇸US-34.210.225.110-16
+  server: 00000000000000000000000000000000000000000000000000000000000012a.node-for-bigairport.win
+  port: 10392
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000012a.node-for-bigairport.win
+- name: 🇬🇧GB-35.178.114.233-17
+  server: 00000000000000000000000000000000000000000000000000000000000013a.node-for-bigairport.win
+  port: 43566
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000013a.node-for-bigairport.win
+- name: 🇫🇷FR-13.39.23.7-18
+  server: 00000000000000000000000000000000000000000000000000000000000014a.node-for-bigairport.win
+  port: 12659
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000014a.node-for-bigairport.win
+- name: 🇮🇪IE-54.75.70.190-19
+  server: 00000000000000000000000000000000000000000000000000000000000015a.node-for-bigairport.win
+  port: 15092
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000015a.node-for-bigairport.win
+- name: 🇭🇰HK-18.162.130.60-20
+  server: 00000000000000000000000000000000000000000000000000000000000021a.node-for-bigairport.win
+  port: 52356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000021a.node-for-bigairport.win
+- name: 🇭🇰HK-18.163.61.1-21
+  server: 00000000000000000000000000000000000000000000000000000000000022a.node-for-bigairport.win
+  port: 52356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000022a.node-for-bigairport.win
+- name: 🇯🇵JP-35.77.107.179-22
+  server: 00000000000000000000000000000000000000000000000000000000000023a.node-for-bigairport.win
+  port: 52356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000023a.node-for-bigairport.win
+- name: 🇯🇵JP-18.183.152.209-23
+  server: 00000000000000000000000000000000000000000000000000000000000024a.node-for-bigairport.win
+  port: 52356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000024a.node-for-bigairport.win
+- name: 🇸🇬SG-13.212.54.181-24
+  server: 00000000000000000000000000000000000000000000000000000000000025a.node-for-bigairport.win
+  port: 52356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000025a.node-for-bigairport.win
+- name: 🇸🇬SG-13.250.119.92-25
+  server: 00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win
+  port: 52356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win
+- name: 🇰🇷KR-3.38.199.203-26
+  server: 00000000000000000000000000000000000000000000000000000000000027a.node-for-bigairport.win
+  port: 52356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000027a.node-for-bigairport.win
+- name: 🇰🇷KR-3.38.173.7-27
+  server: 00000000000000000000000000000000000000000000000000000000000028a.node-for-bigairport.win
+  port: 52356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000028a.node-for-bigairport.win
+- name: 🇺🇸US-3.101.27.39-28
+  server: 00000000000000000000000000000000000000000000000000000000000029a.node-for-bigairport.win
+  port: 52356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000029a.node-for-bigairport.win
+- name: 🇺🇸US-13.56.251.217-29
+  server: 00000000000000000000000000000000000000000000000000000000000030a.node-for-bigairport.win
+  port: 52356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000030a.node-for-bigairport.win
+- name: 🇭🇰HK-18.166.52.188-30
+  server: 00000000000000000000000000000000000000000000000000000000000031a.node-for-bigairport.win
+  port: 12356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000031a.node-for-bigairport.win
+- name: 🇭🇰HK-18.167.94.255-31
+  server: 00000000000000000000000000000000000000000000000000000000000032a.node-for-bigairport.win
+  port: 12356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000032a.node-for-bigairport.win
+- name: 🇯🇵JP-13.230.41.59-32
+  server: 00000000000000000000000000000000000000000000000000000000000033a.node-for-bigairport.win
+  port: 12356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000033a.node-for-bigairport.win
+- name: 🇯🇵JP-43.206.143.34-33
+  server: 00000000000000000000000000000000000000000000000000000000000034a.node-for-bigairport.win
+  port: 12356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000034a.node-for-bigairport.win
+- name: 🇸🇬SG-13.214.169.93-34
+  server: 00000000000000000000000000000000000000000000000000000000000035a.node-for-bigairport.win
+  port: 12356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000035a.node-for-bigairport.win
+- name: 🇸🇬SG-18.142.96.80-35
+  server: 00000000000000000000000000000000000000000000000000000000000036a.node-for-bigairport.win
+  port: 12356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000036a.node-for-bigairport.win
+- name: 🇰🇷KR-13.209.41.49-36
+  server: 00000000000000000000000000000000000000000000000000000000000037a.node-for-bigairport.win
+  port: 12356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000037a.node-for-bigairport.win
+- name: 🇰🇷KR-3.39.25.190-37
+  server: 00000000000000000000000000000000000000000000000000000000000038a.node-for-bigairport.win
+  port: 12356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000038a.node-for-bigairport.win
+- name: 🇺🇸US-13.57.42.44-38
+  server: 00000000000000000000000000000000000000000000000000000000000039a.node-for-bigairport.win
+  port: 12356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000039a.node-for-bigairport.win
+- name: 🇺🇸US-54.219.92.97-39
+  server: 00000000000000000000000000000000000000000000000000000000000040a.node-for-bigairport.win
+  port: 12356
+  type: vmess
+  uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 00000000000000000000000000000000000000000000000000000000000040a.node-for-bigairport.win
+- name: 🇨🇳CN-120.240.236.14-40
+  server: gdcm.relay01.fast001.buzz
+  port: 19221
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-41
+  server: gdcm.relay01.fast001.buzz
+  port: 19222
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-42
+  server: gdcm.relay01.fast001.buzz
+  port: 19225
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-43
+  server: gdcm.relay01.fast001.buzz
+  port: 19226
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-44
+  server: gdcm.relay01.fast001.buzz
+  port: 19227
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-45
+  server: gdcm.relay01.fast001.buzz
+  port: 19228
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-46
+  server: gdcm.relay01.fast001.buzz
+  port: 19238
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-47
+  server: gdcm.relay01.fast001.buzz
+  port: 19239
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-48
+  server: gdcm.relay01.fast001.buzz
+  port: 19240
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-49
+  server: gdcm.relay01.fast001.buzz
+  port: 19241
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-50
+  server: gdcm.relay01.fast001.buzz
+  port: 19229
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-51
+  server: gdcm.relay01.fast001.buzz
+  port: 19230
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-52
+  server: gdcm.relay01.fast001.buzz
+  port: 19231
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-53
+  server: gdcm.relay01.fast001.buzz
+  port: 19232
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-54
+  server: gdcm.relay01.fast001.buzz
+  port: 19243
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-55
+  server: gdcm.relay01.fast001.buzz
+  port: 19244
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-56
+  server: gdcm.relay01.fast001.buzz
+  port: 19245
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-57
+  server: gdcm.relay01.fast001.buzz
+  port: 19242
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-58
+  server: gdcm.relay01.fast001.buzz
+  port: 19246
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-59
+  server: gdcm.relay01.fast001.buzz
+  port: 19247
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
+- name: 🇨🇳CN-120.240.236.14-60
+  server: gdcm.relay01.fast001.buzz
+  port: 19248
+  type: vmess
+  uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: tcp
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gdcm.relay01.fast001.buzz
 proxy-groups:
 - name: 节点选择
   type: select
@@ -888,55 +860,54 @@ proxy-groups:
 - name: 香港节点
   type: select
   proxies:
-  - 🇭🇰HK-16.163.127.109-01
-  - 🇭🇰HK-43.198.102.121-02
-  - 🇭🇰HK-18.162.130.60-16
-  - 🇭🇰HK-18.163.61.1-17
-  - 🇭🇰HK-18.166.52.188-26
-  - 🇭🇰HK-18.167.94.255-27
+  - 🇭🇰HK-16.163.127.109-05
+  - 🇭🇰HK-43.198.102.121-06
+  - 🇭🇰HK-18.162.130.60-20
+  - 🇭🇰HK-18.163.61.1-21
+  - 🇭🇰HK-18.166.52.188-30
+  - 🇭🇰HK-18.167.94.255-31
 - name: 日本节点
   type: select
   proxies:
-  - 🇯🇵JP-13.115.246.235-03
-  - 🇯🇵JP-52.193.140.253-04
-  - 🇯🇵JP-35.77.107.179-18
-  - 🇯🇵JP-18.183.152.209-19
-  - 🇯🇵JP-13.230.41.59-28
-  - 🇯🇵JP-43.206.143.34-29
+  - 🇯🇵JP-13.115.246.235-07
+  - 🇯🇵JP-52.193.140.253-08
+  - 🇯🇵JP-35.77.107.179-22
+  - 🇯🇵JP-18.183.152.209-23
+  - 🇯🇵JP-13.230.41.59-32
+  - 🇯🇵JP-43.206.143.34-33
 - name: 新加坡节点
   type: select
   proxies:
-  - 🇸🇬SG-18.143.139.244-05
-  - 🇸🇬SG-13.212.38.183-06
-  - 🇸🇬SG-13.212.54.181-20
-  - 🇸🇬SG-13.250.119.92-21
-  - 🇸🇬SG-13.214.169.93-30
-  - 🇸🇬SG-18.142.96.80-31
+  - 🇸🇬SG-18.143.139.244-09
+  - 🇸🇬SG-13.212.38.183-10
+  - 🇸🇬SG-13.212.54.181-24
+  - 🇸🇬SG-13.250.119.92-25
+  - 🇸🇬SG-13.214.169.93-34
+  - 🇸🇬SG-18.142.96.80-35
 - name: 其他节点
   type: select
   proxies:
-  - 🏁RELAY-1.1.1.1-00
-  - 🇰🇷KR-3.38.135.133-07
-  - 🇰🇷KR-3.39.0.63-08
-  - 🇺🇸US-184.169.246.237-09
-  - 🇺🇸US-52.8.15.20-10
-  - 🇩🇪DE-3.127.210.159-11
-  - 🇺🇸US-34.210.225.110-12
-  - 🇬🇧GB-35.178.114.233-13
-  - 🇫🇷FR-13.39.23.7-14
-  - 🇮🇪IE-54.75.70.190-15
-  - 🇰🇷KR-3.38.199.203-22
-  - 🇰🇷KR-3.38.173.7-23
-  - 🇺🇸US-3.101.27.39-24
-  - 🇺🇸US-13.56.251.217-25
-  - 🇰🇷KR-13.209.41.49-32
-  - 🇰🇷KR-3.39.25.190-33
-  - 🇺🇸US-13.57.42.44-34
-  - 🇺🇸US-54.219.92.97-35
-  - 🏁RELAY-104.24.177.7-36
-  - 🏁RELAY-104.24.177.7-37
-  - 🇨🇳CN-120.240.236.14-38
-  - 🇨🇳CN-120.240.236.14-39
+  - 🏁RELAY-198.41.215.20-01
+  - 🏁RELAY-190.93.247.250-02
+  - 🏁RELAY-190.93.247.250-03
+  - 🏁RELAY-1.1.1.1-04
+  - 🇰🇷KR-3.38.135.133-11
+  - 🇰🇷KR-3.39.0.63-12
+  - 🇺🇸US-184.169.246.237-13
+  - 🇺🇸US-52.8.15.20-14
+  - 🇩🇪DE-3.127.210.159-15
+  - 🇺🇸US-34.210.225.110-16
+  - 🇬🇧GB-35.178.114.233-17
+  - 🇫🇷FR-13.39.23.7-18
+  - 🇮🇪IE-54.75.70.190-19
+  - 🇰🇷KR-3.38.199.203-26
+  - 🇰🇷KR-3.38.173.7-27
+  - 🇺🇸US-3.101.27.39-28
+  - 🇺🇸US-13.56.251.217-29
+  - 🇰🇷KR-13.209.41.49-36
+  - 🇰🇷KR-3.39.25.190-37
+  - 🇺🇸US-13.57.42.44-38
+  - 🇺🇸US-54.219.92.97-39
   - 🇨🇳CN-120.240.236.14-40
   - 🇨🇳CN-120.240.236.14-41
   - 🇨🇳CN-120.240.236.14-42
@@ -956,55 +927,53 @@ proxy-groups:
   - 🇨🇳CN-120.240.236.14-56
   - 🇨🇳CN-120.240.236.14-57
   - 🇨🇳CN-120.240.236.14-58
-  - 🏁RELAY-172.67.94.93-60
-  - 🏁RELAY-198.41.215.20-61
-  - 🏁RELAY-172.67.94.93-62
+  - 🇨🇳CN-120.240.236.14-59
+  - 🇨🇳CN-120.240.236.14-60
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-1.1.1.1-00
-  - 🇭🇰HK-16.163.127.109-01
-  - 🇭🇰HK-43.198.102.121-02
-  - 🇯🇵JP-13.115.246.235-03
-  - 🇯🇵JP-52.193.140.253-04
-  - 🇸🇬SG-18.143.139.244-05
-  - 🇸🇬SG-13.212.38.183-06
-  - 🇰🇷KR-3.38.135.133-07
-  - 🇰🇷KR-3.39.0.63-08
-  - 🇺🇸US-184.169.246.237-09
-  - 🇺🇸US-52.8.15.20-10
-  - 🇩🇪DE-3.127.210.159-11
-  - 🇺🇸US-34.210.225.110-12
-  - 🇬🇧GB-35.178.114.233-13
-  - 🇫🇷FR-13.39.23.7-14
-  - 🇮🇪IE-54.75.70.190-15
-  - 🇭🇰HK-18.162.130.60-16
-  - 🇭🇰HK-18.163.61.1-17
-  - 🇯🇵JP-35.77.107.179-18
-  - 🇯🇵JP-18.183.152.209-19
-  - 🇸🇬SG-13.212.54.181-20
-  - 🇸🇬SG-13.250.119.92-21
-  - 🇰🇷KR-3.38.199.203-22
-  - 🇰🇷KR-3.38.173.7-23
-  - 🇺🇸US-3.101.27.39-24
-  - 🇺🇸US-13.56.251.217-25
-  - 🇭🇰HK-18.166.52.188-26
-  - 🇭🇰HK-18.167.94.255-27
-  - 🇯🇵JP-13.230.41.59-28
-  - 🇯🇵JP-43.206.143.34-29
-  - 🇸🇬SG-13.214.169.93-30
-  - 🇸🇬SG-18.142.96.80-31
-  - 🇰🇷KR-13.209.41.49-32
-  - 🇰🇷KR-3.39.25.190-33
-  - 🇺🇸US-13.57.42.44-34
-  - 🇺🇸US-54.219.92.97-35
-  - 🏁RELAY-104.24.177.7-36
-  - 🏁RELAY-104.24.177.7-37
-  - 🇨🇳CN-120.240.236.14-38
-  - 🇨🇳CN-120.240.236.14-39
+  - 🏁RELAY-198.41.215.20-01
+  - 🏁RELAY-190.93.247.250-02
+  - 🏁RELAY-190.93.247.250-03
+  - 🏁RELAY-1.1.1.1-04
+  - 🇭🇰HK-16.163.127.109-05
+  - 🇭🇰HK-43.198.102.121-06
+  - 🇯🇵JP-13.115.246.235-07
+  - 🇯🇵JP-52.193.140.253-08
+  - 🇸🇬SG-18.143.139.244-09
+  - 🇸🇬SG-13.212.38.183-10
+  - 🇰🇷KR-3.38.135.133-11
+  - 🇰🇷KR-3.39.0.63-12
+  - 🇺🇸US-184.169.246.237-13
+  - 🇺🇸US-52.8.15.20-14
+  - 🇩🇪DE-3.127.210.159-15
+  - 🇺🇸US-34.210.225.110-16
+  - 🇬🇧GB-35.178.114.233-17
+  - 🇫🇷FR-13.39.23.7-18
+  - 🇮🇪IE-54.75.70.190-19
+  - 🇭🇰HK-18.162.130.60-20
+  - 🇭🇰HK-18.163.61.1-21
+  - 🇯🇵JP-35.77.107.179-22
+  - 🇯🇵JP-18.183.152.209-23
+  - 🇸🇬SG-13.212.54.181-24
+  - 🇸🇬SG-13.250.119.92-25
+  - 🇰🇷KR-3.38.199.203-26
+  - 🇰🇷KR-3.38.173.7-27
+  - 🇺🇸US-3.101.27.39-28
+  - 🇺🇸US-13.56.251.217-29
+  - 🇭🇰HK-18.166.52.188-30
+  - 🇭🇰HK-18.167.94.255-31
+  - 🇯🇵JP-13.230.41.59-32
+  - 🇯🇵JP-43.206.143.34-33
+  - 🇸🇬SG-13.214.169.93-34
+  - 🇸🇬SG-18.142.96.80-35
+  - 🇰🇷KR-13.209.41.49-36
+  - 🇰🇷KR-3.39.25.190-37
+  - 🇺🇸US-13.57.42.44-38
+  - 🇺🇸US-54.219.92.97-39
   - 🇨🇳CN-120.240.236.14-40
   - 🇨🇳CN-120.240.236.14-41
   - 🇨🇳CN-120.240.236.14-42
@@ -1024,9 +993,8 @@ proxy-groups:
   - 🇨🇳CN-120.240.236.14-56
   - 🇨🇳CN-120.240.236.14-57
   - 🇨🇳CN-120.240.236.14-58
-  - 🏁RELAY-172.67.94.93-60
-  - 🏁RELAY-198.41.215.20-61
-  - 🏁RELAY-172.67.94.93-62
+  - 🇨🇳CN-120.240.236.14-59
+  - 🇨🇳CN-120.240.236.14-60
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -1034,46 +1002,45 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-1.1.1.1-00
-  - 🇭🇰HK-16.163.127.109-01
-  - 🇭🇰HK-43.198.102.121-02
-  - 🇯🇵JP-13.115.246.235-03
-  - 🇯🇵JP-52.193.140.253-04
-  - 🇸🇬SG-18.143.139.244-05
-  - 🇸🇬SG-13.212.38.183-06
-  - 🇰🇷KR-3.38.135.133-07
-  - 🇰🇷KR-3.39.0.63-08
-  - 🇺🇸US-184.169.246.237-09
-  - 🇺🇸US-52.8.15.20-10
-  - 🇩🇪DE-3.127.210.159-11
-  - 🇺🇸US-34.210.225.110-12
-  - 🇬🇧GB-35.178.114.233-13
-  - 🇫🇷FR-13.39.23.7-14
-  - 🇮🇪IE-54.75.70.190-15
-  - 🇭🇰HK-18.162.130.60-16
-  - 🇭🇰HK-18.163.61.1-17
-  - 🇯🇵JP-35.77.107.179-18
-  - 🇯🇵JP-18.183.152.209-19
-  - 🇸🇬SG-13.212.54.181-20
-  - 🇸🇬SG-13.250.119.92-21
-  - 🇰🇷KR-3.38.199.203-22
-  - 🇰🇷KR-3.38.173.7-23
-  - 🇺🇸US-3.101.27.39-24
-  - 🇺🇸US-13.56.251.217-25
-  - 🇭🇰HK-18.166.52.188-26
-  - 🇭🇰HK-18.167.94.255-27
-  - 🇯🇵JP-13.230.41.59-28
-  - 🇯🇵JP-43.206.143.34-29
-  - 🇸🇬SG-13.214.169.93-30
-  - 🇸🇬SG-18.142.96.80-31
-  - 🇰🇷KR-13.209.41.49-32
-  - 🇰🇷KR-3.39.25.190-33
-  - 🇺🇸US-13.57.42.44-34
-  - 🇺🇸US-54.219.92.97-35
-  - 🏁RELAY-104.24.177.7-36
-  - 🏁RELAY-104.24.177.7-37
-  - 🇨🇳CN-120.240.236.14-38
-  - 🇨🇳CN-120.240.236.14-39
+  - 🏁RELAY-198.41.215.20-01
+  - 🏁RELAY-190.93.247.250-02
+  - 🏁RELAY-190.93.247.250-03
+  - 🏁RELAY-1.1.1.1-04
+  - 🇭🇰HK-16.163.127.109-05
+  - 🇭🇰HK-43.198.102.121-06
+  - 🇯🇵JP-13.115.246.235-07
+  - 🇯🇵JP-52.193.140.253-08
+  - 🇸🇬SG-18.143.139.244-09
+  - 🇸🇬SG-13.212.38.183-10
+  - 🇰🇷KR-3.38.135.133-11
+  - 🇰🇷KR-3.39.0.63-12
+  - 🇺🇸US-184.169.246.237-13
+  - 🇺🇸US-52.8.15.20-14
+  - 🇩🇪DE-3.127.210.159-15
+  - 🇺🇸US-34.210.225.110-16
+  - 🇬🇧GB-35.178.114.233-17
+  - 🇫🇷FR-13.39.23.7-18
+  - 🇮🇪IE-54.75.70.190-19
+  - 🇭🇰HK-18.162.130.60-20
+  - 🇭🇰HK-18.163.61.1-21
+  - 🇯🇵JP-35.77.107.179-22
+  - 🇯🇵JP-18.183.152.209-23
+  - 🇸🇬SG-13.212.54.181-24
+  - 🇸🇬SG-13.250.119.92-25
+  - 🇰🇷KR-3.38.199.203-26
+  - 🇰🇷KR-3.38.173.7-27
+  - 🇺🇸US-3.101.27.39-28
+  - 🇺🇸US-13.56.251.217-29
+  - 🇭🇰HK-18.166.52.188-30
+  - 🇭🇰HK-18.167.94.255-31
+  - 🇯🇵JP-13.230.41.59-32
+  - 🇯🇵JP-43.206.143.34-33
+  - 🇸🇬SG-13.214.169.93-34
+  - 🇸🇬SG-18.142.96.80-35
+  - 🇰🇷KR-13.209.41.49-36
+  - 🇰🇷KR-3.39.25.190-37
+  - 🇺🇸US-13.57.42.44-38
+  - 🇺🇸US-54.219.92.97-39
   - 🇨🇳CN-120.240.236.14-40
   - 🇨🇳CN-120.240.236.14-41
   - 🇨🇳CN-120.240.236.14-42
@@ -1093,55 +1060,53 @@ proxy-groups:
   - 🇨🇳CN-120.240.236.14-56
   - 🇨🇳CN-120.240.236.14-57
   - 🇨🇳CN-120.240.236.14-58
-  - 🏁RELAY-172.67.94.93-60
-  - 🏁RELAY-198.41.215.20-61
-  - 🏁RELAY-172.67.94.93-62
+  - 🇨🇳CN-120.240.236.14-59
+  - 🇨🇳CN-120.240.236.14-60
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-1.1.1.1-00
-  - 🇭🇰HK-16.163.127.109-01
-  - 🇭🇰HK-43.198.102.121-02
-  - 🇯🇵JP-13.115.246.235-03
-  - 🇯🇵JP-52.193.140.253-04
-  - 🇸🇬SG-18.143.139.244-05
-  - 🇸🇬SG-13.212.38.183-06
-  - 🇰🇷KR-3.38.135.133-07
-  - 🇰🇷KR-3.39.0.63-08
-  - 🇺🇸US-184.169.246.237-09
-  - 🇺🇸US-52.8.15.20-10
-  - 🇩🇪DE-3.127.210.159-11
-  - 🇺🇸US-34.210.225.110-12
-  - 🇬🇧GB-35.178.114.233-13
-  - 🇫🇷FR-13.39.23.7-14
-  - 🇮🇪IE-54.75.70.190-15
-  - 🇭🇰HK-18.162.130.60-16
-  - 🇭🇰HK-18.163.61.1-17
-  - 🇯🇵JP-35.77.107.179-18
-  - 🇯🇵JP-18.183.152.209-19
-  - 🇸🇬SG-13.212.54.181-20
-  - 🇸🇬SG-13.250.119.92-21
-  - 🇰🇷KR-3.38.199.203-22
-  - 🇰🇷KR-3.38.173.7-23
-  - 🇺🇸US-3.101.27.39-24
-  - 🇺🇸US-13.56.251.217-25
-  - 🇭🇰HK-18.166.52.188-26
-  - 🇭🇰HK-18.167.94.255-27
-  - 🇯🇵JP-13.230.41.59-28
-  - 🇯🇵JP-43.206.143.34-29
-  - 🇸🇬SG-13.214.169.93-30
-  - 🇸🇬SG-18.142.96.80-31
-  - 🇰🇷KR-13.209.41.49-32
-  - 🇰🇷KR-3.39.25.190-33
-  - 🇺🇸US-13.57.42.44-34
-  - 🇺🇸US-54.219.92.97-35
-  - 🏁RELAY-104.24.177.7-36
-  - 🏁RELAY-104.24.177.7-37
-  - 🇨🇳CN-120.240.236.14-38
-  - 🇨🇳CN-120.240.236.14-39
+  - 🏁RELAY-198.41.215.20-01
+  - 🏁RELAY-190.93.247.250-02
+  - 🏁RELAY-190.93.247.250-03
+  - 🏁RELAY-1.1.1.1-04
+  - 🇭🇰HK-16.163.127.109-05
+  - 🇭🇰HK-43.198.102.121-06
+  - 🇯🇵JP-13.115.246.235-07
+  - 🇯🇵JP-52.193.140.253-08
+  - 🇸🇬SG-18.143.139.244-09
+  - 🇸🇬SG-13.212.38.183-10
+  - 🇰🇷KR-3.38.135.133-11
+  - 🇰🇷KR-3.39.0.63-12
+  - 🇺🇸US-184.169.246.237-13
+  - 🇺🇸US-52.8.15.20-14
+  - 🇩🇪DE-3.127.210.159-15
+  - 🇺🇸US-34.210.225.110-16
+  - 🇬🇧GB-35.178.114.233-17
+  - 🇫🇷FR-13.39.23.7-18
+  - 🇮🇪IE-54.75.70.190-19
+  - 🇭🇰HK-18.162.130.60-20
+  - 🇭🇰HK-18.163.61.1-21
+  - 🇯🇵JP-35.77.107.179-22
+  - 🇯🇵JP-18.183.152.209-23
+  - 🇸🇬SG-13.212.54.181-24
+  - 🇸🇬SG-13.250.119.92-25
+  - 🇰🇷KR-3.38.199.203-26
+  - 🇰🇷KR-3.38.173.7-27
+  - 🇺🇸US-3.101.27.39-28
+  - 🇺🇸US-13.56.251.217-29
+  - 🇭🇰HK-18.166.52.188-30
+  - 🇭🇰HK-18.167.94.255-31
+  - 🇯🇵JP-13.230.41.59-32
+  - 🇯🇵JP-43.206.143.34-33
+  - 🇸🇬SG-13.214.169.93-34
+  - 🇸🇬SG-18.142.96.80-35
+  - 🇰🇷KR-13.209.41.49-36
+  - 🇰🇷KR-3.39.25.190-37
+  - 🇺🇸US-13.57.42.44-38
+  - 🇺🇸US-54.219.92.97-39
   - 🇨🇳CN-120.240.236.14-40
   - 🇨🇳CN-120.240.236.14-41
   - 🇨🇳CN-120.240.236.14-42
@@ -1161,9 +1126,8 @@ proxy-groups:
   - 🇨🇳CN-120.240.236.14-56
   - 🇨🇳CN-120.240.236.14-57
   - 🇨🇳CN-120.240.236.14-58
-  - 🏁RELAY-172.67.94.93-60
-  - 🏁RELAY-198.41.215.20-61
-  - 🏁RELAY-172.67.94.93-62
+  - 🇨🇳CN-120.240.236.14-59
+  - 🇨🇳CN-120.240.236.14-60
 - name: 谷歌服务
   type: select
   proxies:
