@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🏁RELAY-104.24.177.7-00
+- name: 🏁RELAY-104.24.176.7-00
   server: cdnjs.com
   port: 443
   type: vmess
@@ -19,7 +19,7 @@ proxies:
     path: /speedtest
     headers:
       Host: Lille.kotick.site
-- name: 🏁RELAY-104.24.177.7-01
+- name: 🏁RELAY-172.67.81.238-01
   server: cdnjs.com
   port: 443
   type: vmess
@@ -32,7 +32,7 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      Host: Amsterdam.kotick.site
+      Host: Dusseldorf.kotick.site
 - name: 🏁RELAY-1.1.1.1-02
   server: 1.1.1.1
   port: 65535
@@ -551,7 +551,7 @@ proxies:
     path: /
     headers:
       Host: 00000000000000000000000000000000000000000000000000000000000040a.node-for-bigairport.win
-- name: 🏁RELAY-172.64.160.249-40
+- name: 🏁RELAY-172.67.19.94-40
   server: cf-lt.sharecentre.online
   port: 443
   type: vmess
@@ -565,7 +565,7 @@ proxies:
     path: /shirker
     headers:
       Host: sg1.sharecentrepro.com
-- name: 🏁RELAY-162.159.246.34-41
+- name: 🏁RELAY-172.67.19.94-41
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -579,7 +579,7 @@ proxies:
     path: /shirker
     headers:
       Host: sg1.sharecentrepro.com
-- name: 🏁RELAY-162.159.246.34-42
+- name: 🏁RELAY-172.67.90.50-42
   server: cf-lt.sharecentre.online
   port: 443
   type: vmess
@@ -593,7 +593,7 @@ proxies:
     path: /shirker
     headers:
       Host: hk-hytron.ilovescp.com
-- name: 🏁RELAY-162.159.246.34-43
+- name: 🏁RELAY-162.159.134.135-43
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -649,8 +649,8 @@ proxy-groups:
 - name: 其他节点
   type: select
   proxies:
-  - 🏁RELAY-104.24.177.7-00
-  - 🏁RELAY-104.24.177.7-01
+  - 🏁RELAY-104.24.176.7-00
+  - 🏁RELAY-172.67.81.238-01
   - 🏁RELAY-1.1.1.1-02
   - 🏁RELAY-1.1.1.1-03
   - 🇰🇷KR-43.201.70.253-10
@@ -670,18 +670,18 @@ proxy-groups:
   - 🇰🇷KR-13.125.133.88-36
   - 🇺🇸US-13.56.19.184-37
   - 🇺🇸US-54.193.24.80-38
-  - 🏁RELAY-172.64.160.249-40
-  - 🏁RELAY-162.159.246.34-41
-  - 🏁RELAY-162.159.246.34-42
-  - 🏁RELAY-162.159.246.34-43
+  - 🏁RELAY-172.67.19.94-40
+  - 🏁RELAY-172.67.19.94-41
+  - 🏁RELAY-172.67.90.50-42
+  - 🏁RELAY-162.159.134.135-43
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-104.24.177.7-00
-  - 🏁RELAY-104.24.177.7-01
+  - 🏁RELAY-104.24.176.7-00
+  - 🏁RELAY-172.67.81.238-01
   - 🏁RELAY-1.1.1.1-02
   - 🏁RELAY-1.1.1.1-03
   - 🇭🇰HK-16.162.93.238-04
@@ -719,10 +719,10 @@ proxy-groups:
   - 🇰🇷KR-13.125.133.88-36
   - 🇺🇸US-13.56.19.184-37
   - 🇺🇸US-54.193.24.80-38
-  - 🏁RELAY-172.64.160.249-40
-  - 🏁RELAY-162.159.246.34-41
-  - 🏁RELAY-162.159.246.34-42
-  - 🏁RELAY-162.159.246.34-43
+  - 🏁RELAY-172.67.19.94-40
+  - 🏁RELAY-172.67.19.94-41
+  - 🏁RELAY-172.67.90.50-42
+  - 🏁RELAY-162.159.134.135-43
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -730,8 +730,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-104.24.177.7-00
-  - 🏁RELAY-104.24.177.7-01
+  - 🏁RELAY-104.24.176.7-00
+  - 🏁RELAY-172.67.81.238-01
   - 🏁RELAY-1.1.1.1-02
   - 🏁RELAY-1.1.1.1-03
   - 🇭🇰HK-16.162.93.238-04
@@ -769,18 +769,18 @@ proxy-groups:
   - 🇰🇷KR-13.125.133.88-36
   - 🇺🇸US-13.56.19.184-37
   - 🇺🇸US-54.193.24.80-38
-  - 🏁RELAY-172.64.160.249-40
-  - 🏁RELAY-162.159.246.34-41
-  - 🏁RELAY-162.159.246.34-42
-  - 🏁RELAY-162.159.246.34-43
+  - 🏁RELAY-172.67.19.94-40
+  - 🏁RELAY-172.67.19.94-41
+  - 🏁RELAY-172.67.90.50-42
+  - 🏁RELAY-162.159.134.135-43
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-104.24.177.7-00
-  - 🏁RELAY-104.24.177.7-01
+  - 🏁RELAY-104.24.176.7-00
+  - 🏁RELAY-172.67.81.238-01
   - 🏁RELAY-1.1.1.1-02
   - 🏁RELAY-1.1.1.1-03
   - 🇭🇰HK-16.162.93.238-04
@@ -818,10 +818,10 @@ proxy-groups:
   - 🇰🇷KR-13.125.133.88-36
   - 🇺🇸US-13.56.19.184-37
   - 🇺🇸US-54.193.24.80-38
-  - 🏁RELAY-172.64.160.249-40
-  - 🏁RELAY-162.159.246.34-41
-  - 🏁RELAY-162.159.246.34-42
-  - 🏁RELAY-162.159.246.34-43
+  - 🏁RELAY-172.67.19.94-40
+  - 🏁RELAY-172.67.19.94-41
+  - 🏁RELAY-172.67.90.50-42
+  - 🏁RELAY-162.159.134.135-43
 - name: 谷歌服务
   type: select
   proxies:
