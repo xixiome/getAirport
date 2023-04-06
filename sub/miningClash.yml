@@ -5,35 +5,7 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🏁RELAY-172.67.81.238-00
-  server: cdnjs.com
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Amsterdam.kotick.site
-- name: 🏁RELAY-104.24.176.7-01
-  server: cdnjs.com
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Dusseldorf.kotick.site
-- name: 🏁RELAY-172.67.254.97-03
+- name: 🏁RELAY-172.67.9.6-01
   server: cf-lt.sharecentre.online
   port: 443
   type: vmess
@@ -47,7 +19,7 @@ proxies:
     path: /shirker
     headers:
       Host: sg1.sharecentrepro.com
-- name: 🏁RELAY-172.67.254.97-04
+- name: 🏁RELAY-172.67.9.6-02
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -61,7 +33,7 @@ proxies:
     path: /shirker
     headers:
       Host: sg1.sharecentrepro.com
-- name: 🏁RELAY-172.67.108.238-05
+- name: 🏁RELAY-172.67.9.6-03
   server: cf-lt.sharecentre.online
   port: 443
   type: vmess
@@ -75,7 +47,7 @@ proxies:
     path: /shirker
     headers:
       Host: hk-hytron.ilovescp.com
-- name: 🏁RELAY-172.67.87.76-06
+- name: 🏁RELAY-172.67.193.89-04
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -89,6 +61,34 @@ proxies:
     path: /shirker
     headers:
       Host: lv1.sharecentrepro.org
+- name: 🏁RELAY-104.24.176.7-05
+  server: cdnjs.com
+  port: 443
+  type: vmess
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /speedtest
+    headers:
+      Host: Lille.kotick.site
+- name: 🏁RELAY-172.67.81.238-06
+  server: cdnjs.com
+  port: 443
+  type: vmess
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /speedtest
+    headers:
+      Host: Kansas.kotick.site
 - name: 🏁RELAY-1.1.1.1-07
   server: 1.1.1.1
   port: 65535
@@ -649,12 +649,12 @@ proxy-groups:
 - name: 其他节点
   type: select
   proxies:
-  - 🏁RELAY-172.67.81.238-00
-  - 🏁RELAY-104.24.176.7-01
-  - 🏁RELAY-172.67.254.97-03
-  - 🏁RELAY-172.67.254.97-04
-  - 🏁RELAY-172.67.108.238-05
-  - 🏁RELAY-172.67.87.76-06
+  - 🏁RELAY-172.67.9.6-01
+  - 🏁RELAY-172.67.9.6-02
+  - 🏁RELAY-172.67.9.6-03
+  - 🏁RELAY-172.67.193.89-04
+  - 🏁RELAY-104.24.176.7-05
+  - 🏁RELAY-172.67.81.238-06
   - 🏁RELAY-1.1.1.1-07
   - 🏁RELAY-1.1.1.1-08
   - 🇰🇷KR-43.201.70.253-15
@@ -680,12 +680,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.81.238-00
-  - 🏁RELAY-104.24.176.7-01
-  - 🏁RELAY-172.67.254.97-03
-  - 🏁RELAY-172.67.254.97-04
-  - 🏁RELAY-172.67.108.238-05
-  - 🏁RELAY-172.67.87.76-06
+  - 🏁RELAY-172.67.9.6-01
+  - 🏁RELAY-172.67.9.6-02
+  - 🏁RELAY-172.67.9.6-03
+  - 🏁RELAY-172.67.193.89-04
+  - 🏁RELAY-104.24.176.7-05
+  - 🏁RELAY-172.67.81.238-06
   - 🏁RELAY-1.1.1.1-07
   - 🏁RELAY-1.1.1.1-08
   - 🇭🇰HK-16.163.156.131-09
@@ -730,12 +730,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.81.238-00
-  - 🏁RELAY-104.24.176.7-01
-  - 🏁RELAY-172.67.254.97-03
-  - 🏁RELAY-172.67.254.97-04
-  - 🏁RELAY-172.67.108.238-05
-  - 🏁RELAY-172.67.87.76-06
+  - 🏁RELAY-172.67.9.6-01
+  - 🏁RELAY-172.67.9.6-02
+  - 🏁RELAY-172.67.9.6-03
+  - 🏁RELAY-172.67.193.89-04
+  - 🏁RELAY-104.24.176.7-05
+  - 🏁RELAY-172.67.81.238-06
   - 🏁RELAY-1.1.1.1-07
   - 🏁RELAY-1.1.1.1-08
   - 🇭🇰HK-16.163.156.131-09
@@ -779,12 +779,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.81.238-00
-  - 🏁RELAY-104.24.176.7-01
-  - 🏁RELAY-172.67.254.97-03
-  - 🏁RELAY-172.67.254.97-04
-  - 🏁RELAY-172.67.108.238-05
-  - 🏁RELAY-172.67.87.76-06
+  - 🏁RELAY-172.67.9.6-01
+  - 🏁RELAY-172.67.9.6-02
+  - 🏁RELAY-172.67.9.6-03
+  - 🏁RELAY-172.67.193.89-04
+  - 🏁RELAY-104.24.176.7-05
+  - 🏁RELAY-172.67.81.238-06
   - 🏁RELAY-1.1.1.1-07
   - 🏁RELAY-1.1.1.1-08
   - 🇭🇰HK-16.163.156.131-09
