@@ -32,8 +32,8 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      Host: Lille.kotick.site
-- name: 🏁RELAY-172.64.83.209-03
+      Host: Kansas.kotick.site
+- name: 🏁RELAY-172.67.202.8-03
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -47,7 +47,7 @@ proxies:
     path: /shirker
     headers:
       Host: sg1.sharecentrepro.com
-- name: 🏁RELAY-172.67.235.247-04
+- name: 🏁RELAY-172.67.202.8-04
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -61,7 +61,7 @@ proxies:
     path: /shirker
     headers:
       Host: uk1.scproxy.top
-- name: 🏁RELAY-172.64.83.209-05
+- name: 🏁RELAY-172.67.143.62-05
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -104,9 +104,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.67.81.238-00
   - 🏁RELAY-104.24.176.7-01
-  - 🏁RELAY-172.64.83.209-03
-  - 🏁RELAY-172.67.235.247-04
-  - 🏁RELAY-172.64.83.209-05
+  - 🏁RELAY-172.67.202.8-03
+  - 🏁RELAY-172.67.202.8-04
+  - 🏁RELAY-172.67.143.62-05
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -115,9 +115,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.67.81.238-00
   - 🏁RELAY-104.24.176.7-01
-  - 🏁RELAY-172.64.83.209-03
-  - 🏁RELAY-172.67.235.247-04
-  - 🏁RELAY-172.64.83.209-05
+  - 🏁RELAY-172.67.202.8-03
+  - 🏁RELAY-172.67.202.8-04
+  - 🏁RELAY-172.67.143.62-05
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -127,9 +127,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.67.81.238-00
   - 🏁RELAY-104.24.176.7-01
-  - 🏁RELAY-172.64.83.209-03
-  - 🏁RELAY-172.67.235.247-04
-  - 🏁RELAY-172.64.83.209-05
+  - 🏁RELAY-172.67.202.8-03
+  - 🏁RELAY-172.67.202.8-04
+  - 🏁RELAY-172.67.143.62-05
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -138,9 +138,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.67.81.238-00
   - 🏁RELAY-104.24.176.7-01
-  - 🏁RELAY-172.64.83.209-03
-  - 🏁RELAY-172.67.235.247-04
-  - 🏁RELAY-172.64.83.209-05
+  - 🏁RELAY-172.67.202.8-03
+  - 🏁RELAY-172.67.202.8-04
+  - 🏁RELAY-172.67.143.62-05
 - name: 谷歌服务
   type: select
   proxies:
