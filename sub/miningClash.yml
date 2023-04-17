@@ -33,7 +33,7 @@ proxies:
     path: /shirker
     headers:
       Host: sg2.sharecentrepro.com
-- name: 🏁RELAY-198.41.222.205-03
+- name: 🏁RELAY-198.41.223.152-03
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -76,7 +76,7 @@ proxy-groups:
   proxies:
   - 🏁RELAY-198.41.211.174-01
   - 🏁RELAY-198.41.211.174-02
-  - 🏁RELAY-198.41.222.205-03
+  - 🏁RELAY-198.41.223.152-03
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -85,7 +85,7 @@ proxy-groups:
   proxies:
   - 🏁RELAY-198.41.211.174-01
   - 🏁RELAY-198.41.211.174-02
-  - 🏁RELAY-198.41.222.205-03
+  - 🏁RELAY-198.41.223.152-03
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -95,7 +95,7 @@ proxy-groups:
   proxies:
   - 🏁RELAY-198.41.211.174-01
   - 🏁RELAY-198.41.211.174-02
-  - 🏁RELAY-198.41.222.205-03
+  - 🏁RELAY-198.41.223.152-03
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -104,7 +104,7 @@ proxy-groups:
   proxies:
   - 🏁RELAY-198.41.211.174-01
   - 🏁RELAY-198.41.211.174-02
-  - 🏁RELAY-198.41.222.205-03
+  - 🏁RELAY-198.41.223.152-03
 - name: 谷歌服务
   type: select
   proxies:
