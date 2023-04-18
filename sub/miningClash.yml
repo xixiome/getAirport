@@ -33,7 +33,7 @@ proxies:
     path: /shirker
     headers:
       Host: sg2.sharecentrepro.com
-- name: 🏁RELAY-172.67.252.147-03
+- name: 🏁RELAY-198.41.222.205-03
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -47,34 +47,6 @@ proxies:
     path: /shirker
     headers:
       Host: ca.ilovescp.com
-- name: 🏁RELAY-104.24.177.7-04
-  server: cdnjs.com
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Dusseldorf.kotick.site
-- name: 🏁RELAY-104.24.176.7-05
-  server: cdnjs.com
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Kansas.kotick.site
 proxy-groups:
 - name: 节点选择
   type: select
@@ -104,9 +76,7 @@ proxy-groups:
   proxies:
   - 🏁RELAY-198.41.222.205-01
   - 🏁RELAY-198.41.223.152-02
-  - 🏁RELAY-172.67.252.147-03
-  - 🏁RELAY-104.24.177.7-04
-  - 🏁RELAY-104.24.176.7-05
+  - 🏁RELAY-198.41.222.205-03
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -115,9 +85,7 @@ proxy-groups:
   proxies:
   - 🏁RELAY-198.41.222.205-01
   - 🏁RELAY-198.41.223.152-02
-  - 🏁RELAY-172.67.252.147-03
-  - 🏁RELAY-104.24.177.7-04
-  - 🏁RELAY-104.24.176.7-05
+  - 🏁RELAY-198.41.222.205-03
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -127,9 +95,7 @@ proxy-groups:
   proxies:
   - 🏁RELAY-198.41.222.205-01
   - 🏁RELAY-198.41.223.152-02
-  - 🏁RELAY-172.67.252.147-03
-  - 🏁RELAY-104.24.177.7-04
-  - 🏁RELAY-104.24.176.7-05
+  - 🏁RELAY-198.41.222.205-03
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -138,9 +104,7 @@ proxy-groups:
   proxies:
   - 🏁RELAY-198.41.222.205-01
   - 🏁RELAY-198.41.223.152-02
-  - 🏁RELAY-172.67.252.147-03
-  - 🏁RELAY-104.24.177.7-04
-  - 🏁RELAY-104.24.176.7-05
+  - 🏁RELAY-198.41.222.205-03
 - name: 谷歌服务
   type: select
   proxies:
