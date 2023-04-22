@@ -19,7 +19,7 @@ proxies:
     path: /shirker
     headers:
       Host: nl.sharecentrepro.com
-- name: 🏁RELAY-162.159.128.0-02
+- name: 🏁RELAY-172.67.98.83-02
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -32,8 +32,8 @@ proxies:
   ws-opts:
     path: /shirker
     headers:
-      Host: sg1.sharecentrepro.com
-- name: 🏁RELAY-172.67.98.83-03
+      Host: sg.ilovescp.com
+- name: 🏁RELAY-198.41.208.192-03
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -46,8 +46,8 @@ proxies:
   ws-opts:
     path: /shirker
     headers:
-      Host: hk-hytron.ilovescp.com
-- name: 🏁RELAY-198.41.221.63-04
+      Host: uk1.scproxy.top
+- name: 🏁RELAY-172.67.98.83-04
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -60,7 +60,7 @@ proxies:
   ws-opts:
     path: /shirker
     headers:
-      Host: dp2.scproxy.top
+      Host: dp1.scproxy.top
 proxy-groups:
 - name: 节点选择
   type: select
@@ -89,9 +89,9 @@ proxy-groups:
   type: select
   proxies:
   - 🏁RELAY-172.67.98.83-01
-  - 🏁RELAY-162.159.128.0-02
-  - 🏁RELAY-172.67.98.83-03
-  - 🏁RELAY-198.41.221.63-04
+  - 🏁RELAY-172.67.98.83-02
+  - 🏁RELAY-198.41.208.192-03
+  - 🏁RELAY-172.67.98.83-04
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -99,9 +99,9 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-172.67.98.83-01
-  - 🏁RELAY-162.159.128.0-02
-  - 🏁RELAY-172.67.98.83-03
-  - 🏁RELAY-198.41.221.63-04
+  - 🏁RELAY-172.67.98.83-02
+  - 🏁RELAY-198.41.208.192-03
+  - 🏁RELAY-172.67.98.83-04
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -110,9 +110,9 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-172.67.98.83-01
-  - 🏁RELAY-162.159.128.0-02
-  - 🏁RELAY-172.67.98.83-03
-  - 🏁RELAY-198.41.221.63-04
+  - 🏁RELAY-172.67.98.83-02
+  - 🏁RELAY-198.41.208.192-03
+  - 🏁RELAY-172.67.98.83-04
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -120,9 +120,9 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-172.67.98.83-01
-  - 🏁RELAY-162.159.128.0-02
-  - 🏁RELAY-172.67.98.83-03
-  - 🏁RELAY-198.41.221.63-04
+  - 🏁RELAY-172.67.98.83-02
+  - 🏁RELAY-198.41.208.192-03
+  - 🏁RELAY-172.67.98.83-04
 - name: 谷歌服务
   type: select
   proxies:
