@@ -19,7 +19,7 @@ proxies:
     path: /shirker
     headers:
       Host: nl.sharecentrepro.com
-- name: 🏁RELAY-198.41.208.197-02
+- name: 🏁RELAY-172.67.95.13-02
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -33,7 +33,7 @@ proxies:
     path: /shirker
     headers:
       Host: sg.ilovescp.com
-- name: 🏁RELAY-172.64.163.18-03
+- name: 🏁RELAY-172.67.80.95-03
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -89,8 +89,8 @@ proxy-groups:
   type: select
   proxies:
   - 🏁RELAY-198.41.223.180-01
-  - 🏁RELAY-198.41.208.197-02
-  - 🏁RELAY-172.64.163.18-03
+  - 🏁RELAY-172.67.95.13-02
+  - 🏁RELAY-172.67.80.95-03
   - 🏁RELAY-198.41.223.180-04
 - name: 自动选择
   type: url-test
@@ -99,8 +99,8 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-198.41.223.180-01
-  - 🏁RELAY-198.41.208.197-02
-  - 🏁RELAY-172.64.163.18-03
+  - 🏁RELAY-172.67.95.13-02
+  - 🏁RELAY-172.67.80.95-03
   - 🏁RELAY-198.41.223.180-04
 - name: 负载均衡
   type: load-balance
@@ -110,8 +110,8 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-198.41.223.180-01
-  - 🏁RELAY-198.41.208.197-02
-  - 🏁RELAY-172.64.163.18-03
+  - 🏁RELAY-172.67.95.13-02
+  - 🏁RELAY-172.67.80.95-03
   - 🏁RELAY-198.41.223.180-04
 - name: 失败切换
   type: fallback
@@ -120,8 +120,8 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-198.41.223.180-01
-  - 🏁RELAY-198.41.208.197-02
-  - 🏁RELAY-172.64.163.18-03
+  - 🏁RELAY-172.67.95.13-02
+  - 🏁RELAY-172.67.80.95-03
   - 🏁RELAY-198.41.223.180-04
 - name: 谷歌服务
   type: select
