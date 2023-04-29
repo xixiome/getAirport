@@ -19,7 +19,7 @@ proxies:
     path: /shirker
     headers:
       Host: hk2.ilovescp.com
-- name: 🏁RELAY-198.41.223.81-02
+- name: 🏁RELAY-198.41.223.58-02
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -75,7 +75,7 @@ proxy-groups:
   type: select
   proxies:
   - 🏁RELAY-198.41.223.81-01
-  - 🏁RELAY-198.41.223.81-02
+  - 🏁RELAY-198.41.223.58-02
   - 🏁RELAY-198.41.223.58-03
 - name: 自动选择
   type: url-test
@@ -84,7 +84,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-198.41.223.81-01
-  - 🏁RELAY-198.41.223.81-02
+  - 🏁RELAY-198.41.223.58-02
   - 🏁RELAY-198.41.223.58-03
 - name: 负载均衡
   type: load-balance
@@ -94,7 +94,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-198.41.223.81-01
-  - 🏁RELAY-198.41.223.81-02
+  - 🏁RELAY-198.41.223.58-02
   - 🏁RELAY-198.41.223.58-03
 - name: 失败切换
   type: fallback
@@ -103,7 +103,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-198.41.223.81-01
-  - 🏁RELAY-198.41.223.81-02
+  - 🏁RELAY-198.41.223.58-02
   - 🏁RELAY-198.41.223.58-03
 - name: 谷歌服务
   type: select
