@@ -5,425 +5,7 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🏁RELAY-172.67.81.238-00
-  server: cdnjs.com
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Kansas.kotick.site
-- name: 🏁RELAY-172.67.81.238-01
-  server: cdnjs.com
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Lille.kotick.site
-- name: 🇦🇶NOWHERE-0.0.0.0-02
-  server: a
-  port: 1
-  type: ss
-  cipher: aes-128-gcm
-  password: 59e004fd-959f-4844-9354-1125c9c67333
-- name: 🇦🇶NOWHERE-0.0.0.0-03
-  server: a
-  port: 1
-  type: ss
-  cipher: aes-128-gcm
-  password: 59e004fd-959f-4844-9354-1125c9c67333
-- name: 🇭🇰HK-42.3.25.57-04
-  server: v01.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇨🇳CN-183.255.114.76-05
-  server: v02.jiedian.stream
-  port: 10000
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇨🇳CN-120.241.255.164-06
-  server: v03.jiedian.stream
-  port: 10000
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇭🇰HK-16.162.75.83-07
-  server: v05.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇹🇼TW-114.37.203.120-08
-  server: v06.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇹🇼TW-1.162.60.171-09
-  server: v07.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇹🇼TW-36.231.151.227-10
-  server: v08.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇯🇵JP-43.207.118.49-11
-  server: v11.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇯🇵JP-52.199.57.12-12
-  server: v12.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇯🇵JP-172.104.117.150-13
-  server: v13.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇸🇬SG-54.179.113.61-14
-  server: v16.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇸🇬SG-13.250.113.205-15
-  server: v17.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇸🇬SG-192.46.228.172-16
-  server: v18.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇸🇬SG-188.166.248.6-17
-  server: v19.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇺🇸US-3.144.97.236-18
-  server: v21.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇺🇸US-3.144.97.236-19
-  server: v22.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇺🇸US-104.237.154.117-20
-  server: v23.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇺🇸US-143.110.233.181-21
-  server: v24.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇩🇪DE-3.71.199.15-22
-  server: v26.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇩🇪DE-3.71.199.15-23
-  server: v27.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇩🇪DE-139.144.68.8-24
-  server: v28.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇩🇪DE-209.38.228.43-25
-  server: v29.jiedian.stream
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇺🇸US-154.40.50.224-26
-  server: 154.40.50.224
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇺🇸US-137.184.116.32-27
-  server: 137.184.116.32
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇺🇸US-165.232.136.227-28
-  server: 165.232.136.227
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇺🇸US-192.9.241.40-29
-  server: 192.9.241.40
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🇩🇪DE-130.61.242.14-30
-  server: 130.61.242.14
-  port: 80
-  type: vmess
-  uuid: 59e004fd-959f-4844-9354-1125c9c67333
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-- name: 🏁RELAY-198.41.223.8-32
+- name: 🏁RELAY-172.67.86.249-01
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -437,7 +19,7 @@ proxies:
     path: /shirker
     headers:
       Host: nl.sharecentrepro.com
-- name: 🏁RELAY-198.41.223.64-33
+- name: 🏁RELAY-198.41.223.70-02
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -451,7 +33,7 @@ proxies:
     path: /shirker
     headers:
       Host: in.sharecentrepro.com
-- name: 🏁RELAY-198.41.223.235-34
+- name: 🏁RELAY-198.41.223.64-03
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -465,7 +47,7 @@ proxies:
     path: /shirker
     headers:
       Host: hk-hytron.ilovescp.com
-- name: 🏁RELAY-198.41.214.164-35
+- name: 🏁RELAY-172.67.86.249-04
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -479,6 +61,384 @@ proxies:
     path: /shirker
     headers:
       Host: dp3.scproxy.top
+- name: 🇭🇰HK-42.3.25.57-05
+  server: v01.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇨🇳CN-183.255.114.76-06
+  server: v02.jiedian.stream
+  port: 10000
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇨🇳CN-120.241.255.164-07
+  server: v03.jiedian.stream
+  port: 10000
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇭🇰HK-16.162.75.83-08
+  server: v05.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇹🇼TW-114.37.203.120-09
+  server: v06.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇹🇼TW-1.162.60.171-10
+  server: v07.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇹🇼TW-36.231.151.227-11
+  server: v08.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇯🇵JP-18.176.61.167-12
+  server: v11.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇯🇵JP-13.114.123.228-13
+  server: v12.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇯🇵JP-172.104.77.230-14
+  server: v13.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇸🇬SG-13.212.196.83-15
+  server: v16.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇸🇬SG-13.212.4.70-16
+  server: v17.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇸🇬SG-139.162.41.121-17
+  server: v18.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇸🇬SG-188.166.248.6-18
+  server: v19.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇺🇸US-35.92.37.115-19
+  server: v21.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇺🇸US-35.92.37.115-20
+  server: v22.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇺🇸US-50.116.15.127-21
+  server: v23.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇺🇸US-146.190.156.152-22
+  server: v24.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇩🇪DE-3.76.100.216-23
+  server: v26.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇩🇪DE-3.76.100.216-24
+  server: v27.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇩🇪DE-139.144.68.8-25
+  server: v28.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇩🇪DE-167.172.185.188-26
+  server: v29.jiedian.stream
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇺🇸US-154.40.50.224-27
+  server: 154.40.50.224
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇺🇸US-137.184.116.32-28
+  server: 137.184.116.32
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇺🇸US-165.232.136.227-29
+  server: 165.232.136.227
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇺🇸US-192.9.241.40-30
+  server: 192.9.241.40
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
+- name: 🇩🇪DE-130.61.242.14-31
+  server: 130.61.242.14
+  port: 80
+  type: vmess
+  uuid: 59e004fd-959f-4844-9354-1125c9c67333
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: gw.alicdn.com
 proxy-groups:
 - name: 节点选择
   type: select
@@ -494,91 +454,83 @@ proxy-groups:
 - name: 香港节点
   type: select
   proxies:
-  - 🇭🇰HK-42.3.25.57-04
-  - 🇭🇰HK-16.162.75.83-07
+  - 🇭🇰HK-42.3.25.57-05
+  - 🇭🇰HK-16.162.75.83-08
 - name: 日本节点
   type: select
   proxies:
-  - 🇯🇵JP-43.207.118.49-11
-  - 🇯🇵JP-52.199.57.12-12
-  - 🇯🇵JP-172.104.117.150-13
+  - 🇯🇵JP-18.176.61.167-12
+  - 🇯🇵JP-13.114.123.228-13
+  - 🇯🇵JP-172.104.77.230-14
 - name: 新加坡节点
   type: select
   proxies:
-  - 🇸🇬SG-54.179.113.61-14
-  - 🇸🇬SG-13.250.113.205-15
-  - 🇸🇬SG-192.46.228.172-16
-  - 🇸🇬SG-188.166.248.6-17
+  - 🇸🇬SG-13.212.196.83-15
+  - 🇸🇬SG-13.212.4.70-16
+  - 🇸🇬SG-139.162.41.121-17
+  - 🇸🇬SG-188.166.248.6-18
 - name: 其他节点
   type: select
   proxies:
-  - 🏁RELAY-172.67.81.238-00
-  - 🏁RELAY-172.67.81.238-01
-  - 🇦🇶NOWHERE-0.0.0.0-02
-  - 🇦🇶NOWHERE-0.0.0.0-03
-  - 🇨🇳CN-183.255.114.76-05
-  - 🇨🇳CN-120.241.255.164-06
-  - 🇹🇼TW-114.37.203.120-08
-  - 🇹🇼TW-1.162.60.171-09
-  - 🇹🇼TW-36.231.151.227-10
-  - 🇺🇸US-3.144.97.236-18
-  - 🇺🇸US-3.144.97.236-19
-  - 🇺🇸US-104.237.154.117-20
-  - 🇺🇸US-143.110.233.181-21
-  - 🇩🇪DE-3.71.199.15-22
-  - 🇩🇪DE-3.71.199.15-23
-  - 🇩🇪DE-139.144.68.8-24
-  - 🇩🇪DE-209.38.228.43-25
-  - 🇺🇸US-154.40.50.224-26
-  - 🇺🇸US-137.184.116.32-27
-  - 🇺🇸US-165.232.136.227-28
-  - 🇺🇸US-192.9.241.40-29
-  - 🇩🇪DE-130.61.242.14-30
-  - 🏁RELAY-198.41.223.8-32
-  - 🏁RELAY-198.41.223.64-33
-  - 🏁RELAY-198.41.223.235-34
-  - 🏁RELAY-198.41.214.164-35
+  - 🏁RELAY-172.67.86.249-01
+  - 🏁RELAY-198.41.223.70-02
+  - 🏁RELAY-198.41.223.64-03
+  - 🏁RELAY-172.67.86.249-04
+  - 🇨🇳CN-183.255.114.76-06
+  - 🇨🇳CN-120.241.255.164-07
+  - 🇹🇼TW-114.37.203.120-09
+  - 🇹🇼TW-1.162.60.171-10
+  - 🇹🇼TW-36.231.151.227-11
+  - 🇺🇸US-35.92.37.115-19
+  - 🇺🇸US-35.92.37.115-20
+  - 🇺🇸US-50.116.15.127-21
+  - 🇺🇸US-146.190.156.152-22
+  - 🇩🇪DE-3.76.100.216-23
+  - 🇩🇪DE-3.76.100.216-24
+  - 🇩🇪DE-139.144.68.8-25
+  - 🇩🇪DE-167.172.185.188-26
+  - 🇺🇸US-154.40.50.224-27
+  - 🇺🇸US-137.184.116.32-28
+  - 🇺🇸US-165.232.136.227-29
+  - 🇺🇸US-192.9.241.40-30
+  - 🇩🇪DE-130.61.242.14-31
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.81.238-00
-  - 🏁RELAY-172.67.81.238-01
-  - 🇦🇶NOWHERE-0.0.0.0-02
-  - 🇦🇶NOWHERE-0.0.0.0-03
-  - 🇭🇰HK-42.3.25.57-04
-  - 🇨🇳CN-183.255.114.76-05
-  - 🇨🇳CN-120.241.255.164-06
-  - 🇭🇰HK-16.162.75.83-07
-  - 🇹🇼TW-114.37.203.120-08
-  - 🇹🇼TW-1.162.60.171-09
-  - 🇹🇼TW-36.231.151.227-10
-  - 🇯🇵JP-43.207.118.49-11
-  - 🇯🇵JP-52.199.57.12-12
-  - 🇯🇵JP-172.104.117.150-13
-  - 🇸🇬SG-54.179.113.61-14
-  - 🇸🇬SG-13.250.113.205-15
-  - 🇸🇬SG-192.46.228.172-16
-  - 🇸🇬SG-188.166.248.6-17
-  - 🇺🇸US-3.144.97.236-18
-  - 🇺🇸US-3.144.97.236-19
-  - 🇺🇸US-104.237.154.117-20
-  - 🇺🇸US-143.110.233.181-21
-  - 🇩🇪DE-3.71.199.15-22
-  - 🇩🇪DE-3.71.199.15-23
-  - 🇩🇪DE-139.144.68.8-24
-  - 🇩🇪DE-209.38.228.43-25
-  - 🇺🇸US-154.40.50.224-26
-  - 🇺🇸US-137.184.116.32-27
-  - 🇺🇸US-165.232.136.227-28
-  - 🇺🇸US-192.9.241.40-29
-  - 🇩🇪DE-130.61.242.14-30
-  - 🏁RELAY-198.41.223.8-32
-  - 🏁RELAY-198.41.223.64-33
-  - 🏁RELAY-198.41.223.235-34
-  - 🏁RELAY-198.41.214.164-35
+  - 🏁RELAY-172.67.86.249-01
+  - 🏁RELAY-198.41.223.70-02
+  - 🏁RELAY-198.41.223.64-03
+  - 🏁RELAY-172.67.86.249-04
+  - 🇭🇰HK-42.3.25.57-05
+  - 🇨🇳CN-183.255.114.76-06
+  - 🇨🇳CN-120.241.255.164-07
+  - 🇭🇰HK-16.162.75.83-08
+  - 🇹🇼TW-114.37.203.120-09
+  - 🇹🇼TW-1.162.60.171-10
+  - 🇹🇼TW-36.231.151.227-11
+  - 🇯🇵JP-18.176.61.167-12
+  - 🇯🇵JP-13.114.123.228-13
+  - 🇯🇵JP-172.104.77.230-14
+  - 🇸🇬SG-13.212.196.83-15
+  - 🇸🇬SG-13.212.4.70-16
+  - 🇸🇬SG-139.162.41.121-17
+  - 🇸🇬SG-188.166.248.6-18
+  - 🇺🇸US-35.92.37.115-19
+  - 🇺🇸US-35.92.37.115-20
+  - 🇺🇸US-50.116.15.127-21
+  - 🇺🇸US-146.190.156.152-22
+  - 🇩🇪DE-3.76.100.216-23
+  - 🇩🇪DE-3.76.100.216-24
+  - 🇩🇪DE-139.144.68.8-25
+  - 🇩🇪DE-167.172.185.188-26
+  - 🇺🇸US-154.40.50.224-27
+  - 🇺🇸US-137.184.116.32-28
+  - 🇺🇸US-165.232.136.227-29
+  - 🇺🇸US-192.9.241.40-30
+  - 🇩🇪DE-130.61.242.14-31
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -586,82 +538,74 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.81.238-00
-  - 🏁RELAY-172.67.81.238-01
-  - 🇦🇶NOWHERE-0.0.0.0-02
-  - 🇦🇶NOWHERE-0.0.0.0-03
-  - 🇭🇰HK-42.3.25.57-04
-  - 🇨🇳CN-183.255.114.76-05
-  - 🇨🇳CN-120.241.255.164-06
-  - 🇭🇰HK-16.162.75.83-07
-  - 🇹🇼TW-114.37.203.120-08
-  - 🇹🇼TW-1.162.60.171-09
-  - 🇹🇼TW-36.231.151.227-10
-  - 🇯🇵JP-43.207.118.49-11
-  - 🇯🇵JP-52.199.57.12-12
-  - 🇯🇵JP-172.104.117.150-13
-  - 🇸🇬SG-54.179.113.61-14
-  - 🇸🇬SG-13.250.113.205-15
-  - 🇸🇬SG-192.46.228.172-16
-  - 🇸🇬SG-188.166.248.6-17
-  - 🇺🇸US-3.144.97.236-18
-  - 🇺🇸US-3.144.97.236-19
-  - 🇺🇸US-104.237.154.117-20
-  - 🇺🇸US-143.110.233.181-21
-  - 🇩🇪DE-3.71.199.15-22
-  - 🇩🇪DE-3.71.199.15-23
-  - 🇩🇪DE-139.144.68.8-24
-  - 🇩🇪DE-209.38.228.43-25
-  - 🇺🇸US-154.40.50.224-26
-  - 🇺🇸US-137.184.116.32-27
-  - 🇺🇸US-165.232.136.227-28
-  - 🇺🇸US-192.9.241.40-29
-  - 🇩🇪DE-130.61.242.14-30
-  - 🏁RELAY-198.41.223.8-32
-  - 🏁RELAY-198.41.223.64-33
-  - 🏁RELAY-198.41.223.235-34
-  - 🏁RELAY-198.41.214.164-35
+  - 🏁RELAY-172.67.86.249-01
+  - 🏁RELAY-198.41.223.70-02
+  - 🏁RELAY-198.41.223.64-03
+  - 🏁RELAY-172.67.86.249-04
+  - 🇭🇰HK-42.3.25.57-05
+  - 🇨🇳CN-183.255.114.76-06
+  - 🇨🇳CN-120.241.255.164-07
+  - 🇭🇰HK-16.162.75.83-08
+  - 🇹🇼TW-114.37.203.120-09
+  - 🇹🇼TW-1.162.60.171-10
+  - 🇹🇼TW-36.231.151.227-11
+  - 🇯🇵JP-18.176.61.167-12
+  - 🇯🇵JP-13.114.123.228-13
+  - 🇯🇵JP-172.104.77.230-14
+  - 🇸🇬SG-13.212.196.83-15
+  - 🇸🇬SG-13.212.4.70-16
+  - 🇸🇬SG-139.162.41.121-17
+  - 🇸🇬SG-188.166.248.6-18
+  - 🇺🇸US-35.92.37.115-19
+  - 🇺🇸US-35.92.37.115-20
+  - 🇺🇸US-50.116.15.127-21
+  - 🇺🇸US-146.190.156.152-22
+  - 🇩🇪DE-3.76.100.216-23
+  - 🇩🇪DE-3.76.100.216-24
+  - 🇩🇪DE-139.144.68.8-25
+  - 🇩🇪DE-167.172.185.188-26
+  - 🇺🇸US-154.40.50.224-27
+  - 🇺🇸US-137.184.116.32-28
+  - 🇺🇸US-165.232.136.227-29
+  - 🇺🇸US-192.9.241.40-30
+  - 🇩🇪DE-130.61.242.14-31
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.81.238-00
-  - 🏁RELAY-172.67.81.238-01
-  - 🇦🇶NOWHERE-0.0.0.0-02
-  - 🇦🇶NOWHERE-0.0.0.0-03
-  - 🇭🇰HK-42.3.25.57-04
-  - 🇨🇳CN-183.255.114.76-05
-  - 🇨🇳CN-120.241.255.164-06
-  - 🇭🇰HK-16.162.75.83-07
-  - 🇹🇼TW-114.37.203.120-08
-  - 🇹🇼TW-1.162.60.171-09
-  - 🇹🇼TW-36.231.151.227-10
-  - 🇯🇵JP-43.207.118.49-11
-  - 🇯🇵JP-52.199.57.12-12
-  - 🇯🇵JP-172.104.117.150-13
-  - 🇸🇬SG-54.179.113.61-14
-  - 🇸🇬SG-13.250.113.205-15
-  - 🇸🇬SG-192.46.228.172-16
-  - 🇸🇬SG-188.166.248.6-17
-  - 🇺🇸US-3.144.97.236-18
-  - 🇺🇸US-3.144.97.236-19
-  - 🇺🇸US-104.237.154.117-20
-  - 🇺🇸US-143.110.233.181-21
-  - 🇩🇪DE-3.71.199.15-22
-  - 🇩🇪DE-3.71.199.15-23
-  - 🇩🇪DE-139.144.68.8-24
-  - 🇩🇪DE-209.38.228.43-25
-  - 🇺🇸US-154.40.50.224-26
-  - 🇺🇸US-137.184.116.32-27
-  - 🇺🇸US-165.232.136.227-28
-  - 🇺🇸US-192.9.241.40-29
-  - 🇩🇪DE-130.61.242.14-30
-  - 🏁RELAY-198.41.223.8-32
-  - 🏁RELAY-198.41.223.64-33
-  - 🏁RELAY-198.41.223.235-34
-  - 🏁RELAY-198.41.214.164-35
+  - 🏁RELAY-172.67.86.249-01
+  - 🏁RELAY-198.41.223.70-02
+  - 🏁RELAY-198.41.223.64-03
+  - 🏁RELAY-172.67.86.249-04
+  - 🇭🇰HK-42.3.25.57-05
+  - 🇨🇳CN-183.255.114.76-06
+  - 🇨🇳CN-120.241.255.164-07
+  - 🇭🇰HK-16.162.75.83-08
+  - 🇹🇼TW-114.37.203.120-09
+  - 🇹🇼TW-1.162.60.171-10
+  - 🇹🇼TW-36.231.151.227-11
+  - 🇯🇵JP-18.176.61.167-12
+  - 🇯🇵JP-13.114.123.228-13
+  - 🇯🇵JP-172.104.77.230-14
+  - 🇸🇬SG-13.212.196.83-15
+  - 🇸🇬SG-13.212.4.70-16
+  - 🇸🇬SG-139.162.41.121-17
+  - 🇸🇬SG-188.166.248.6-18
+  - 🇺🇸US-35.92.37.115-19
+  - 🇺🇸US-35.92.37.115-20
+  - 🇺🇸US-50.116.15.127-21
+  - 🇺🇸US-146.190.156.152-22
+  - 🇩🇪DE-3.76.100.216-23
+  - 🇩🇪DE-3.76.100.216-24
+  - 🇩🇪DE-139.144.68.8-25
+  - 🇩🇪DE-167.172.185.188-26
+  - 🇺🇸US-154.40.50.224-27
+  - 🇺🇸US-137.184.116.32-28
+  - 🇺🇸US-165.232.136.227-29
+  - 🇺🇸US-192.9.241.40-30
+  - 🇩🇪DE-130.61.242.14-31
 - name: 谷歌服务
   type: select
   proxies:
