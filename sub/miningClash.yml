@@ -18,8 +18,8 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      Host: Lille.kotick.site
-- name: 🏁RELAY-104.24.177.7-01
+      Host: Amsterdam.kotick.site
+- name: 🏁RELAY-104.24.176.7-01
   server: cdnjs.com
   port: 443
   type: vmess
@@ -33,7 +33,7 @@ proxies:
     path: /speedtest
     headers:
       Host: Kansas.kotick.site
-- name: 🏁RELAY-172.67.160.190-03
+- name: 🏁RELAY-172.64.111.97-03
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -61,7 +61,7 @@ proxies:
     path: /shirker
     headers:
       Host: in.sharecentrepro.com
-- name: 🏁RELAY-198.41.223.31-05
+- name: 🏁RELAY-172.64.111.201-05
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -75,7 +75,7 @@ proxies:
     path: /shirker
     headers:
       Host: ca.ilovescp.com
-- name: 🏁RELAY-172.67.160.190-06
+- name: 🏁RELAY-198.41.223.8-06
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -117,11 +117,11 @@ proxy-groups:
   type: select
   proxies:
   - 🏁RELAY-172.67.81.238-00
-  - 🏁RELAY-104.24.177.7-01
-  - 🏁RELAY-172.67.160.190-03
+  - 🏁RELAY-104.24.176.7-01
+  - 🏁RELAY-172.64.111.97-03
   - 🏁RELAY-198.41.223.31-04
-  - 🏁RELAY-198.41.223.31-05
-  - 🏁RELAY-172.67.160.190-06
+  - 🏁RELAY-172.64.111.201-05
+  - 🏁RELAY-198.41.223.8-06
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -129,11 +129,11 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-172.67.81.238-00
-  - 🏁RELAY-104.24.177.7-01
-  - 🏁RELAY-172.67.160.190-03
+  - 🏁RELAY-104.24.176.7-01
+  - 🏁RELAY-172.64.111.97-03
   - 🏁RELAY-198.41.223.31-04
-  - 🏁RELAY-198.41.223.31-05
-  - 🏁RELAY-172.67.160.190-06
+  - 🏁RELAY-172.64.111.201-05
+  - 🏁RELAY-198.41.223.8-06
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -142,11 +142,11 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-172.67.81.238-00
-  - 🏁RELAY-104.24.177.7-01
-  - 🏁RELAY-172.67.160.190-03
+  - 🏁RELAY-104.24.176.7-01
+  - 🏁RELAY-172.64.111.97-03
   - 🏁RELAY-198.41.223.31-04
-  - 🏁RELAY-198.41.223.31-05
-  - 🏁RELAY-172.67.160.190-06
+  - 🏁RELAY-172.64.111.201-05
+  - 🏁RELAY-198.41.223.8-06
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -154,11 +154,11 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-172.67.81.238-00
-  - 🏁RELAY-104.24.177.7-01
-  - 🏁RELAY-172.67.160.190-03
+  - 🏁RELAY-104.24.176.7-01
+  - 🏁RELAY-172.64.111.97-03
   - 🏁RELAY-198.41.223.31-04
-  - 🏁RELAY-198.41.223.31-05
-  - 🏁RELAY-172.67.160.190-06
+  - 🏁RELAY-172.64.111.201-05
+  - 🏁RELAY-198.41.223.8-06
 - name: 谷歌服务
   type: select
   proxies:
