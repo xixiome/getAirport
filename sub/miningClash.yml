@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🏁RELAY-172.67.44.59-01
+- name: 🏁RELAY-198.41.223.64-01
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -19,7 +19,7 @@ proxies:
     path: /shirker
     headers:
       Host: nl.sharecentrepro.com
-- name: 🏁RELAY-172.67.221.180-02
+- name: 🏁RELAY-198.41.223.77-02
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -33,7 +33,7 @@ proxies:
     path: /shirker
     headers:
       Host: hk-hytron.ilovescp.com
-- name: 🏁RELAY-172.67.111.113-03
+- name: 🏁RELAY-198.41.223.91-03
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -74,18 +74,18 @@ proxy-groups:
 - name: 其他节点
   type: select
   proxies:
-  - 🏁RELAY-172.67.44.59-01
-  - 🏁RELAY-172.67.221.180-02
-  - 🏁RELAY-172.67.111.113-03
+  - 🏁RELAY-198.41.223.64-01
+  - 🏁RELAY-198.41.223.77-02
+  - 🏁RELAY-198.41.223.91-03
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.44.59-01
-  - 🏁RELAY-172.67.221.180-02
-  - 🏁RELAY-172.67.111.113-03
+  - 🏁RELAY-198.41.223.64-01
+  - 🏁RELAY-198.41.223.77-02
+  - 🏁RELAY-198.41.223.91-03
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -93,18 +93,18 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.44.59-01
-  - 🏁RELAY-172.67.221.180-02
-  - 🏁RELAY-172.67.111.113-03
+  - 🏁RELAY-198.41.223.64-01
+  - 🏁RELAY-198.41.223.77-02
+  - 🏁RELAY-198.41.223.91-03
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.44.59-01
-  - 🏁RELAY-172.67.221.180-02
-  - 🏁RELAY-172.67.111.113-03
+  - 🏁RELAY-198.41.223.64-01
+  - 🏁RELAY-198.41.223.77-02
+  - 🏁RELAY-198.41.223.91-03
 - name: 谷歌服务
   type: select
   proxies:
