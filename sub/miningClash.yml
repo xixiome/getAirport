@@ -19,7 +19,7 @@ proxies:
     path: /shirker
     headers:
       Host: nl.sharecentrepro.com
-- name: 🏁RELAY-172.64.160.106-02
+- name: 🏁RELAY-172.64.199.60-02
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -75,7 +75,7 @@ proxy-groups:
   type: select
   proxies:
   - 🏁RELAY-172.64.94.21-01
-  - 🏁RELAY-172.64.160.106-02
+  - 🏁RELAY-172.64.199.60-02
   - 🏁RELAY-172.64.94.21-03
 - name: 自动选择
   type: url-test
@@ -84,7 +84,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-172.64.94.21-01
-  - 🏁RELAY-172.64.160.106-02
+  - 🏁RELAY-172.64.199.60-02
   - 🏁RELAY-172.64.94.21-03
 - name: 负载均衡
   type: load-balance
@@ -94,7 +94,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-172.64.94.21-01
-  - 🏁RELAY-172.64.160.106-02
+  - 🏁RELAY-172.64.199.60-02
   - 🏁RELAY-172.64.94.21-03
 - name: 失败切换
   type: fallback
@@ -103,7 +103,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-172.64.94.21-01
-  - 🏁RELAY-172.64.160.106-02
+  - 🏁RELAY-172.64.199.60-02
   - 🏁RELAY-172.64.94.21-03
 - name: 谷歌服务
   type: select
