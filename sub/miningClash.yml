@@ -18,7 +18,7 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      Host: Dusseldorf.kotick.site
+      Host: Lille.kotick.site
 - name: 🏁RELAY-172.67.197.17-01
   server: 172.67.197.17
   port: 443
@@ -32,8 +32,8 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      Host: Lille.kotick.site
-- name: 🏁RELAY-172.67.112.197-03
+      Host: Dusseldorf.kotick.site
+- name: 🏁RELAY-198.41.223.138-03
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -47,7 +47,7 @@ proxies:
     path: /shirker
     headers:
       Host: nl.sharecentrepro.com
-- name: 🏁RELAY-172.67.112.197-04
+- name: 🏁RELAY-198.41.223.180-04
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -61,7 +61,7 @@ proxies:
     path: /shirker
     headers:
       Host: lv1.sharecentrepro.org
-- name: 🏁RELAY-172.67.112.197-05
+- name: 🏁RELAY-198.41.223.138-05
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -104,9 +104,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.67.197.17-00
   - 🏁RELAY-172.67.197.17-01
-  - 🏁RELAY-172.67.112.197-03
-  - 🏁RELAY-172.67.112.197-04
-  - 🏁RELAY-172.67.112.197-05
+  - 🏁RELAY-198.41.223.138-03
+  - 🏁RELAY-198.41.223.180-04
+  - 🏁RELAY-198.41.223.138-05
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -115,9 +115,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.67.197.17-00
   - 🏁RELAY-172.67.197.17-01
-  - 🏁RELAY-172.67.112.197-03
-  - 🏁RELAY-172.67.112.197-04
-  - 🏁RELAY-172.67.112.197-05
+  - 🏁RELAY-198.41.223.138-03
+  - 🏁RELAY-198.41.223.180-04
+  - 🏁RELAY-198.41.223.138-05
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -127,9 +127,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.67.197.17-00
   - 🏁RELAY-172.67.197.17-01
-  - 🏁RELAY-172.67.112.197-03
-  - 🏁RELAY-172.67.112.197-04
-  - 🏁RELAY-172.67.112.197-05
+  - 🏁RELAY-198.41.223.138-03
+  - 🏁RELAY-198.41.223.180-04
+  - 🏁RELAY-198.41.223.138-05
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -138,9 +138,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.67.197.17-00
   - 🏁RELAY-172.67.197.17-01
-  - 🏁RELAY-172.67.112.197-03
-  - 🏁RELAY-172.67.112.197-04
-  - 🏁RELAY-172.67.112.197-05
+  - 🏁RELAY-198.41.223.138-03
+  - 🏁RELAY-198.41.223.180-04
+  - 🏁RELAY-198.41.223.138-05
 - name: 谷歌服务
   type: select
   proxies:
