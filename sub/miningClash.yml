@@ -32,7 +32,7 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      Host: Amsterdam.bobbykotick.rip
+      Host: Dusseldorf.bobbykotick.rip
 - name: 🏁RELAY-198.41.223.78-03
   server: cf-lt.sharecentre.online
   port: 80
@@ -47,7 +47,7 @@ proxies:
     path: /shirker
     headers:
       Host: nl.sharecentrepro.com
-- name: 🏁RELAY-198.41.223.250-04
+- name: 🏁RELAY-198.41.223.56-04
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -61,7 +61,7 @@ proxies:
     path: /shirker
     headers:
       Host: lv1.sharecentrepro.org
-- name: 🏁RELAY-198.41.223.76-05
+- name: 🏁RELAY-198.41.223.211-05
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -105,8 +105,8 @@ proxy-groups:
   - 🏁RELAY-104.21.59.157-00
   - 🏁RELAY-172.67.180.138-01
   - 🏁RELAY-198.41.223.78-03
-  - 🏁RELAY-198.41.223.250-04
-  - 🏁RELAY-198.41.223.76-05
+  - 🏁RELAY-198.41.223.56-04
+  - 🏁RELAY-198.41.223.211-05
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -116,8 +116,8 @@ proxy-groups:
   - 🏁RELAY-104.21.59.157-00
   - 🏁RELAY-172.67.180.138-01
   - 🏁RELAY-198.41.223.78-03
-  - 🏁RELAY-198.41.223.250-04
-  - 🏁RELAY-198.41.223.76-05
+  - 🏁RELAY-198.41.223.56-04
+  - 🏁RELAY-198.41.223.211-05
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -128,8 +128,8 @@ proxy-groups:
   - 🏁RELAY-104.21.59.157-00
   - 🏁RELAY-172.67.180.138-01
   - 🏁RELAY-198.41.223.78-03
-  - 🏁RELAY-198.41.223.250-04
-  - 🏁RELAY-198.41.223.76-05
+  - 🏁RELAY-198.41.223.56-04
+  - 🏁RELAY-198.41.223.211-05
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -139,8 +139,8 @@ proxy-groups:
   - 🏁RELAY-104.21.59.157-00
   - 🏁RELAY-172.67.180.138-01
   - 🏁RELAY-198.41.223.78-03
-  - 🏁RELAY-198.41.223.250-04
-  - 🏁RELAY-198.41.223.76-05
+  - 🏁RELAY-198.41.223.56-04
+  - 🏁RELAY-198.41.223.211-05
 - name: 谷歌服务
   type: select
   proxies:
