@@ -18,8 +18,8 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      Host: Lille.bobbykotick.rip
-- name: 🏁RELAY-104.21.59.157-01
+      Host: Dusseldorf.bobbykotick.rip
+- name: 🏁RELAY-172.67.180.138-01
   server: bobbykotick.rip
   port: 443
   type: vmess
@@ -32,8 +32,8 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      Host: Kansas.bobbykotick.rip
-- name: 🏁RELAY-172.64.166.186-03
+      Host: Amsterdam.bobbykotick.rip
+- name: 🏁RELAY-198.41.223.14-03
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -47,7 +47,7 @@ proxies:
     path: /shirker
     headers:
       Host: nl.sharecentrepro.com
-- name: 🏁RELAY-172.67.185.49-04
+- name: 🏁RELAY-198.41.223.42-04
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -61,7 +61,7 @@ proxies:
     path: /shirker
     headers:
       Host: nl2.sharecentrepro.com
-- name: 🏁RELAY-198.41.223.232-05
+- name: 🏁RELAY-198.41.223.57-05
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -75,7 +75,7 @@ proxies:
     path: /shirker
     headers:
       Host: nl3.sharecentrepro.org
-- name: 🏁RELAY-172.67.253.243-06
+- name: 🏁RELAY-198.41.223.14-06
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -112,15 +112,15 @@ proxy-groups:
 - name: 新加坡节点
   type: select
   proxies:
-  - 🏁RELAY-172.67.253.243-06
+  - 🏁RELAY-198.41.223.14-06
 - name: 其他节点
   type: select
   proxies:
   - 🏁RELAY-104.21.59.157-00
-  - 🏁RELAY-104.21.59.157-01
-  - 🏁RELAY-172.64.166.186-03
-  - 🏁RELAY-172.67.185.49-04
-  - 🏁RELAY-198.41.223.232-05
+  - 🏁RELAY-172.67.180.138-01
+  - 🏁RELAY-198.41.223.14-03
+  - 🏁RELAY-198.41.223.42-04
+  - 🏁RELAY-198.41.223.57-05
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -128,11 +128,11 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-104.21.59.157-00
-  - 🏁RELAY-104.21.59.157-01
-  - 🏁RELAY-172.64.166.186-03
-  - 🏁RELAY-172.67.185.49-04
-  - 🏁RELAY-198.41.223.232-05
-  - 🏁RELAY-172.67.253.243-06
+  - 🏁RELAY-172.67.180.138-01
+  - 🏁RELAY-198.41.223.14-03
+  - 🏁RELAY-198.41.223.42-04
+  - 🏁RELAY-198.41.223.57-05
+  - 🏁RELAY-198.41.223.14-06
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -141,11 +141,11 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-104.21.59.157-00
-  - 🏁RELAY-104.21.59.157-01
-  - 🏁RELAY-172.64.166.186-03
-  - 🏁RELAY-172.67.185.49-04
-  - 🏁RELAY-198.41.223.232-05
-  - 🏁RELAY-172.67.253.243-06
+  - 🏁RELAY-172.67.180.138-01
+  - 🏁RELAY-198.41.223.14-03
+  - 🏁RELAY-198.41.223.42-04
+  - 🏁RELAY-198.41.223.57-05
+  - 🏁RELAY-198.41.223.14-06
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -153,11 +153,11 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-104.21.59.157-00
-  - 🏁RELAY-104.21.59.157-01
-  - 🏁RELAY-172.64.166.186-03
-  - 🏁RELAY-172.67.185.49-04
-  - 🏁RELAY-198.41.223.232-05
-  - 🏁RELAY-172.67.253.243-06
+  - 🏁RELAY-172.67.180.138-01
+  - 🏁RELAY-198.41.223.14-03
+  - 🏁RELAY-198.41.223.42-04
+  - 🏁RELAY-198.41.223.57-05
+  - 🏁RELAY-198.41.223.14-06
 - name: 谷歌服务
   type: select
   proxies:
