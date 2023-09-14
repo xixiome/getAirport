@@ -5,35 +5,7 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🏁RELAY-172.64.80.1-00
-  server: bobbykotick.rip
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Dusseldorf.bobbykotick.rip
-- name: 🏁RELAY-172.64.80.1-01
-  server: bobbykotick.rip
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Lille.bobbykotick.rip
-- name: 🏁RELAY-172.67.216.101-03
+- name: 🏁RELAY-198.41.223.197-01
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -47,7 +19,7 @@ proxies:
     path: /shirker
     headers:
       Host: nl.sharecentrepro.com
-- name: 🏁RELAY-172.67.216.101-04
+- name: 🏁RELAY-198.41.223.209-02
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -61,7 +33,7 @@ proxies:
     path: /shirker
     headers:
       Host: fr.ilovescp.com
-- name: 🏁RELAY-198.41.223.197-05
+- name: 🏁RELAY-198.41.223.91-03
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -75,7 +47,7 @@ proxies:
     path: /shirker
     headers:
       Host: uk2.scproxy.top
-- name: 🏁RELAY-172.67.105.15-06
+- name: 🏁RELAY-198.41.223.91-04
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -89,6 +61,34 @@ proxies:
     path: /shirker
     headers:
       Host: hk.ilovescp.com
+- name: 🏁RELAY-172.67.180.138-05
+  server: bobbykotick.rip
+  port: 443
+  type: vmess
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /speedtest
+    headers:
+      Host: Amsterdam.bobbykotick.rip
+- name: 🏁RELAY-172.67.180.138-06
+  server: bobbykotick.rip
+  port: 443
+  type: vmess
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /speedtest
+    headers:
+      Host: Lille.bobbykotick.rip
 proxy-groups:
 - name: 节点选择
   type: select
@@ -116,24 +116,24 @@ proxy-groups:
 - name: 其他节点
   type: select
   proxies:
-  - 🏁RELAY-172.64.80.1-00
-  - 🏁RELAY-172.64.80.1-01
-  - 🏁RELAY-172.67.216.101-03
-  - 🏁RELAY-172.67.216.101-04
-  - 🏁RELAY-198.41.223.197-05
-  - 🏁RELAY-172.67.105.15-06
+  - 🏁RELAY-198.41.223.197-01
+  - 🏁RELAY-198.41.223.209-02
+  - 🏁RELAY-198.41.223.91-03
+  - 🏁RELAY-198.41.223.91-04
+  - 🏁RELAY-172.67.180.138-05
+  - 🏁RELAY-172.67.180.138-06
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.64.80.1-00
-  - 🏁RELAY-172.64.80.1-01
-  - 🏁RELAY-172.67.216.101-03
-  - 🏁RELAY-172.67.216.101-04
-  - 🏁RELAY-198.41.223.197-05
-  - 🏁RELAY-172.67.105.15-06
+  - 🏁RELAY-198.41.223.197-01
+  - 🏁RELAY-198.41.223.209-02
+  - 🏁RELAY-198.41.223.91-03
+  - 🏁RELAY-198.41.223.91-04
+  - 🏁RELAY-172.67.180.138-05
+  - 🏁RELAY-172.67.180.138-06
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -141,24 +141,24 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.64.80.1-00
-  - 🏁RELAY-172.64.80.1-01
-  - 🏁RELAY-172.67.216.101-03
-  - 🏁RELAY-172.67.216.101-04
-  - 🏁RELAY-198.41.223.197-05
-  - 🏁RELAY-172.67.105.15-06
+  - 🏁RELAY-198.41.223.197-01
+  - 🏁RELAY-198.41.223.209-02
+  - 🏁RELAY-198.41.223.91-03
+  - 🏁RELAY-198.41.223.91-04
+  - 🏁RELAY-172.67.180.138-05
+  - 🏁RELAY-172.67.180.138-06
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.64.80.1-00
-  - 🏁RELAY-172.64.80.1-01
-  - 🏁RELAY-172.67.216.101-03
-  - 🏁RELAY-172.67.216.101-04
-  - 🏁RELAY-198.41.223.197-05
-  - 🏁RELAY-172.67.105.15-06
+  - 🏁RELAY-198.41.223.197-01
+  - 🏁RELAY-198.41.223.209-02
+  - 🏁RELAY-198.41.223.91-03
+  - 🏁RELAY-198.41.223.91-04
+  - 🏁RELAY-172.67.180.138-05
+  - 🏁RELAY-172.67.180.138-06
 - name: 谷歌服务
   type: select
   proxies:
