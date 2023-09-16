@@ -18,7 +18,7 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      Host: Amsterdam.bobbykotick.rip
+      Host: Dusseldorf.bobbykotick.rip
 - name: 🏁RELAY-172.67.180.138-01
   server: bobbykotick.rip
   port: 443
@@ -32,8 +32,8 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      Host: Dusseldorf.bobbykotick.rip
-- name: 🏁RELAY-198.41.208.170-03
+      Host: Lille.bobbykotick.rip
+- name: 🏁RELAY-172.67.84.44-03
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -47,7 +47,7 @@ proxies:
     path: /shirker
     headers:
       Host: nl.sharecentrepro.com
-- name: 🏁RELAY-172.67.124.74-04
+- name: 🏁RELAY-172.67.84.44-04
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -61,7 +61,7 @@ proxies:
     path: /shirker
     headers:
       Host: fr.ilovescp.com
-- name: 🏁RELAY-198.41.221.93-05
+- name: 🏁RELAY-162.159.36.95-05
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -104,9 +104,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.67.180.138-00
   - 🏁RELAY-172.67.180.138-01
-  - 🏁RELAY-198.41.208.170-03
-  - 🏁RELAY-172.67.124.74-04
-  - 🏁RELAY-198.41.221.93-05
+  - 🏁RELAY-172.67.84.44-03
+  - 🏁RELAY-172.67.84.44-04
+  - 🏁RELAY-162.159.36.95-05
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -115,9 +115,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.67.180.138-00
   - 🏁RELAY-172.67.180.138-01
-  - 🏁RELAY-198.41.208.170-03
-  - 🏁RELAY-172.67.124.74-04
-  - 🏁RELAY-198.41.221.93-05
+  - 🏁RELAY-172.67.84.44-03
+  - 🏁RELAY-172.67.84.44-04
+  - 🏁RELAY-162.159.36.95-05
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -127,9 +127,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.67.180.138-00
   - 🏁RELAY-172.67.180.138-01
-  - 🏁RELAY-198.41.208.170-03
-  - 🏁RELAY-172.67.124.74-04
-  - 🏁RELAY-198.41.221.93-05
+  - 🏁RELAY-172.67.84.44-03
+  - 🏁RELAY-172.67.84.44-04
+  - 🏁RELAY-162.159.36.95-05
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -138,9 +138,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.67.180.138-00
   - 🏁RELAY-172.67.180.138-01
-  - 🏁RELAY-198.41.208.170-03
-  - 🏁RELAY-172.67.124.74-04
-  - 🏁RELAY-198.41.221.93-05
+  - 🏁RELAY-172.67.84.44-03
+  - 🏁RELAY-172.67.84.44-04
+  - 🏁RELAY-162.159.36.95-05
 - name: 谷歌服务
   type: select
   proxies:
