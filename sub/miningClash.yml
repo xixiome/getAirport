@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🏁RELAY-172.67.86.105-01
+- name: 🏁RELAY-198.41.208.179-01
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -19,7 +19,7 @@ proxies:
     path: /shirker
     headers:
       Host: nl.sharecentrepro.com
-- name: 🏁RELAY-172.67.141.126-02
+- name: 🏁RELAY-172.67.86.105-02
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -33,7 +33,7 @@ proxies:
     path: /shirker
     headers:
       Host: fr.ilovescp.com
-- name: 🏁RELAY-198.41.208.179-03
+- name: 🏁RELAY-172.67.86.105-03
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -74,7 +74,7 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      Host: Dusseldorf.bobbykotick.rip
+      Host: Lille.bobbykotick.rip
 proxy-groups:
 - name: 节点选择
   type: select
@@ -102,9 +102,9 @@ proxy-groups:
 - name: 其他节点
   type: select
   proxies:
-  - 🏁RELAY-172.67.86.105-01
-  - 🏁RELAY-172.67.141.126-02
-  - 🏁RELAY-198.41.208.179-03
+  - 🏁RELAY-198.41.208.179-01
+  - 🏁RELAY-172.67.86.105-02
+  - 🏁RELAY-172.67.86.105-03
   - 🏁RELAY-104.21.59.157-04
   - 🏁RELAY-104.21.59.157-05
 - name: 自动选择
@@ -113,9 +113,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.86.105-01
-  - 🏁RELAY-172.67.141.126-02
-  - 🏁RELAY-198.41.208.179-03
+  - 🏁RELAY-198.41.208.179-01
+  - 🏁RELAY-172.67.86.105-02
+  - 🏁RELAY-172.67.86.105-03
   - 🏁RELAY-104.21.59.157-04
   - 🏁RELAY-104.21.59.157-05
 - name: 负载均衡
@@ -125,9 +125,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.86.105-01
-  - 🏁RELAY-172.67.141.126-02
-  - 🏁RELAY-198.41.208.179-03
+  - 🏁RELAY-198.41.208.179-01
+  - 🏁RELAY-172.67.86.105-02
+  - 🏁RELAY-172.67.86.105-03
   - 🏁RELAY-104.21.59.157-04
   - 🏁RELAY-104.21.59.157-05
 - name: 失败切换
@@ -136,9 +136,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.86.105-01
-  - 🏁RELAY-172.67.141.126-02
-  - 🏁RELAY-198.41.208.179-03
+  - 🏁RELAY-198.41.208.179-01
+  - 🏁RELAY-172.67.86.105-02
+  - 🏁RELAY-172.67.86.105-03
   - 🏁RELAY-104.21.59.157-04
   - 🏁RELAY-104.21.59.157-05
 - name: 谷歌服务
