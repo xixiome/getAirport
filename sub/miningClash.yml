@@ -5,63 +5,7 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🏁RELAY-198.41.208.179-01
-  server: cf-lt.sharecentre.online
-  port: 80
-  type: vmess
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /shirker
-    headers:
-      Host: nl.sharecentrepro.com
-- name: 🏁RELAY-172.67.86.105-02
-  server: cf-lt.sharecentre.online
-  port: 80
-  type: vmess
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /shirker
-    headers:
-      Host: fr.ilovescp.com
-- name: 🏁RELAY-172.67.86.105-03
-  server: cf-lt.sharecentre.online
-  port: 80
-  type: vmess
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /shirker
-    headers:
-      Host: lv2.scproxy.top
-- name: 🏁RELAY-104.21.59.157-04
-  server: bobbykotick.rip
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Amsterdam.bobbykotick.rip
-- name: 🏁RELAY-104.21.59.157-05
+- name: 🏁RELAY-172.64.80.1-00
   server: bobbykotick.rip
   port: 443
   type: vmess
@@ -75,6 +19,62 @@ proxies:
     path: /speedtest
     headers:
       Host: Lille.bobbykotick.rip
+- name: 🏁RELAY-172.64.80.1-01
+  server: bobbykotick.rip
+  port: 443
+  type: vmess
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /speedtest
+    headers:
+      Host: Dusseldorf.bobbykotick.rip
+- name: 🏁RELAY-172.67.180.154-03
+  server: cf-lt.sharecentre.online
+  port: 80
+  type: vmess
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /shirker
+    headers:
+      Host: nl.sharecentrepro.com
+- name: 🏁RELAY-172.67.67.237-04
+  server: cf-lt.sharecentre.online
+  port: 80
+  type: vmess
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /shirker
+    headers:
+      Host: fr.ilovescp.com
+- name: 🏁RELAY-172.67.93.6-05
+  server: cf-lt.sharecentre.online
+  port: 80
+  type: vmess
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /shirker
+    headers:
+      Host: lv2.scproxy.top
 proxy-groups:
 - name: 节点选择
   type: select
@@ -102,22 +102,22 @@ proxy-groups:
 - name: 其他节点
   type: select
   proxies:
-  - 🏁RELAY-198.41.208.179-01
-  - 🏁RELAY-172.67.86.105-02
-  - 🏁RELAY-172.67.86.105-03
-  - 🏁RELAY-104.21.59.157-04
-  - 🏁RELAY-104.21.59.157-05
+  - 🏁RELAY-172.64.80.1-00
+  - 🏁RELAY-172.64.80.1-01
+  - 🏁RELAY-172.67.180.154-03
+  - 🏁RELAY-172.67.67.237-04
+  - 🏁RELAY-172.67.93.6-05
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-198.41.208.179-01
-  - 🏁RELAY-172.67.86.105-02
-  - 🏁RELAY-172.67.86.105-03
-  - 🏁RELAY-104.21.59.157-04
-  - 🏁RELAY-104.21.59.157-05
+  - 🏁RELAY-172.64.80.1-00
+  - 🏁RELAY-172.64.80.1-01
+  - 🏁RELAY-172.67.180.154-03
+  - 🏁RELAY-172.67.67.237-04
+  - 🏁RELAY-172.67.93.6-05
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -125,22 +125,22 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-198.41.208.179-01
-  - 🏁RELAY-172.67.86.105-02
-  - 🏁RELAY-172.67.86.105-03
-  - 🏁RELAY-104.21.59.157-04
-  - 🏁RELAY-104.21.59.157-05
+  - 🏁RELAY-172.64.80.1-00
+  - 🏁RELAY-172.64.80.1-01
+  - 🏁RELAY-172.67.180.154-03
+  - 🏁RELAY-172.67.67.237-04
+  - 🏁RELAY-172.67.93.6-05
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-198.41.208.179-01
-  - 🏁RELAY-172.67.86.105-02
-  - 🏁RELAY-172.67.86.105-03
-  - 🏁RELAY-104.21.59.157-04
-  - 🏁RELAY-104.21.59.157-05
+  - 🏁RELAY-172.64.80.1-00
+  - 🏁RELAY-172.64.80.1-01
+  - 🏁RELAY-172.67.180.154-03
+  - 🏁RELAY-172.67.67.237-04
+  - 🏁RELAY-172.67.93.6-05
 - name: 谷歌服务
   type: select
   proxies:
