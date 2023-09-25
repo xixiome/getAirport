@@ -19,7 +19,7 @@ proxies:
     path: /scp
     headers:
       Host: nl.sharecentrepro.com
-- name: 🏁RELAY-198.41.215.80-02
+- name: 🏁RELAY-172.67.86.205-02
   server: cf-lt.sharecentre.online
   port: 443
   type: vmess
@@ -33,7 +33,7 @@ proxies:
     path: /scp
     headers:
       Host: fr.ilovescp.com
-- name: 🏁RELAY-141.101.122.105-03
+- name: 🏁RELAY-172.67.86.205-03
   server: cf-lt.sharecentre.online
   port: 443
   type: vmess
@@ -75,8 +75,8 @@ proxy-groups:
   type: select
   proxies:
   - 🏁RELAY-198.41.214.105-01
-  - 🏁RELAY-198.41.215.80-02
-  - 🏁RELAY-141.101.122.105-03
+  - 🏁RELAY-172.67.86.205-02
+  - 🏁RELAY-172.67.86.205-03
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -84,8 +84,8 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-198.41.214.105-01
-  - 🏁RELAY-198.41.215.80-02
-  - 🏁RELAY-141.101.122.105-03
+  - 🏁RELAY-172.67.86.205-02
+  - 🏁RELAY-172.67.86.205-03
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -94,8 +94,8 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-198.41.214.105-01
-  - 🏁RELAY-198.41.215.80-02
-  - 🏁RELAY-141.101.122.105-03
+  - 🏁RELAY-172.67.86.205-02
+  - 🏁RELAY-172.67.86.205-03
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -103,8 +103,8 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-198.41.214.105-01
-  - 🏁RELAY-198.41.215.80-02
-  - 🏁RELAY-141.101.122.105-03
+  - 🏁RELAY-172.67.86.205-02
+  - 🏁RELAY-172.67.86.205-03
 - name: 谷歌服务
   type: select
   proxies:
