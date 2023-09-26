@@ -5,23 +5,9 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🏁RELAY-172.67.95.232-01
+- name: 🏁RELAY-172.67.237.205-01
   server: cf-lt.sharecentre.online
-  port: 443
-  type: vmess
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /scp
-    headers:
-      Host: nl.sharecentrepro.com
-- name: 🏁RELAY-172.67.67.128-02
-  server: cf-lt.sharecentre.online
-  port: 443
+  port: 80
   type: vmess
   uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
   alterId: 0
@@ -32,23 +18,23 @@ proxies:
   ws-opts:
     path: /scp
     headers:
-      Host: fr.ilovescp.com
+      Host: uk.ipad.monster
+- name: 🏁RELAY-172.67.69.149-02
+  server: cf-lt.sharecentre.online
+  port: 80
+  type: vmess
+  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /scp
+    headers:
+      Host: fr.ipad.monster
 - name: 🏁RELAY-172.67.67.128-03
   server: cf-lt.sharecentre.online
-  port: 443
-  type: vmess
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /scp
-    headers:
-      Host: lv2.scproxy.top
-- name: 🏁RELAY-172.67.69.149-04
-  server: cf-lt.sharecentre.online
   port: 80
   type: vmess
   uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
@@ -60,21 +46,7 @@ proxies:
   ws-opts:
     path: /scp
     headers:
-      Host: buyvm3.fastfrog.online
-- name: 🏁RELAY-172.67.121.27-05
-  server: cf-lt.sharecentre.online
-  port: 80
-  type: vmess
-  uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /scp
-    headers:
-      Host: buyvm5.fastfrog.online
+      Host: buyvm4.ipad.monster
 proxy-groups:
 - name: 节点选择
   type: select
@@ -102,22 +74,18 @@ proxy-groups:
 - name: 其他节点
   type: select
   proxies:
-  - 🏁RELAY-172.67.95.232-01
-  - 🏁RELAY-172.67.67.128-02
+  - 🏁RELAY-172.67.237.205-01
+  - 🏁RELAY-172.67.69.149-02
   - 🏁RELAY-172.67.67.128-03
-  - 🏁RELAY-172.67.69.149-04
-  - 🏁RELAY-172.67.121.27-05
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.95.232-01
-  - 🏁RELAY-172.67.67.128-02
+  - 🏁RELAY-172.67.237.205-01
+  - 🏁RELAY-172.67.69.149-02
   - 🏁RELAY-172.67.67.128-03
-  - 🏁RELAY-172.67.69.149-04
-  - 🏁RELAY-172.67.121.27-05
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -125,22 +93,18 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.95.232-01
-  - 🏁RELAY-172.67.67.128-02
+  - 🏁RELAY-172.67.237.205-01
+  - 🏁RELAY-172.67.69.149-02
   - 🏁RELAY-172.67.67.128-03
-  - 🏁RELAY-172.67.69.149-04
-  - 🏁RELAY-172.67.121.27-05
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-172.67.95.232-01
-  - 🏁RELAY-172.67.67.128-02
+  - 🏁RELAY-172.67.237.205-01
+  - 🏁RELAY-172.67.69.149-02
   - 🏁RELAY-172.67.67.128-03
-  - 🏁RELAY-172.67.69.149-04
-  - 🏁RELAY-172.67.121.27-05
 - name: 谷歌服务
   type: select
   proxies:
