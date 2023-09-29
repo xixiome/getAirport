@@ -18,7 +18,7 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      Host: Kansas.bobbykotick.rip
+      Host: Lille.bobbykotick.rip
 - name: 🏁RELAY-172.64.80.1-01
   server: bobbykotick.rip
   port: 443
@@ -32,8 +32,8 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      Host: Amsterdam.bobbykotick.rip
-- name: 🏁RELAY-172.67.91.105-03
+      Host: Dusseldorf.bobbykotick.rip
+- name: 🏁RELAY-172.67.96.59-03
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -44,10 +44,10 @@ proxies:
   network: ws
   tls: false
   ws-opts:
-    path: /ah2h3
+    path: /abandon
     headers:
       Host: uk.ipad.monster
-- name: 🏁RELAY-172.64.92.189-04
+- name: 🏁RELAY-172.67.95.232-04
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -58,10 +58,10 @@ proxies:
   network: ws
   tls: false
   ws-opts:
-    path: /ah2h3
+    path: /abandon
     headers:
       Host: fr.ipad.monster
-- name: 🏁RELAY-172.67.44.91-05
+- name: 🏁RELAY-172.67.139.147-05
   server: cf-lt.sharecentre.online
   port: 80
   type: vmess
@@ -72,7 +72,7 @@ proxies:
   network: ws
   tls: false
   ws-opts:
-    path: /ah2h3
+    path: /abandon
     headers:
       Host: buyvm4.ipad.monster
 proxy-groups:
@@ -104,9 +104,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.64.80.1-00
   - 🏁RELAY-172.64.80.1-01
-  - 🏁RELAY-172.67.91.105-03
-  - 🏁RELAY-172.64.92.189-04
-  - 🏁RELAY-172.67.44.91-05
+  - 🏁RELAY-172.67.96.59-03
+  - 🏁RELAY-172.67.95.232-04
+  - 🏁RELAY-172.67.139.147-05
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -115,9 +115,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.64.80.1-00
   - 🏁RELAY-172.64.80.1-01
-  - 🏁RELAY-172.67.91.105-03
-  - 🏁RELAY-172.64.92.189-04
-  - 🏁RELAY-172.67.44.91-05
+  - 🏁RELAY-172.67.96.59-03
+  - 🏁RELAY-172.67.95.232-04
+  - 🏁RELAY-172.67.139.147-05
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -127,9 +127,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.64.80.1-00
   - 🏁RELAY-172.64.80.1-01
-  - 🏁RELAY-172.67.91.105-03
-  - 🏁RELAY-172.64.92.189-04
-  - 🏁RELAY-172.67.44.91-05
+  - 🏁RELAY-172.67.96.59-03
+  - 🏁RELAY-172.67.95.232-04
+  - 🏁RELAY-172.67.139.147-05
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -138,9 +138,9 @@ proxy-groups:
   proxies:
   - 🏁RELAY-172.64.80.1-00
   - 🏁RELAY-172.64.80.1-01
-  - 🏁RELAY-172.67.91.105-03
-  - 🏁RELAY-172.64.92.189-04
-  - 🏁RELAY-172.67.44.91-05
+  - 🏁RELAY-172.67.96.59-03
+  - 🏁RELAY-172.67.95.232-04
+  - 🏁RELAY-172.67.139.147-05
 - name: 谷歌服务
   type: select
   proxies:
