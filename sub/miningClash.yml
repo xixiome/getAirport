@@ -5,7 +5,91 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🏁RELAY-104.16.168.131-00
+- name: 🇯🇵JP-54.64.15.175-00
+  server: cfzzo.starnetcn.top
+  port: 30091
+  type: vmess
+  uuid: 95e3c4c4-5540-4b2e-ac07-a7505f4a9313
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /1c1123
+    headers:
+      Host: 168.138.47.178
+- name: 🇸🇬SG-52.221.127.156-01
+  server: cfzzb.starnetcn.top
+  port: 30091
+  type: vmess
+  uuid: 95e3c4c4-5540-4b2e-ac07-a7505f4a9313
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /1c1123
+    headers:
+      Host: 168.138.47.178
+- name: 🇯🇵JP-54.64.15.175-02
+  server: cfzzo.starnetcn.top
+  port: 30092
+  type: vmess
+  uuid: 95e3c4c4-5540-4b2e-ac07-a7505f4a9313
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /1c1123
+    headers:
+      Host: 127.0.0.1
+- name: 🇸🇬SG-52.221.127.156-03
+  server: cfzzb.starnetcn.top
+  port: 30092
+  type: vmess
+  uuid: 95e3c4c4-5540-4b2e-ac07-a7505f4a9313
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /1c1123
+    headers:
+      Host: 127.0.0.1
+- name: 🇯🇵JP-54.64.15.175-04
+  server: cfzzo.starnetcn.top
+  port: 30090
+  type: vmess
+  uuid: 95e3c4c4-5540-4b2e-ac07-a7505f4a9313
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /1c1123
+    headers:
+      Host: cfzzs.starnetcn.top
+- name: 🇸🇬SG-52.221.127.156-05
+  server: cfzzb.starnetcn.top
+  port: 30090
+  type: vmess
+  uuid: 95e3c4c4-5540-4b2e-ac07-a7505f4a9313
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /1c1123
+    headers:
+      Host: cfzzs.starnetcn.top
+- name: 🏁RELAY-104.16.169.131-06
   server: hcaptcha.com
   port: 80
   type: vmess
@@ -19,20 +103,6 @@ proxies:
     path: /1c1123
     headers:
       Host: napan.starnetcn.top
-- name: 🏁RELAY-104.16.168.131-01
-  server: hcaptcha.com
-  port: 80
-  type: vmess
-  uuid: 95e3c4c4-5540-4b2e-ac07-a7505f4a9313
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: false
-  ws-opts:
-    path: /1c1123
-    headers:
-      Host: desjd.starnetcn.top
 proxy-groups:
 - name: 节点选择
   type: select
@@ -52,24 +122,32 @@ proxy-groups:
 - name: 日本节点
   type: select
   proxies:
-  - DIRECT
+  - 🇯🇵JP-54.64.15.175-00
+  - 🇯🇵JP-54.64.15.175-02
+  - 🇯🇵JP-54.64.15.175-04
 - name: 新加坡节点
   type: select
   proxies:
-  - DIRECT
+  - 🇸🇬SG-52.221.127.156-01
+  - 🇸🇬SG-52.221.127.156-03
+  - 🇸🇬SG-52.221.127.156-05
 - name: 其他节点
   type: select
   proxies:
-  - 🏁RELAY-104.16.168.131-00
-  - 🏁RELAY-104.16.168.131-01
+  - 🏁RELAY-104.16.169.131-06
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-104.16.168.131-00
-  - 🏁RELAY-104.16.168.131-01
+  - 🇯🇵JP-54.64.15.175-00
+  - 🇸🇬SG-52.221.127.156-01
+  - 🇯🇵JP-54.64.15.175-02
+  - 🇸🇬SG-52.221.127.156-03
+  - 🇯🇵JP-54.64.15.175-04
+  - 🇸🇬SG-52.221.127.156-05
+  - 🏁RELAY-104.16.169.131-06
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -77,16 +155,26 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-104.16.168.131-00
-  - 🏁RELAY-104.16.168.131-01
+  - 🇯🇵JP-54.64.15.175-00
+  - 🇸🇬SG-52.221.127.156-01
+  - 🇯🇵JP-54.64.15.175-02
+  - 🇸🇬SG-52.221.127.156-03
+  - 🇯🇵JP-54.64.15.175-04
+  - 🇸🇬SG-52.221.127.156-05
+  - 🏁RELAY-104.16.169.131-06
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🏁RELAY-104.16.168.131-00
-  - 🏁RELAY-104.16.168.131-01
+  - 🇯🇵JP-54.64.15.175-00
+  - 🇸🇬SG-52.221.127.156-01
+  - 🇯🇵JP-54.64.15.175-02
+  - 🇸🇬SG-52.221.127.156-03
+  - 🇯🇵JP-54.64.15.175-04
+  - 🇸🇬SG-52.221.127.156-05
+  - 🏁RELAY-104.16.169.131-06
 - name: 谷歌服务
   type: select
   proxies:
