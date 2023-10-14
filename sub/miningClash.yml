@@ -18,8 +18,8 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      Host: Amsterdam.bobbykotick.rip
-- name: 🏁RELAY-104.21.59.157-01
+      Host: Kansas.bobbykotick.rip
+- name: 🏁RELAY-172.67.180.138-01
   server: bobbykotick.rip
   port: 443
   type: vmess
@@ -32,8 +32,8 @@ proxies:
   ws-opts:
     path: /speedtest
     headers:
-      Host: Kansas.bobbykotick.rip
-- name: 🇯🇵JP-35.76.187.90-02
+      Host: Lille.bobbykotick.rip
+- name: 🇯🇵JP-54.64.139.42-02
   server: kr-cdn-6273819.starnetcn.top
   port: 53782
   type: vmess
@@ -47,7 +47,7 @@ proxies:
     path: /1c1791euidqihd
     headers:
       Host: 127.0.0.1
-- name: 🇯🇵JP-35.76.187.90-03
+- name: 🇯🇵JP-54.64.139.42-03
   server: kr-cdn-6273819.starnetcn.top
   port: 31235
   type: vmess
@@ -61,7 +61,7 @@ proxies:
     path: /315d825893fc34aca0231ab967157986
     headers:
       Host: jxhoisldy718922.starnetcn.top
-- name: 🇯🇵JP-35.76.187.90-04
+- name: 🇯🇵JP-54.64.139.42-04
   server: kr-cdn-6273819.starnetcn.top
   port: 51236
   type: vmess
@@ -75,7 +75,7 @@ proxies:
     path: /315d825893fc34aca0231ab967157986.m3u8
     headers:
       Host: fd98201dijmasadj.starnetcn.top
-- name: 🇯🇵JP-35.76.187.90-05
+- name: 🇯🇵JP-54.64.139.42-05
   server: kr-cdn-6273819.starnetcn.top
   port: 28391
   type: vmess
@@ -89,7 +89,7 @@ proxies:
     path: /315d825893fc34aca0231ab967157986
     headers:
       Host: xgui2agy3dq8y.starnetcn.top
-- name: 🇯🇵JP-35.76.187.90-06
+- name: 🇯🇵JP-54.64.139.42-06
   server: kr-cdn-6273819.starnetcn.top
   port: 43213
   type: vmess
@@ -103,7 +103,7 @@ proxies:
     path: /315d825893fc34aca0231ab967157986
     headers:
       Host: desd2yn3ioa4smla.starnetcn.top
-- name: 🇯🇵JP-35.76.187.90-07
+- name: 🇯🇵JP-54.64.139.42-07
   server: kr-cdn-6273819.starnetcn.top
   port: 65223
   type: vmess
@@ -117,6 +117,20 @@ proxies:
     path: /Ec6QL8sn3glc432zgPg
     headers:
       Host: ruadsd4qqfspagagn.starnetcn.top
+- name: 🇨🇦CA-198.50.119.81-08
+  server: xgui2agy3dq8y.starnetcn.top
+  port: 10088
+  type: vmess
+  uuid: 8e73f50a-35cd-4235-9c18-a3e061e7bc9f
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: false
+  ws-opts:
+    path: /315d825893fc34aca0231ab967157986
+    headers:
+      Host: download.microsoft.com
 proxy-groups:
 - name: 节点选择
   type: select
@@ -136,12 +150,12 @@ proxy-groups:
 - name: 日本节点
   type: select
   proxies:
-  - 🇯🇵JP-35.76.187.90-02
-  - 🇯🇵JP-35.76.187.90-03
-  - 🇯🇵JP-35.76.187.90-04
-  - 🇯🇵JP-35.76.187.90-05
-  - 🇯🇵JP-35.76.187.90-06
-  - 🇯🇵JP-35.76.187.90-07
+  - 🇯🇵JP-54.64.139.42-02
+  - 🇯🇵JP-54.64.139.42-03
+  - 🇯🇵JP-54.64.139.42-04
+  - 🇯🇵JP-54.64.139.42-05
+  - 🇯🇵JP-54.64.139.42-06
+  - 🇯🇵JP-54.64.139.42-07
 - name: 新加坡节点
   type: select
   proxies:
@@ -150,7 +164,8 @@ proxy-groups:
   type: select
   proxies:
   - 🏁RELAY-104.21.59.157-00
-  - 🏁RELAY-104.21.59.157-01
+  - 🏁RELAY-172.67.180.138-01
+  - 🇨🇦CA-198.50.119.81-08
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -158,13 +173,14 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-104.21.59.157-00
-  - 🏁RELAY-104.21.59.157-01
-  - 🇯🇵JP-35.76.187.90-02
-  - 🇯🇵JP-35.76.187.90-03
-  - 🇯🇵JP-35.76.187.90-04
-  - 🇯🇵JP-35.76.187.90-05
-  - 🇯🇵JP-35.76.187.90-06
-  - 🇯🇵JP-35.76.187.90-07
+  - 🏁RELAY-172.67.180.138-01
+  - 🇯🇵JP-54.64.139.42-02
+  - 🇯🇵JP-54.64.139.42-03
+  - 🇯🇵JP-54.64.139.42-04
+  - 🇯🇵JP-54.64.139.42-05
+  - 🇯🇵JP-54.64.139.42-06
+  - 🇯🇵JP-54.64.139.42-07
+  - 🇨🇦CA-198.50.119.81-08
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -173,13 +189,14 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-104.21.59.157-00
-  - 🏁RELAY-104.21.59.157-01
-  - 🇯🇵JP-35.76.187.90-02
-  - 🇯🇵JP-35.76.187.90-03
-  - 🇯🇵JP-35.76.187.90-04
-  - 🇯🇵JP-35.76.187.90-05
-  - 🇯🇵JP-35.76.187.90-06
-  - 🇯🇵JP-35.76.187.90-07
+  - 🏁RELAY-172.67.180.138-01
+  - 🇯🇵JP-54.64.139.42-02
+  - 🇯🇵JP-54.64.139.42-03
+  - 🇯🇵JP-54.64.139.42-04
+  - 🇯🇵JP-54.64.139.42-05
+  - 🇯🇵JP-54.64.139.42-06
+  - 🇯🇵JP-54.64.139.42-07
+  - 🇨🇦CA-198.50.119.81-08
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -187,13 +204,14 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 🏁RELAY-104.21.59.157-00
-  - 🏁RELAY-104.21.59.157-01
-  - 🇯🇵JP-35.76.187.90-02
-  - 🇯🇵JP-35.76.187.90-03
-  - 🇯🇵JP-35.76.187.90-04
-  - 🇯🇵JP-35.76.187.90-05
-  - 🇯🇵JP-35.76.187.90-06
-  - 🇯🇵JP-35.76.187.90-07
+  - 🏁RELAY-172.67.180.138-01
+  - 🇯🇵JP-54.64.139.42-02
+  - 🇯🇵JP-54.64.139.42-03
+  - 🇯🇵JP-54.64.139.42-04
+  - 🇯🇵JP-54.64.139.42-05
+  - 🇯🇵JP-54.64.139.42-06
+  - 🇯🇵JP-54.64.139.42-07
+  - 🇨🇦CA-198.50.119.81-08
 - name: 谷歌服务
   type: select
   proxies:
