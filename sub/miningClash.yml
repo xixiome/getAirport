@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-- name: 🇯🇵JP-35.75.143.248-00
+- name: 🇯🇵JP-57.180.72.8-00
   server: kr-cdn-6273819.starnetcn.top
   port: 53782
   type: vmess
@@ -19,7 +19,7 @@ proxies:
     path: /1c1791euidqihd
     headers:
       Host: 127.0.0.1
-- name: 🇯🇵JP-35.75.143.248-01
+- name: 🇯🇵JP-57.180.72.8-01
   server: kr-cdn-6273819.starnetcn.top
   port: 31235
   type: vmess
@@ -33,7 +33,7 @@ proxies:
     path: /315d825893fc34aca0231ab967157986
     headers:
       Host: jxhoisldy718922.starnetcn.top
-- name: 🇯🇵JP-35.75.143.248-02
+- name: 🇯🇵JP-57.180.72.8-02
   server: kr-cdn-6273819.starnetcn.top
   port: 51236
   type: vmess
@@ -47,7 +47,7 @@ proxies:
     path: /315d825893fc34aca0231ab967157986.m3u8
     headers:
       Host: fd98201dijmasadj.starnetcn.top
-- name: 🇯🇵JP-35.75.143.248-03
+- name: 🇯🇵JP-57.180.72.8-03
   server: kr-cdn-6273819.starnetcn.top
   port: 28391
   type: vmess
@@ -61,7 +61,7 @@ proxies:
     path: /315d825893fc34aca0231ab967157986
     headers:
       Host: xgui2agy3dq8y.starnetcn.top
-- name: 🇯🇵JP-35.75.143.248-04
+- name: 🇯🇵JP-57.180.72.8-04
   server: kr-cdn-6273819.starnetcn.top
   port: 43213
   type: vmess
@@ -75,7 +75,7 @@ proxies:
     path: /315d825893fc34aca0231ab967157986
     headers:
       Host: desd2yn3ioa4smla.starnetcn.top
-- name: 🇯🇵JP-35.75.143.248-05
+- name: 🇯🇵JP-57.180.72.8-05
   server: kr-cdn-6273819.starnetcn.top
   port: 65223
   type: vmess
@@ -108,12 +108,12 @@ proxy-groups:
 - name: 日本节点
   type: select
   proxies:
-  - 🇯🇵JP-35.75.143.248-00
-  - 🇯🇵JP-35.75.143.248-01
-  - 🇯🇵JP-35.75.143.248-02
-  - 🇯🇵JP-35.75.143.248-03
-  - 🇯🇵JP-35.75.143.248-04
-  - 🇯🇵JP-35.75.143.248-05
+  - 🇯🇵JP-57.180.72.8-00
+  - 🇯🇵JP-57.180.72.8-01
+  - 🇯🇵JP-57.180.72.8-02
+  - 🇯🇵JP-57.180.72.8-03
+  - 🇯🇵JP-57.180.72.8-04
+  - 🇯🇵JP-57.180.72.8-05
 - name: 新加坡节点
   type: select
   proxies:
@@ -128,12 +128,12 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇯🇵JP-35.75.143.248-00
-  - 🇯🇵JP-35.75.143.248-01
-  - 🇯🇵JP-35.75.143.248-02
-  - 🇯🇵JP-35.75.143.248-03
-  - 🇯🇵JP-35.75.143.248-04
-  - 🇯🇵JP-35.75.143.248-05
+  - 🇯🇵JP-57.180.72.8-00
+  - 🇯🇵JP-57.180.72.8-01
+  - 🇯🇵JP-57.180.72.8-02
+  - 🇯🇵JP-57.180.72.8-03
+  - 🇯🇵JP-57.180.72.8-04
+  - 🇯🇵JP-57.180.72.8-05
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -141,24 +141,24 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇯🇵JP-35.75.143.248-00
-  - 🇯🇵JP-35.75.143.248-01
-  - 🇯🇵JP-35.75.143.248-02
-  - 🇯🇵JP-35.75.143.248-03
-  - 🇯🇵JP-35.75.143.248-04
-  - 🇯🇵JP-35.75.143.248-05
+  - 🇯🇵JP-57.180.72.8-00
+  - 🇯🇵JP-57.180.72.8-01
+  - 🇯🇵JP-57.180.72.8-02
+  - 🇯🇵JP-57.180.72.8-03
+  - 🇯🇵JP-57.180.72.8-04
+  - 🇯🇵JP-57.180.72.8-05
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 🇯🇵JP-35.75.143.248-00
-  - 🇯🇵JP-35.75.143.248-01
-  - 🇯🇵JP-35.75.143.248-02
-  - 🇯🇵JP-35.75.143.248-03
-  - 🇯🇵JP-35.75.143.248-04
-  - 🇯🇵JP-35.75.143.248-05
+  - 🇯🇵JP-57.180.72.8-00
+  - 🇯🇵JP-57.180.72.8-01
+  - 🇯🇵JP-57.180.72.8-02
+  - 🇯🇵JP-57.180.72.8-03
+  - 🇯🇵JP-57.180.72.8-04
+  - 🇯🇵JP-57.180.72.8-05
 - name: 谷歌服务
   type: select
   proxies:
