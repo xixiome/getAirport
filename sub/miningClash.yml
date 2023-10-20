@@ -75,21 +75,7 @@ proxies:
     path: /Ec6QL8sn3glc432zgPg
     headers:
       Host: ruadsd4qqfspagagn.starnetcn.top
-- name: 🏁RELAY-172.67.180.138-05
-  server: bobbykotick.rip
-  port: 443
-  type: vmess
-  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
-  alterId: 0
-  cipher: auto
-  skip-cert-vertify: true
-  network: ws
-  tls: true
-  ws-opts:
-    path: /speedtest
-    headers:
-      Host: Kansas.bobbykotick.rip
-- name: 🏁RELAY-104.21.59.157-06
+- name: 🏁RELAY-172.64.80.1-05
   server: bobbykotick.rip
   port: 443
   type: vmess
@@ -103,6 +89,20 @@ proxies:
     path: /speedtest
     headers:
       Host: Dusseldorf.bobbykotick.rip
+- name: 🏁RELAY-172.64.80.1-06
+  server: bobbykotick.rip
+  port: 443
+  type: vmess
+  uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF
+  alterId: 0
+  cipher: auto
+  skip-cert-vertify: true
+  network: ws
+  tls: true
+  ws-opts:
+    path: /speedtest
+    headers:
+      Host: Amsterdam.bobbykotick.rip
 proxy-groups:
 - name: 节点选择
   type: select
@@ -134,8 +134,8 @@ proxy-groups:
 - name: 其他节点
   type: select
   proxies:
-  - 🏁RELAY-172.67.180.138-05
-  - 🏁RELAY-104.21.59.157-06
+  - 🏁RELAY-172.64.80.1-05
+  - 🏁RELAY-172.64.80.1-06
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -147,8 +147,8 @@ proxy-groups:
   - 🇯🇵JP-18.176.109.150-02
   - 🇯🇵JP-18.176.109.150-03
   - 🇯🇵JP-18.176.109.150-04
-  - 🏁RELAY-172.67.180.138-05
-  - 🏁RELAY-104.21.59.157-06
+  - 🏁RELAY-172.64.80.1-05
+  - 🏁RELAY-172.64.80.1-06
 - name: 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -161,8 +161,8 @@ proxy-groups:
   - 🇯🇵JP-18.176.109.150-02
   - 🇯🇵JP-18.176.109.150-03
   - 🇯🇵JP-18.176.109.150-04
-  - 🏁RELAY-172.67.180.138-05
-  - 🏁RELAY-104.21.59.157-06
+  - 🏁RELAY-172.64.80.1-05
+  - 🏁RELAY-172.64.80.1-06
 - name: 失败切换
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -174,8 +174,8 @@ proxy-groups:
   - 🇯🇵JP-18.176.109.150-02
   - 🇯🇵JP-18.176.109.150-03
   - 🇯🇵JP-18.176.109.150-04
-  - 🏁RELAY-172.67.180.138-05
-  - 🏁RELAY-104.21.59.157-06
+  - 🏁RELAY-172.64.80.1-05
+  - 🏁RELAY-172.64.80.1-06
 - name: 谷歌服务
   type: select
   proxies:
